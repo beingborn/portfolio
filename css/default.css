@@ -488,9 +488,9 @@ body {
 }
 */
 .task-list {
-  color: var(--font-color);
+  color: #767676;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   padding-top: 20px;
 }
 
