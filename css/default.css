@@ -371,7 +371,7 @@ body {
 .project-view {
   /* height: 100vh; */
   width: 100%;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   padding-bottom: 120px;
 }
 
@@ -379,10 +379,13 @@ body {
   display: block;
   width: 32px;
   height: 32px;
-  background: url(/포트폴리오/img/keyboard_arrow_right.svg) no-repeat
+  background: url(../img/keyboard_arrow_right.svg) no-repeat
     center/contain;
   transform: rotate(-180deg);
   font-weight: 800;
+  position: absolute;
+  left: 240px;
+  top: 20px;
 }
 
 .left-detail {
@@ -413,11 +416,12 @@ body {
 }
 
 .project-wrapper {
-  /* background-color:cornflowerblue; */
+  background-color:#EFEFEF;
   display: flex;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   justify-content: space-between;
-  align-items: center;
+  height: 100vh;
+  /* align-items: center; */
 }
 
 .project-wrapper .sub-title {
@@ -425,7 +429,7 @@ body {
   color: gray;
 }
 .project-wrapper .main-title {
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 900;
   white-space: nowrap;
   padding-top: 16px;
@@ -437,16 +441,53 @@ body {
 }
 
 .left-thumb {
-  /*width: 600px;*/
+  margin-top: 240px;
+  margin-left: 240px;
 }
 
-/*
-.right-thumb {
-  width: 400px;
-  height: 400px;
-  background-color: darkgrey;
+.program-use {
+  display: flex;
 }
-*/
+
+.program-use li {
+  width: 32px;
+  height: 32px;
+  background-color: #767676;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.new-title {
+  font-weight: 900;
+}
+
+.program-use .html {
+  background: url(../img/html-icon.svg) no-repeat center;
+}
+
+.program-use .css {
+  background: url(../img/css-icon.svg) no-repeat center;
+}
+
+.program-use .js {
+  background: url(../img/javascript-icon.svg) no-repeat center;
+}
+
+.program-use .figma {
+  background: url(../img/photoshop-icon.svg) no-repeat center;
+}
+
+
+
+
+/* 
+.right-thumb {
+  width: 50%;
+  height: 800px;
+  background: url(../img/sub1-mockup.png) no-repeat center top;
+  margin-right: 100px;
+} */
+
 
 .use-tool {
   font-size: 16px;
