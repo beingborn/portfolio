@@ -2,10 +2,11 @@
   --font-color: #464c52;
 }
 
+
+
 @font-face {
-  font-family: Gotham;
-  src: url(/font/Gotham-Black.ttf) format("ttf");
-  font-weight: 900;
+  font-family: 'Gotham_Black';
+  src: url('../font/Gotham-Black.woff') format("woff");
 }
 
 @font-face {
@@ -15,13 +16,13 @@
 
 @font-face {
   font-family: Gotham;
-  src: url(/font/Gotham-Bold.ttf) format("ttf");
+  src: url(/font/Gotham-Bold.woff) format("woff");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Gotham;
-  src: url(/font/Gotham-Medium.ttf) format("ttf");
+  src: url(/font/Gotham-Medium.woff) format("woff");
   font-weight: 400;
 }
 
@@ -100,9 +101,16 @@ nav {
 /* 메인 비주얼 영역 */
 
 body {
+
+}
+.bg {
+    position:absolute;
+    left:0px; top:0px;
+    width:100%; height:120%; z-index: -1000;
+
   background: url(../img/main-bg3.png) no-repeat;
-  background-position: center -45vh;
-  background-size: 110% auto;
+  background-position: center -15vw;
+  background-size: cover;
 }
 
 .hero {
@@ -112,7 +120,7 @@ body {
 }
 
 .hero-tit {
-  font-size: 130px;
+  font-size: 8vw;
   font-weight: 900;
   color: #fff;
 }
@@ -131,7 +139,7 @@ body {
 }
 
 .right-sub .sub-tit {
-  font-size: 44px;
+  font-size: 2.5vw;
   font-weight: 900;
 }
 
@@ -149,7 +157,7 @@ body {
 
 .tit-wrap {
   display: flex;
-  width: 1280px;
+  width: 70%;
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -204,6 +212,7 @@ body {
 }
 
 .project-sub {
+    font-size:1.12vw;
   font-weight: 400;
 }
 
@@ -317,11 +326,13 @@ body {
 
 .viewport-wrap {
   width: 1200px;
+  overflow: hidden;
 }
 
 .right-viewport {
-  width: 100%;
-  overflow: hidden;
+/*  width: 100%;*/
+/*  overflow: hidden;*/
+/*border:1px solid red;*/
 }
 
 /* 오른쪽 그룹 */
@@ -329,13 +340,15 @@ body {
   display: flex;
   /* width: 1440px; */
   /* flex-wrap: nowrap; */
-  /* border: 1px solid cornflowerblue;  */
+/*   border: 1px solid cornflowerblue;  */
   position: relative;
-  align-items: center;
-  vertical-align: middle;
+/*    font-family: Gotham_Black;*/
+
+
 }
 
 .right-vision p {
+  font-family: Gotham_Black;
   color: transparent;
   -webkit-text-stroke: 1.5px #000;
   font-size: 44px;
@@ -708,9 +721,10 @@ body {
 
 
 .right-vision .korean-vision {
-  /* font-family: Gasoek-heavy , BlackHanSans; */
-  /* font-weight: 400; */
-  /* font-family: "Black Han Sans"; */
+/*   font-family: Gotham; */
+/*   font-weight: 900; */
+   font-family: "Black Han Sans"; 
+    padding-top:4px;
 
   /* font-style: normal; */
   -webkit-text-stroke: 0.05px #000

@@ -1,3 +1,6 @@
+window.onload=function(){
+
+
 var mainTask = $(".task-wrap li a");
 var taskExplain = $(".task-box");
 var taskBox = $(".code-review");
@@ -58,15 +61,31 @@ let play = true;
 const movingWrap = $('.right-vision')
 
 
+
+
 let x = 0
 let s = -1
 
 const set = $('.right-vision p')
+
+
+let hap=0;
+
+setTimeout(function(){
+
+    for(i=0; i< set.length; i++){
+        hap = hap + $('.right-vision p:eq('+i+')').width() +40           
+    }
+    //alert(hap);
+    
+},500);
+
+
 const temp = set.clone(true)
 movingWrap.append(temp)
 
-// let wrapWidth = movingWrap.width();
-// let itemWidth = movingWrap.find('p').outerWidth();
+let wrapWidth = movingWrap.width();
+let itemWidth = movingWrap.find('p').outerWidth();
 
 
 
@@ -76,7 +95,7 @@ function moving(){
     // x = x + s
     let currentLeft = parseInt(movingWrap.css('left'));
 
-    if ( currentLeft < -1800 ) { // 끊어지는 위치가 될 시 기존 위치로 변경하기 즉 clone 노드까지 뷰포트에 다 보여졌을 때
+    if ( currentLeft < -hap ) { // 끊어지는 위치가 될 시 기존 위치로 변경하기 즉 clone 노드까지 뷰포트에 다 보여졌을 때
       currentLeft = 0
     }
 
@@ -87,3 +106,5 @@ function moving(){
 }
 
 setInterval(moving, 10)
+
+};
