@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: Gasoek-heavy;
+  src: url(/font/Gasoek-Heavy.ttf) format("ttf");
+}
+
+@font-face {
   font-family: Gotham;
   src: url(/font/Gotham-Bold.ttf) format("ttf");
   font-weight: 700;
@@ -21,15 +26,16 @@
 }
 
 @font-face {
-  font-family: BlackHanSans;
-  src: url(../font/BlackHanSans-Regular.ttf) format("ttf");
-  font-weight: 400;
+  font-family: "Black Han Sans";
+  src: url(/font/BlackHanSans-Regular.ttf) format("ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: NanumGothic;
-  src: url(../font/NanumGothic-Regular.ttf) format("ttf");
-  font-weight: 400;
+  src: url(../font/NanumGothic-ExtraBold.ttf) format("ttf");
+  font-weight: 800;
 }
 
 * {
@@ -274,7 +280,7 @@ body {
 .vision-wrap {
   display: flex;
   margin-left: 240px;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   align-items: center;
 }
 
@@ -303,7 +309,7 @@ body {
   /* width: 1280px; */
   z-index: 333;
   position: relative;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   overflow: hidden;
 }
 
@@ -321,10 +327,12 @@ body {
 /* 오른쪽 그룹 */
 .right-vision {
   display: flex;
-  width: 2200px;
+  /* width: 1440px; */
   /* flex-wrap: nowrap; */
-  /* display: inline-bloc; */
-  border: 1px solid cornflowerblue;  
+  /* border: 1px solid cornflowerblue;  */
+  position: relative;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .right-vision p {
@@ -333,6 +341,7 @@ body {
   font-size: 44px;
   font-weight: 900;
   margin-right: 40px;
+  flex-shrink: 0;
 }
 
 
@@ -348,9 +357,9 @@ body {
 .left-vision {
   /* display: inline-block; */
   flex: 0 0 480px;
-  padding-right: 20px;
-  border-right: 2px solid black;
-  border: 1px solid pink;
+  /* padding-right: 20px; */
+  border-right: 1.5px solid black;
+  /* border: 1px solid pink; */
 }
 
 .my-vision .left-vision p:nth-child(2) {
@@ -684,6 +693,25 @@ body {
   color: darkgray;
 }
 
-.korean-vision {
-  font-family: BlackHanSans;
+.gasoek-one-regular {
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.black-han-sans-regular {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+.right-vision .korean-vision {
+  /* font-family: Gasoek-heavy , BlackHanSans; */
+  /* font-weight: 400; */
+  /* font-family: "Black Han Sans"; */
+
+  /* font-style: normal; */
+  -webkit-text-stroke: 0.05px #000
 }

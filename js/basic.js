@@ -54,8 +54,36 @@ mainTask.click(function () {
 
 // 이동 갤러리 변수 선언
 
+let play = true;
+const movingWrap = $('.right-vision')
+
+
+let x = 0
+let s = -1
+
+const set = $('.right-vision p')
+const temp = set.clone(true)
+movingWrap.append(temp)
+
+// let wrapWidth = movingWrap.width();
+// let itemWidth = movingWrap.find('p').outerWidth();
+
 
 
 function moving(){
-  console.log("hi");
+
+  if(play) {
+    // x = x + s
+    let currentLeft = parseInt(movingWrap.css('left'));
+
+    if ( currentLeft < -1800 ) { // 끊어지는 위치가 될 시 기존 위치로 변경하기 즉 clone 노드까지 뷰포트에 다 보여졌을 때
+      currentLeft = 0
+    }
+
+
+
+    movingWrap.css('left', `${currentLeft - 1}px`);
+  }
 }
+
+setInterval(moving, 10)
