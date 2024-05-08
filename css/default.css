@@ -50,12 +50,14 @@ body {
 
 nav {
   height: 440px;
+  display: flex;
 }
 
 .inner {
   width: 1440px;
   margin: 0px auto;
   /* border: 1px solid blue; */
+  
 }
 
 .section-tit {
@@ -100,17 +102,27 @@ nav {
 
 /* 메인 비주얼 영역 */
 
-body {
 
-}
 .bg {
-    position:absolute;
-    left:0px; top:0px;
-    width:100%; height:120%; z-index: -1000;
+  position:absolute;
+  left:0px; top:0px;
+  width:100%; height:120%; z-index: -1000;
 
   background: url(../img/main-bg3.png) no-repeat;
   background-position: center -15vw;
   background-size: cover;
+}
+
+.bottom-bg {
+  position:absolute;
+  left:0px; bottom:0px;
+  width:100%; 
+  height:170%;
+  z-index: -1000;
+  background: url(../img/bottom-bg.png) no-repeat;
+  background-position: center bottom -5vh;
+  background-size: cover;
+  /* transform: rotate(20deg); */
 }
 
 .hero {
@@ -173,12 +185,12 @@ body {
 }
 
 .section-tit {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .skill-tit {
   font-size: 68px;
-  font-weight: 900;
+  font-family: "Gotham_Black";
   padding-bottom: 16px;
   color: var(--font-color);
 }
@@ -228,14 +240,15 @@ body {
 .project-wrap {
   position: relative;
   padding: 32px 0;
-  border-top: 2px solid lightgray;
+  /* border-top: 2px solid lightgray; */
   border-bottom: 2px solid lightgray;
   vertical-align: middle;
 }
 
 .project-tit {
   font-size: 48px;
-  font-weight: 900;
+  font-family: "Gotham_Black";
+  /* font-weight: 900; */
   padding-bottom: 16px;
   display: flex;
   align-items: center;
@@ -279,6 +292,7 @@ body {
 .my-vision {
   padding: 120px 0;
   position: relative;
+  margin-bottom: 100px;
   /*
   background: url(/img/vision-bg.png) no-repeat center;
   background-size: cover;
@@ -371,7 +385,7 @@ body {
   /* display: inline-block; */
   flex: 0 0 480px;
   /* padding-right: 20px; */
-  border-right: 1.5px solid black;
+  border-right: 1.5px solid lightgray;
   /* border: 1px solid pink; */
 }
 
@@ -388,9 +402,19 @@ body {
 /* footer-sns */
 
 .footer-sns {
-  padding: 120px 0;
-  background-color: #1e1eca;
+  padding-top: 120px;
+  height: 65vh;
+  position: relative;
+  /* background-color: #1e1eca; */
 }
+
+.footer-sns .inner {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .footer-sns p,
 .footer-sns h2 {
@@ -436,7 +460,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-bottom: 120px;
-  background-color:#EFEFEF;
+  background-color:#fbfbfb;
 
 }
 
@@ -487,6 +511,7 @@ body {
   display: flex;
   justify-content: space-between;
   /* border: 1px solid blue; */
+    padding-top: 20vh;
   width: 1440px;
 }
 
@@ -604,7 +629,7 @@ body {
 
 .main-task {
   position: relative;
-  top: 200px;
+  padding: 200px 0;
 }
 
 .task-wrap {
@@ -685,17 +710,12 @@ body {
   padding: 40px 0;
 }
 
-.code-real {
-  /*
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;*/
-
-  position: absolute;
-  top: 40px;
-  right: 0;
-  height: 800px;
+.task-flex nav {
+  display: flex;
+  justify-content: space-between;
 }
+
+
 
 .code-title {
   font-weight: 800;
@@ -729,3 +749,78 @@ body {
   /* font-style: normal; */
   -webkit-text-stroke: 0.05px #000
 }
+
+/* 코드 부분 */
+
+.code-real {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 20px;
+}
+
+.code-title {
+  position: absolute;
+  top: -60px;
+  left: 0;
+}
+
+.code-title p {
+  font-weight: 400;
+  padding-top: 8px;
+}
+
+.code-number {
+  width:47px; 
+   background-color:#eaf2f5; 
+   border-left:1px solid #e5ecef; 
+  border-right:3px solid #d1dde1; 
+  color:#9db9c2; text-align:right;
+}
+
+.code-number .numberline {
+  /* border: 1px solid red; */
+  line-height: 32px;
+  height: 32px;
+  text-align: center;
+}
+
+.code .line01 {
+  width:650px;
+  border-right:1px solid #e5ecef; 
+  color:black; font-size:12px;
+  background-color:#f4fafc;
+  font-family:inherit; 
+  line-height: 32px;
+  height: 32px;
+  /* border: 1px solid blue; */
+  padding-left: 8px;
+}
+
+.code .line02 {
+  width:650px;
+  border-right:1px solid #e5ecef;
+  color:black; 
+  font-size:12px;
+  background-color:#fff;
+  font-family:inherit; 
+  /* padding:0.5em 0.5em 0.5em 1em;  */
+  line-height: 32px;
+  height: 32px;
+  padding-left: 8px;
+
+  /* border: 1px solid blue; */
+}
+
+.code-real p {
+  white-space: pre;
+}
+
+.code-number .numberline p {
+  color:#9db9c2;
+}
+
+.code-explain {
+  color: lightskyblue;
+}
+

@@ -3,10 +3,12 @@ window.onload=function(){
 
 var mainTask = $(".task-wrap li a");
 var taskExplain = $(".task-box");
-var taskBox = $(".code-review");
+var taskBox = $(".code-real");
 var isOpen = false;
 
-taskBox.eq(0).css("display", "block");
+taskBox.hide();
+taskBox.eq(0).show();
+
 mainTask.eq(0).css("color", "black");
 
 mainTask.click(function () {

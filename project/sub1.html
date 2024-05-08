@@ -1,192 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
-
-    <style>
-      body {
-        background: none !important;
-        overflow-x: hidden;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <!-- <div class="inner"> -->
-        <section class="project-view">
-
-          <a href="/포트폴리오/index.html" class="prev-btn">&lt; PREV</a>
-          <div class="project-wrapper">
-            <div class="left-thumb">
-              <div class="sub-project-title">
-                <!-- <p class="sub-title">REDESIGN & PUBLISHING</p> -->
-                <ul class="program-use">
-                  <li class="html"></li>
-                  <li class="css"></li>
-                  <li class="js"></li>
-                  <li class="figma"></li>
-                </ul>
-                <h2 class="main-title">JEEP RENEWAL PROJECT</h2>
-                <p class="project-article">
-                  반응형 레이아웃을 이해하기 위해 진행한 클론 코딩
-                  프로젝트입니다. <br />media 쿼리 및 vw, vh 등 반응형 단위를
-                  직접적으로 이해할 수 있었습니다.
-                </p>
-                <div class="new-wrap">
-                  <p style="margin-bottom: 8px; font-size: 20px">
-                  </p>
-                  <p style="margin-bottom: 8px; font-size: 20px;">
-                    <span class="new-title"> 기여도 </span> : 디자인 100%, 개발 100%
-                  </p> 
-                  <p style="margin-bottom: 8px; font-size: 20px; "><span class="new-title">글꼴</span> : NOTOSANS</p>
-                </div>
-              </div>
-
-
-
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../css/default.css" />
+      <link rel="stylesheet" href="../css/reset.css" />
+      <style>
+         body {
+         background: none !important;
+         overflow-x: hidden;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="wrap">
+         <!-- <div class="inner"> -->
+         <section class="project-view">
+            <a href="/포트폴리오/index.html" class="prev-btn">&lt; PREV</a>
+            <div class="project-wrapper">
+               <div class="left-thumb">
+                  <div class="sub-project-title">
+                     <!-- <p class="sub-title">REDESIGN & PUBLISHING</p> -->
+                     <ul class="program-use">
+                        <li class="html"></li>
+                        <li class="css"></li>
+                        <li class="js"></li>
+                        <li class="figma"></li>
+                     </ul>
+                     <h2 class="main-title">JEEP RENEWAL PROJECT</h2>
+                     <p class="project-article">
+                        반응형 레이아웃을 이해하기 위해 진행한 클론 코딩
+                        프로젝트입니다. <br />media 쿼리 및 vw, vh 등 반응형 단위를
+                        직접적으로 이해할 수 있었습니다.
+                     </p>
+                     <div class="new-wrap">
+                        <p style="margin-bottom: 8px; font-size: 20px">
+                        </p>
+                        <p style="margin-bottom: 8px; font-size: 20px;">
+                           <span class="new-title"> 기여도 </span> : 디자인 100%, 개발 100%
+                        </p>
+                        <p style="margin-bottom: 8px; font-size: 20px; "><span class="new-title">글꼴</span> : NOTOSANS</p>
+                     </div>
+                  </div>
+               </div>
+               <!-- right-thumb -->
+               <div class="right-thumb">
+                  <img
+                     src="../img/sub1-mockup-example.png"
+                     width="100%"
+                     height="780px"
+                     alt=""
+                     />
+               </div>
             </div>
-            <!-- right-thumb -->
-            <div class="right-thumb">
-              <img
-                
-                src="../img/sub1-mockup-example.png"
-                width="100%"
-                height="780px"
-                alt=""
-              />
-            </div>
-          <!-- </div> -->
-        </section>
+         </section>
 
-        <!-- 프로젝트 소개 -->
-        <section class="main-task">
+         <!-- 프로젝트 소개 -->
+
+         <section class="main-task">
           <div class="inner">
             <h2 class="section-tit">PROJECT MAIN TASK</h2>
+              <div class="task-flex">
+                <nav>
+                            <ul class="task-wrap">
 
-            <div class="task-flex">
-              <nav>
-                <ul class="task-wrap">
-                  <li>
-                    <a
-                      >인터랙션 옵저버 (스크롤 애니메이션)
-                      <div class="task-box">
-                        <p class="task-list">1. 감시자 객체 설정하기</p>
-                        <p class="task-list">2. 관찰 대상 설정하기</p>
-                        <p class="task-list">
-                          3. if (관찰 대상 트루 조건 시) 실행 코드 입력
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      >로컬 스토리지를 활용한 페이지간 연동
-                      <div class="task-box">
-                        <p class="task-list">
-                          1. 서로 다른 페이지 버튼 간 클래스 통일하기
-                        </p>
-                        <p class="task-list">
-                          2. change 이벤트 발생 시 로컬 스토리지에 상태 변경하기
-                        </p>
-                        <p class="task-list">
-                          3. 브라우저 로드 시 변경 사항 있으면 페이지 새로 고침
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      >CSS Grid를 통한 액자식 레이아웃 구성
-                      <div class="task-box">
-                        <p class="task-list">
-                          1. 아이템 컨테이너에 display grid 선언
-                        </p>
-                        <p class="task-list">
-                          2. Column Row 줄 나누기, 영역 선언
-                        </p>
-                        <p class="task-list">3. 자식 아이템에 영역 지정하기</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      >두 개 스와이퍼 버튼 별 실행
-                      <div class="task-box">
-                        <p class="task-list">1. 스와이퍼 cdn 링크 설정</p>
-                        <p class="task-list">
-                          2. 슬라이드 별 마크업 및 CSS 진행
-                        </p>
-                        <p class="task-list">3. 스와이퍼 별 js 세부 설정</p>
-                        <p class="task-list">4. 스와이퍼 id 삽입, CSS 지정</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      >선택 슬라이드 제목 바인딩(값 찾아서 할당하기)
-                      <div class="task-box">
-                        <p class="task-list">
-                          1. 클릭된 상태가 될 요소 변수 선언
-                        </p>
-                        <p class="task-list">
-                          2. this와 find()를 이용해 이벤트 대상 변수에 할당하기
-                        </p>
-                        <p class="task-list">
-                          3. 해당 클래스의 요소에 해당 변수 text()로 바인딩하기
-                        </p>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+                              <li>
+                                <a>인터랙션 옵저버 (스크롤 애니메이션)
+                                  <div class="task-box">
+                                    <p class="task-list">1. 감시자 객체 설정하기</p>
+                                    <p class="task-list">2. 관찰 대상 설정하기</p>
+                                    <p class="task-list">3. if (관찰 대상 트루 조건 시) 실행 코드 입력</p>
+                                  </div>
+                                </a>
+                              </li>
 
-              <div class="code-review">
-                <div class="code-real">
-                  <!-- <img src="../img/interaction.png" width="800" alt="" /> -->
-                  <!-- <iframe src="https://pastebin.com/embed_iframe/EcG0Mgs7" style="border:none;width:800px; height: auto;" ></iframe> -->
-                  <iframe src="https://pastebin.com/embed_iframe/ZrTUExU8" style="border:none;width: 800px; height: 600px"></iframe>
-                </div>
-              </div>
+                              <li>
+                                <a>로컬 스토리지를 활용한 페이지간 연동
+                                  <div class="task-box">
+                                    <p class="task-list">1. 서로 다른 페이지 버튼 간 클래스 통일하기</p>
+                                    <p class="task-list">2. change 이벤트 발생 시 로컬 스토리지에 상태 변경하기</p>
+                                    <p class="task-list">3. 브라우저 로드 시 변경 사항 있으면 페이지 새로 고침</p>
+                                  </div>
+                                </a>
+                              </li>
 
-              <div class="code-review">
-                <div class="code-real">
-                  <img src="../img/local-storage.png" width="800" alt="" />
-                </div>
-              </div>
+                              <li>
+                                <a>CSS Grid를 통한 액자식 레이아웃 구성
+                                  <div class="task-box">
+                                    <p class="task-list">1. 아이템 컨테이너에 display grid 선언</p>
+                                    <p class="task-list">2. Column Row 줄 나누기, 영역 선언</p>
+                                    <p class="task-list">3. 자식 아이템에 영역 지정하기</p>
+                                  </div>
+                                </a>
+                              </li>
 
-              <div class="code-review">
-                <!-- 글씨를 키우면 될듯 -->
-                <div class="code-real">
-                  <img src="../img/grid-container.png" width="800" alt="" />
-                </div>
-              </div>
+                              <li>
+                                <a>두 개 스와이퍼 버튼 별 실행
+                                  <div class="task-box">
+                                    <p class="task-list">1. 스와이퍼 cdn 링크 설정</p>
+                                    <p class="task-list">2. 슬라이드 별 마크업 및 CSS 진행</p>
+                                    <p class="task-list">3. 스와이퍼 별 js 세부 설정</p>
+                                    <p class="task-list">4. 스와이퍼 id 삽입, CSS 지정</p>
+                                  </div>
+                                </a>
+                              </li>
 
-              <div class="code-review">
-                <div class="code-real">
-                  <img src="../img/two-swiper.png" width="800" alt="" />
-                </div>
-              </div>
+                              <li>
+                                <a>선택 슬라이드 제목 바인딩(값 찾아서 할당하기)
+                                  <div class="task-box">
+                                    <p class="task-list">1. 클릭된 상태가 될 요소 변수 선언</p>
+                                    <p class="task-list">2. this와 find()를 이용해 이벤트 대상 변수에 할당하기</p>
+                                    <p class="task-list">3. 해당 클래스의 요소에 해당 변수 text()로 바인딩하기</p>
+                                  </div>
+                                </a>
+                              </li>         
+                            </ul>
 
-              <div class="code-review">
-                <div class="code-real">
-                  <img src="../img/data-binding.png" width="800" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+                  <!-- 1번 태스크 코드 -->
+                  <div class="code-real" >
+                    <div class="code-title">
+                      <h4>인터랙션 옵저버?</h4>
+                      <p style="font-size: 14px;">감시하는 객체를 만들어 요소의 스크롤 애니메이션을 보다 정확하게 수행 할 수 있게 도와주는 수단</p>
+                    </div>
+
+                    
+                    <ul class="code-number">
+                        <li class="numberline"><p>1</p></li>
+                        <li class="numberline"><p>2</p></li>
+                        <li class="numberline"><p>3</p></li>
+                        <li class="numberline"><p>4</p></li>
+                        <li class="numberline"><p>5</p></li>
+                        <li class="numberline"><p>6</p></li>
+                        <li class="numberline"><p>7</p></li>
+                        <li class="numberline"><p>8</p></li>
+                        <li class="numberline"><p>9</p></li>
+                        <li class="numberline"><p>10</p></li>
+                        <li class="numberline"><p>11</p></li>
+                        <li class="numberline"><p>12</p></li>
+                        <li class="numberline"><p>13</p></li>
+                        <li class="numberline"><p>14</p></li>
+                    </ul>
+
+                    <div class="code">
+                        <div class="line01"><p>let observer = new IntersectionObserver(   <span class="code-explain">// 생성자 즉 대상 요소 감시자 설정</span>  </p></div>
+                        <div class="line02"><p>    (entries) => {</p></div>
+                        <div class="line01"><p>      entries.forEach((entry)=> {</p></div>
+                        <div class="line02"><p>        if (entry.isIntersecting)  {   <span class="code-explain">// 요소가 뷰 포트에 보일 시 해당 코드 실행</span> </p></div>
+                        <div class="line01"><p>          $(entry.target).css({ opacity : 1});</p></div>
+                        <div class="line02"><p>        } else {</p></div>
+                        <div class="line01"><p>             $(entry.target).css({ opacity : 0});</p></div>
+                        <div class="line01"><p>        }</p></div>
+                        <div class="line02"><p>     });</p></div>
+                        <div class="line01"><p>    },</p></div>
+                        <div class="line02"><p>    { threshold : 0.5}   <span class="code-explain">// 보이는 영역 비율 50%, 넘을 시 함수 실행</span></p></div>
+                        <div class="line01"><p>);</p></div>
+                        <div class="line02"><p>             </p></div>
+                        <div class="line01"><p>observer.observe(opacityText1[0])  <span class="code-explain">// 관찰 대상 설정</span></p></div>
+                    </div>
+                  </div>
+
+
+                  <div class="code-real" >
+                    <div class="code-title">
+                      <h4>앙기모찌!</h4>
+                      <p>인터랙션 옵저버란 이러쿵 저러쿵해서 진심 머리에 혈류량이 안도는 느낌입니다</p>
+                    </div>
+
+                    
+                    <ul class="code-number">
+                        <li class="numberline"><p>1</p></li>
+                        <li class="numberline"><p>2</p></li>
+                        <li class="numberline"><p>3</p></li>
+                        <li class="numberline"><p>4</p></li>
+                        <li class="numberline"><p>5</p></li>
+                        <li class="numberline"><p>6</p></li>
+                        <li class="numberline"><p>7</p></li>
+                        <li class="numberline"><p>8</p></li>
+                        <li class="numberline"><p>9</p></li>
+                        <li class="numberline"><p>10</p></li>
+                        <li class="numberline"><p>11</p></li>
+                        <li class="numberline"><p>12</p></li>
+                        <li class="numberline"><p>13</p></li>
+                        <li class="numberline"><p>14</p></li>
+                        <li class="numberline"><p>15</p></li>
+                        <li class="numberline"><p>16</p></li>
+                        <li class="numberline"><p>17</p></li>
+                        <li class="numberline"><p>18</p></li>
+                    </ul>
+
+                    <div class="code">
+                        <div class="line01"><p>$(function(){ </p></div>
+                        <div class="line02"><p>    var count=0;</p></div>
+                        <div class="line01"><p>    function timer(){</p></div>
+                        <div class="line02"><p>        count++; //count를 1씩 증가</p></div>
+                        <div class="line01"><p>        $(".test").text(count);</p></div>
+                        <div class="line02"><p>        if(count===1){ //0.1초후</p></div>
+                        <div class="line01"><p>             $('#bubble').sprite({fps: 3, no_of_frames: 5});</p></div>
+                        <div class="line01"><p>        }</p></div>
+                        <div class="line02"><p>        if(count===3){ //0.3초후</p></div>
+                        <div class="line01"><p>             $('#sm_bg1').sprite({fps:15, no_of_frames: 12, play_frames: 12, });</p></div>
+                        <div class="line02"><p>        }</p></div>
+                        <div class="line01"><p>        if(count===6){ //0.6초후</p></div>
+                        <div class="line02"><p>             $('#sm_bg2').sprite({fps:15, no_of_frames: 10, play_frames: 10, });</p></div>
+                        <div class="line01"><p>             clearTimeout(s1);</p></div>
+                        <div class="line02"><p>         }</p></div>
+                        <div class="line01"><p>     }</p></div>
+                        <div class="line02"><p>     var s1 = setInterval(timer,100); //timer함수를 0.1초에 한번씩 반복실행</p></div>
+                        <div class="line01"><p>});</p></div>
+                    </div>
+                  </div>
+
+
+                  <div class="code-real" >
+                    <div class="code-title">
+                      <h4>미루미룽!</h4>
+                      <p>인터랙션 옵저버란 이러쿵 저러쿵해서 진심 머리에 혈류량이 안도는 느낌입니다</p>
+                    </div>
+
+                    
+                    <ul class="code-number">
+                        <li class="numberline"><p>1</p></li>
+                        <li class="numberline"><p>2</p></li>
+                        <li class="numberline"><p>3</p></li>
+                        <li class="numberline"><p>4</p></li>
+                        <li class="numberline"><p>5</p></li>
+                        <li class="numberline"><p>6</p></li>
+                        <li class="numberline"><p>7</p></li>
+                        <li class="numberline"><p>8</p></li>
+                        <li class="numberline"><p>9</p></li>
+                        <li class="numberline"><p>10</p></li>
+                        <li class="numberline"><p>11</p></li>
+                        <li class="numberline"><p>12</p></li>
+                        <li class="numberline"><p>13</p></li>
+                        <li class="numberline"><p>14</p></li>
+                        <li class="numberline"><p>15</p></li>
+                        <li class="numberline"><p>16</p></li>
+                        <li class="numberline"><p>17</p></li>
+                        <li class="numberline"><p>18</p></li>
+                    </ul>
+
+                    <div class="code">
+                        <div class="line01"><p>$(function(){ </p></div>
+                        <div class="line02"><p>    var count=0;</p></div>
+                        <div class="line01"><p>    function timer(){</p></div>
+                        <div class="line02"><p>        count++; //count를 1씩 증가</p></div>
+                        <div class="line01"><p>        $(".test").text(count);</p></div>
+                        <div class="line02"><p>        if(count===1){ //0.1초후</p></div>
+                        <div class="line01"><p>             $('#bubble').sprite({fps: 3, no_of_frames: 5});</p></div>
+                        <div class="line01"><p>        }</p></div>
+                        <div class="line02"><p>        if(count===3){ //0.3초후</p></div>
+                        <div class="line01"><p>             $('#sm_bg1').sprite({fps:15, no_of_frames: 12, play_frames: 12, });</p></div>
+                        <div class="line02"><p>        }</p></div>
+                        <div class="line01"><p>        if(count===6){ //0.6초후</p></div>
+                        <div class="line02"><p>             $('#sm_bg2').sprite({fps:15, no_of_frames: 10, play_frames: 10, });</p></div>
+                        <div class="line01"><p>             clearTimeout(s1);</p></div>
+                        <div class="line02"><p>         }</p></div>
+                        <div class="line01"><p>     }</p></div>
+                        <div class="line02"><p>     var s1 = setInterval(timer,100); //timer함수를 0.1초에 한번씩 반복실행</p></div>
+                        <div class="line01"><p>});</p></div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="code-real" >
+                    <div class="code-title">
+                      <h4>고추고추!</h4>
+                      <p>인터랙션 옵저버란 이러쿵 저러쿵해서 진심 머리에 혈류량이 안도는 느낌입니다</p>
+                    </div>
+
+                    
+                    <ul class="code-number">
+                        <li class="numberline"><p>1</p></li>
+                        <li class="numberline"><p>2</p></li>
+                        <li class="numberline"><p>3</p></li>
+                        <li class="numberline"><p>4</p></li>
+                        <li class="numberline"><p>5</p></li>
+                        <li class="numberline"><p>6</p></li>
+                        <li class="numberline"><p>7</p></li>
+                        <li class="numberline"><p>8</p></li>
+                        <li class="numberline"><p>9</p></li>
+                        <li class="numberline"><p>10</p></li>
+                        <li class="numberline"><p>11</p></li>
+                        <li class="numberline"><p>12</p></li>
+                        <li class="numberline"><p>13</p></li>
+                        <li class="numberline"><p>14</p></li>
+                        <li class="numberline"><p>15</p></li>
+                        <li class="numberline"><p>16</p></li>
+                        <li class="numberline"><p>17</p></li>
+                        <li class="numberline"><p>18</p></li>
+                    </ul>
+
+                    <div class="code">
+                        <div class="line01"><p>let observer = new IntersectionObserver( // 생성자 즉 대상 요소 감시자 설정 </p></div>
+                        <div class="line02"><p>    var count=0;</p></div>
+                        <div class="line01"><p>    function timer(){</p></div>
+                        <div class="line02"><p>        count++; //count를 1씩 증가</p></div>
+                        <div class="line01"><p>        $(".test").text(count);</p></div>
+                        <div class="line02"><p>        if(count===1){ //0.1초후</p></div>
+                        <div class="line01"><p>             $('#bubble').sprite({fps: 3, no_of_frames: 5});</p></div>
+                        <div class="line01"><p>        }</p></div>
+                        <div class="line02"><p>        if(count===3){ //0.3초후</p></div>
+                        <div class="line01"><p>             $('#sm_bg1').sprite({fps:15, no_of_frames: 12, play_frames: 12, });</p></div>
+                        <div class="line02"><p>        }</p></div>
+                        <div class="line01"><p>        if(count===6){ //0.6초후</p></div>
+                        <div class="line02"><p>             $('#sm_bg2').sprite({fps:15, no_of_frames: 10, play_frames: 10, });</p></div>
+                        <div class="line01"><p>             clearTimeout(s1);</p></div>
+                        <div class="line02"><p>         }</p></div>
+                        <div class="line01"><p>     }</p></div>
+                        <div class="line02"><p>     var s1 = setInterval(timer,100); //timer함수를 0.1초에 한번씩 반복실행</p></div>
+                        <div class="line01"><p>});</p></div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="code-real" >
+                    <div class="code-title">
+                      <h4>제발 정신을 차리길!</h4>
+                      <p>인터랙션 옵저버란 이러쿵 저러쿵해서 진심 머리에 혈류량이 안도는 느낌입니다</p>
+                    </div>
+
+                    
+                    <ul class="code-number">
+                        <li class="numberline"><p>1</p></li>
+                        <li class="numberline"><p>2</p></li>
+                        <li class="numberline"><p>3</p></li>
+                        <li class="numberline"><p>4</p></li>
+                        <li class="numberline"><p>5</p></li>
+                        <li class="numberline"><p>6</p></li>
+                        <li class="numberline"><p>7</p></li>
+                        <li class="numberline"><p>8</p></li>
+                        <li class="numberline"><p>9</p></li>
+                        <li class="numberline"><p>10</p></li>
+                        <li class="numberline"><p>11</p></li>
+                        <li class="numberline"><p>12</p></li>
+                        <li class="numberline"><p>13</p></li>
+                        <li class="numberline"><p>14</p></li>
+                        <li class="numberline"><p>15</p></li>
+                        <li class="numberline"><p>16</p></li>
+                        <li class="numberline"><p>17</p></li>
+                        <li class="numberline"><p>18</p></li>
+                    </ul>
+
+                    <div class="code">
+                        <div class="line01"><p>$(function(){ </p></div>
+                        <div class="line02"><p>    var count=0;</p></div>
+                        <div class="line01"><p>    function timer(){</p></div>
+                        <div class="line02"><p>        count++; //count를 1씩 증가</p></div>
+                        <div class="line01"><p>        $(".test").text(count);</p></div>
+                        <div class="line02"><p>        if(count===1){ //0.1초후</p></div>
+                        <div class="line01"><p>             $('#bubble').sprite({fps: 3, no_of_frames: 5});</p></div>
+                        <div class="line01"><p>        }</p></div>
+                        <div class="line02"><p>        if(count===3){ //0.3초후</p></div>
+                        <div class="line01"><p>             $('#sm_bg1').sprite({fps:15, no_of_frames: 12, play_frames: 12, });</p></div>
+                        <div class="line02"><p>        }</p></div>
+                        <div class="line01"><p>        if(count===6){ //0.6초후</p></div>
+                        <div class="line02"><p>             $('#sm_bg2').sprite({fps:15, no_of_frames: 10, play_frames: 10, });</p></div>
+                        <div class="line01"><p>             clearTimeout(s1);</p></div>
+                        <div class="line02"><p>         }</p></div>
+                        <div class="line01"><p>     }</p></div>
+                        <div class="line02"><p>     var s1 = setInterval(timer,100); //timer함수를 0.1초에 한번씩 반복실행</p></div>
+                        <div class="line01"><p>});</p></div>
+                    </div>
+                  </div>
+
+
+                  
+                </nav>
+         <!-- 왼쪽 nav 정보 end -->
+         </div>
       </div>
-    </div>
+      </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/basic.js"></script>
-  </body>
+</div>
+      
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="../js/basic.js"></script>
+   </body>
 </html>
