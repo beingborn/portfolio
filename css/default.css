@@ -10,20 +10,13 @@
 }
 
 @font-face {
-  font-family: Gasoek-heavy;
-  src: url(/font/Gasoek-Heavy.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: Gotham;
+  font-family: "Gotham_Bold";
   src: url(/font/Gotham-Bold.woff) format("woff");
-  font-weight: 700;
 }
 
 @font-face {
-  font-family: Gotham;
+  font-family: "Gotham_Meduim";
   src: url(/font/Gotham-Medium.woff) format("woff");
-  font-weight: 400;
 }
 
 @font-face {
@@ -62,8 +55,9 @@ nav {
 
 .section-tit {
   font-size: 32px;
-  font-weight: 800;
-  color: var(--font-color);
+  font-family: "Gotham_Bold";
+  /* font-weight: 800; */
+  /* color: var(--font-color); */
 }
 
 /* 헤더 */
@@ -116,11 +110,11 @@ nav {
 .bottom-bg {
   position:absolute;
   left:0px; bottom:0px;
-  width:100%; 
+  width:110%; 
   height:170%;
   z-index: -1000;
   background: url(../img/bottom-bg.png) no-repeat;
-  background-position: center bottom -5vh;
+  background-position: center bottom -15vh;
   background-size: cover;
   /* transform: rotate(20deg); */
 }
@@ -156,7 +150,8 @@ nav {
 }
 
 .right-sub p {
-  padding-bottom: 8px;
+  padding-bottom: 0.5em;
+  white-space: nowrap;
 }
 
 .sub-year {
@@ -192,7 +187,7 @@ nav {
   font-size: 68px;
   font-family: "Gotham_Black";
   padding-bottom: 16px;
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 .about-top,
@@ -219,8 +214,14 @@ nav {
 
 .project-change {
   font-size: 24px;
-  font-weight: 900;
+  /* font-weight: 900; */
   color: #1e1eca;
+  opacity: 0.6;
+}
+
+.btn-active {
+  font-family: "Gotham_Black";
+  opacity: 1.0;
 }
 
 .project-sub {
@@ -261,8 +262,9 @@ nav {
 }
 
 .project-skill {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  /* font-weight: 400; */
+  font-family: "Gotham_Medium";
   color: lightgray;
 }
 
@@ -293,6 +295,8 @@ nav {
   padding: 120px 0;
   position: relative;
   margin-bottom: 100px;
+  width: 1920px;
+  margin: 0px auto;
   /*
   background: url(/img/vision-bg.png) no-repeat center;
   background-size: cover;
