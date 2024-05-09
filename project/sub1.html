@@ -17,7 +17,7 @@
       <div class="wrap">
          <!-- <div class="inner"> -->
          <section class="project-view">
-            <a href="/포트폴리오/index.html" class="prev-btn">&lt; PREV</a>
+            <!-- <a href="/포트폴리오/index.html" class="prev-btn">&lt; PREV</a> -->
             <div class="project-wrapper">
                <div class="left-thumb">
                   <div class="sub-project-title">
@@ -35,12 +35,14 @@
                         직접적으로 이해할 수 있었습니다.
                      </p>
                      <div class="new-wrap">
-                        <p style="margin-bottom: 8px; font-size: 20px">
-                        </p>
-                        <p style="margin-bottom: 8px; font-size: 20px;">
-                           <span class="new-title"> 기여도 </span> : 디자인 100%, 개발 100%
-                        </p>
-                        <p style="margin-bottom: 8px; font-size: 20px; "><span class="new-title">글꼴</span> : NOTOSANS</p>
+                        <div class="new-wrap-top">
+                          <p style="margin-bottom: 8px; font-size: 16px;"><span class="new-title"> 기여도 </span> : 디자인 100%, 개발 100%                        </p>
+                          <p style="margin-bottom: 8px; font-size: 16px; "><span class="new-title">글꼴</span> : NOTOSANS</p>
+                        </div>
+
+                        <a href="#" class="project-link">WEBSITE</a>
+                        <a href="#" class="project-link">MOBILE</a>
+
                      </div>
                   </div>
                </div>
@@ -164,8 +166,8 @@
 
                   <div class="code-real" >
                     <div class="code-title">
-                      <h4>앙기모찌!</h4>
-                      <p>인터랙션 옵저버란 이러쿵 저러쿵해서 진심 머리에 혈류량이 안도는 느낌입니다</p>
+                      <h4>로컬스토리지</h4>
+                      <span>웹 브라우저 내부에 데이터를 저장하는 기술로, 사용자의 로컬 컴퓨터에 데이터를 저장하여 <br>오프라인 상태에서도 애플리케이션을 사용할 수 있게 해준다.</span>
                     </div>
 
                     
@@ -191,11 +193,12 @@
                     </ul>
 
                     <div class="code">
-                        <div class="line01"><p>$(function(){ </p></div>
-                        <div class="line02"><p>    var count=0;</p></div>
-                        <div class="line01"><p>    function timer(){</p></div>
-                        <div class="line02"><p>        count++; //count를 1씩 증가</p></div>
-                        <div class="line01"><p>        $(".test").text(count);</p></div>
+                        <div class="line01"><p><span class="code-explain">// input 버튼에 변경이 있을 때 로컬 스토리지의 밸류 값 설정하기</span> </p></div>
+                        <div class="line02"><p>indexPersonal.on("change", function () {</p></div>
+                        <div class="line01"><p>  localStorage.setItem("checkboxState", indexPersonal.prop("checked"));</p></div>
+                        <div class="line01"><p>});</p></div>
+                        <div class="line02"><p></p></div>
+                        <div class="line01"><p><span class="code-explain">// 브라우저 불러올 시 상태 값 가져오기</span></p></div>
                         <div class="line02"><p>        if(count===1){ //0.1초후</p></div>
                         <div class="line01"><p>             $('#bubble').sprite({fps: 3, no_of_frames: 5});</p></div>
                         <div class="line01"><p>        }</p></div>

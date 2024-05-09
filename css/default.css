@@ -1,5 +1,9 @@
 :root {
-  --font-color: #464c52;
+  --font-color-900: #212121;
+  --font-color-600: #757575;
+  --font-color-300: #E0E0E0;
+  --font-color-100: #FAFAFA;
+  --main-color: #1E1ECA;
 }
 
 
@@ -54,7 +58,7 @@ nav {
 }
 
 .section-tit {
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Gotham_Bold";
   /* font-weight: 800; */
   /* color: var(--font-color); */
@@ -75,13 +79,14 @@ nav {
   width: 100%;
   padding: 20px 0;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .top-gnb li > a {
-  font-size: 18px;
-  font-weight: 600;
-  margin-right: 48px;
+  font-size: 15px;
+  font-family: "Gotham_Bold";
+  /* font-weight: 600; */
+  margin-right: 40px;
   transition: all 0.5s;
 }
 
@@ -90,8 +95,8 @@ nav {
 }
 
 .top-gnb li:nth-child(1) > a {
-  margin-right: 8px;
-  font-weight: 800;
+  /* margin-right: 8px; */
+  /* font-weight: 800; */
 }
 
 /* 메인 비주얼 영역 */
@@ -127,7 +132,7 @@ nav {
 
 .hero-tit {
   font-size: 8vw;
-  font-weight: 900;
+  font-family: "Gotham_Black";
   color: #fff;
 }
 
@@ -146,7 +151,8 @@ nav {
 
 .right-sub .sub-tit {
   font-size: 2.5vw;
-  font-weight: 900;
+  font-family: "Gotham_Black";
+  /* font-weight: 900; */
 }
 
 .right-sub p {
@@ -180,7 +186,7 @@ nav {
 }
 
 .section-tit {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .skill-tit {
@@ -225,7 +231,8 @@ nav {
 }
 
 .project-sub {
-    font-size:1.12vw;
+  font-family: "Gotham_Medium";
+  font-size:1.12vw;
   font-weight: 400;
 }
 
@@ -448,6 +455,7 @@ nav {
 .copy-right {
   color: #fff;
   font-size: 15px;
+  padding-right: 18px;
 }
 
 .text-align {
@@ -494,10 +502,24 @@ nav {
 }
 
 .project-link {
-  color: #1e1eca;
-  margin-left: auto;
-  font-weight: 600;
-  text-decoration: underline;
+  /* color: #1e1eca; */
+  /* font-weight: 600; */
+  /* float: right; */
+  padding: 8px 16px;
+  /* border: 1px solid black; */
+  background-color: black;
+  font-size: 20px;
+  border-radius: 2px;
+  display: inline-block;
+  color: #fff;
+  font-family: "Gotham_Bold";
+  margin-right: 16px;
+  margin-top: 32px;
+  transition: 0.5s;
+}
+
+.project-link:hover{
+  background-color: var(--main-color);
 }
 
 .project-use {
@@ -567,8 +589,15 @@ nav {
 }
 
 .new-wrap {
-  padding-top: 120px;
+  padding-top: 80px;
+  overflow: hidden;
 }
+
+.new-wrap-top {
+  /* float: left; */
+}
+
+
 
 
 
@@ -651,7 +680,7 @@ nav {
   color: lightgray;
   font-weight: 600;
   padding: 16px 0;
-  font-size: 20px;
+  font-size: 16px;
   transition: all 0.5s;
 }
 /*
@@ -765,7 +794,7 @@ nav {
 
 .code-title {
   position: absolute;
-  top: -60px;
+  top: -62px;
   left: 0;
 }
 
@@ -774,12 +803,17 @@ nav {
   padding-top: 8px;
 }
 
+.code-title span {
+  font-weight: 400;
+  padding-top: 8px;
+}
+
 .code-number {
   width:47px; 
-   background-color:#eaf2f5; 
+   background-color:#eeeeee; 
    border-left:1px solid #e5ecef; 
-  border-right:3px solid #d1dde1; 
-  color:#9db9c2; text-align:right;
+  border-right:3px solid var(--font-color-300); 
+   text-align:right;
 }
 
 .code-number .numberline {
@@ -793,7 +827,7 @@ nav {
   width:650px;
   border-right:1px solid #e5ecef; 
   color:black; font-size:12px;
-  background-color:#f4fafc;
+  background-color: var(--font-color-100);
   font-family:inherit; 
   line-height: 32px;
   height: 32px;
@@ -817,14 +851,15 @@ nav {
 }
 
 .code-real p {
+  font-family: "Gotham_Medium";
   white-space: pre;
 }
 
 .code-number .numberline p {
-  color:#9db9c2;
+  color: var(--font-color-600);
 }
 
 .code-explain {
-  color: lightskyblue;
+  color: var(--main-color)
 }
 
