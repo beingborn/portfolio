@@ -17,7 +17,7 @@
       <div class="wrap">
          <!-- <div class="inner"> -->
          <section class="project-view">
-            <!-- <a href="/포트폴리오/index.html" class="prev-btn">&lt; PREV</a> -->
+            <a href="/포트폴리오/index.html" style="font-family: 'Gotham_Bold';" class="prev-btn">PREV</a>
             <div class="project-wrapper">
                <div class="left-thumb">
                   <div class="sub-project-title">
@@ -40,7 +40,7 @@
                           <p style="margin-bottom: 8px; font-size: 16px; "><span class="new-title">글꼴</span> : NOTOSANS</p>
                         </div>
 
-                        <a href="#" class="project-link">WEBSITE</a>
+                        <a href="https://beingborn.github.io/jeepweb/" class="project-link">WEBSITE</a>
                         <a href="#" class="project-link">MOBILE</a>
 
                      </div>
@@ -318,7 +318,7 @@
                   <div class="code-real" >
                     <div class="code-title">
                       <h4>데이터 바인딩</h4>
-                      <p>인터랙션 옵저버란 이러쿵 저러쿵해서 진심 머리에 혈류량이 안도는 느낌입니다</p>
+                      <p>요소에 객체 및 데이터 값을 주소를 통해 전달해주는 것</p>
                     </div>
 
                     
@@ -335,33 +335,22 @@
                         <li class="numberline"><p>10</p></li>
                         <li class="numberline"><p>11</p></li>
                         <li class="numberline"><p>12</p></li>
-                        <li class="numberline"><p>13</p></li>
-                        <li class="numberline"><p>14</p></li>
-                        <li class="numberline"><p>15</p></li>
-                        <li class="numberline"><p>16</p></li>
-                        <li class="numberline"><p>17</p></li>
-                        <li class="numberline"><p>18</p></li>
+
                     </ul>
 
                     <div class="code">
-                        <div class="line01"><p>$(function(){ </p></div>
-                        <div class="line02"><p>    var count=0;</p></div>
-                        <div class="line01"><p>    function timer(){</p></div>
-                        <div class="line02"><p>        count++; //count를 1씩 증가</p></div>
-                        <div class="line01"><p>        $(".test").text(count);</p></div>
-                        <div class="line02"><p>        if(count===1){ //0.1초후</p></div>
-                        <div class="line01"><p>             $('#bubble').sprite({fps: 3, no_of_frames: 5});</p></div>
-                        <div class="line01"><p>        }</p></div>
-                        <div class="line02"><p>        if(count===3){ //0.3초후</p></div>
-                        <div class="line01"><p>             $('#sm_bg1').sprite({fps:15, no_of_frames: 12, play_frames: 12, });</p></div>
-                        <div class="line02"><p>        }</p></div>
-                        <div class="line01"><p>        if(count===6){ //0.6초후</p></div>
-                        <div class="line02"><p>             $('#sm_bg2').sprite({fps:15, no_of_frames: 10, play_frames: 10, });</p></div>
-                        <div class="line01"><p>             clearTimeout(s1);</p></div>
-                        <div class="line02"><p>         }</p></div>
-                        <div class="line01"><p>     }</p></div>
-                        <div class="line02"><p>     var s1 = setInterval(timer,100); //timer함수를 0.1초에 한번씩 반복실행</p></div>
+                        <div class="line01"><p>var carformSlides;  <span class="code-explain">// 슬라이드</span></p></div>
+                        <div class="line02"><p>var clickModel  <span class="code-explain">// 클릭된 슬라이드 변수</span></p></div>
+                        <div class="line01"><p>   </p></div>
+                        <div class="line02"><p>carformSlides.click(function() {</p></div>
+                        <div class="line01"><p>  clickModel = $(this).find('p').text(); <span class="code-explain">// 클릭된 (this)의 텍스트 값 변수 할당</span></p></div>
+                        <div class="line02"><p>  $('.clicked-model').text(clickModel); <span class="code-explain">// 해당 값 바인딩</span></p></div>
+                        <div class="line01"><p></p></div>
+                        <div class="line02"><p>localStorage.setItem('choose', clickModel); <span class="code-explain">// 로컬스토리지에 값 저장</span></p></div>
                         <div class="line01"><p>});</p></div>
+                        <div class="line02"><p></p></div>
+                        <div class="line01"><p><span class="code-explain"> 저장소에 있는 값 다른 브라우저에서 가져오기</span></p></div>
+                        <div class="line02"><p>var clickSub = localStorage.getItem('choose');</p></div>
                     </div>
                   </div>
 
