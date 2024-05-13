@@ -6,6 +6,11 @@
   --main-color: #1E1ECA;
 }
 
+@font-face {
+  font-family: 'Mont_Heavy';
+  src: url(../font/Mont-HeavyDEMO.otf);
+}
+
 
 
 @font-face {
@@ -44,6 +49,7 @@
 body {
   width: 100%;
   overflow-x: hidden;
+  /* background-color: #eee; */
 }
 
 nav {
@@ -54,13 +60,12 @@ nav {
 .inner {
   width: 1440px;
   margin: 0px auto;
-  /* border: 1px solid blue; */
-  
+  border: 1px solid blue;  
 }
 
 .section-tit {
-  font-size: 24px;
-  font-family: "Gotham_Bold";
+  font-size: 32px;
+  font-family: "Gotham_Black";
   /* font-weight: 800; */
   /* color: var(--font-color); */
 }
@@ -145,7 +150,8 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 .hero-tit {
   font-size: 8vw;
-  font-family: "Gotham_Black";
+  /* font-family: "Gotham_Black"; */
+  font-family: "Mont_Heavy";
   color: #fff;
 }
 
@@ -245,7 +251,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 .project-sub {
   font-family: "Gotham_Medium";
-  font-size:1.12vw;
+  font-size:1vw;
   font-weight: 400;
 }
 
@@ -461,8 +467,8 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .thanks {
-  font-size: 227px;
-  font-weight: 900;
+  /* font-size: 227px; */
+  /* font-weight: 900; */
 }
 
 .copy-right {
