@@ -105,7 +105,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 .top-gnb li > a {
   font-size: 15px;
-  font-family: "Gotham_Medium";
+  font-family: "Gotham_Bold";
   /* font-weight: 600; */
   margin-right: 40px;
   transition: all 0.5s;
@@ -1018,7 +1018,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 .react-icon{background: url(../img/teenyicons_react-solid.svg) no-repeat center; background-size: contain; margin-right: 20px;}
 .figma-icon{background: url(../img/solar_figma-bold-duotone.svg) no-repeat center; background-size: contain; margin-right: 20px;}
 .photo-icon{background: url(../img/skill-icons_photoshop.svg) no-repeat center; background-size: contain; margin-right: 8px;}
-.illust-icon{background: url(../img/skill-icons_illustration.svg) no-repeat center; background-size: contain;}
+.illust-icon{background: url(../img/skill-icons_illustration.svg) no-repeat center; background-size: contain; margin-right: 12px;}
 .mongo-icon{background: url(../img/simple-icons_mongodb.svg) no-repeat center; background-size: contain; margin-right: 20px; }
 
 .illust-icon, .photo-icon {
