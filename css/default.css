@@ -36,7 +36,7 @@
 }
 
 @font-face {
-  font-family: NanumGothic;
+  font-family: "Nanum_Gothic";
   src: url(../font/NanumGothic-ExtraBold.ttf) format("ttf");
   font-weight: 800;
 }
@@ -58,9 +58,9 @@ nav {
 }
 
 .inner {
-  width: 1440px;
+  width: 1280px;
   margin: 0px auto;
-  border: 1px solid blue;  
+  /* border: 1px solid blue;   */
 }
 
 .section-tit {
@@ -273,7 +273,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .project-tit {
-  font-size: 48px;
+  font-size: 40px;
   font-family: "Gotham_Black";
   /* font-weight: 900; */
   padding-bottom: 16px;
@@ -332,7 +332,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 .vision-wrap {
   display: flex;
-  margin-left: 240px;
+  margin-left: 320px;
   /* border: 1px solid green; */
   align-items: center;
 }
@@ -467,19 +467,75 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .thanks {
-  /* font-size: 227px; */
-  /* font-weight: 900; */
+  font-size: 5.2vw;
+  font-family: "Gotham_Black";
+}
+
+.email-link {
+  background-color: #fff;
+  /* padding: 25px; */
+  margin: 0px auto;
+  border-radius: 50%;
+  font-family: "Gotham_Bold";
+  width: 125px;
+  height: 125px;
+  line-height: 125px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+}
+
+.email-link:hover {
+  background-color: var(--font-color-900);
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns-links a {
+  color: #fff;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #fff;
+  transition: all 0.5s;
+}
+
+.sns-links a:hover {
+  color: var(--font-color-900);
+  border-bottom: 1px solid var(--font-color-900);
+}
+
+.sns-links a:nth-child(1){
+  margin-right: 20px;
+}
+
+
+
+
+
+.footer-box {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
 }
 
 .copy-right {
   color: #fff;
   font-size: 15px;
-  padding-right: 18px;
+  font-family: "Gotham_Medium";
+  /* padding-right: 18px; */
+  white-space: nowrap;
+  padding-bottom: 4px;
+  opacity: 0.6;
 }
 
 .text-align {
   text-align: right;
-  margin-top: 40px;
+  /* margin-top: 40px; */
+  padding-bottom: 8px;
 }
 
 /* 프로젝트 */
@@ -910,4 +966,68 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 .code-explain {
   color: var(--main-color)
 }
+
+.skill-box {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+  
+.html-icon{background: url(../img/html-icon.svg) no-repeat center; background-size: contain; }
+.css-icon{background: url(../img/css-icon.svg) no-repeat center; background-size: contain; }
+.js-icon{background: url(../img/devicon_javascript.svg) no-repeat center; background-size: contain; }
+.jq-icon{background: url(../img/devicon_jquery.svg) no-repeat center; background-size: contain;}
+.react-icon{background: url(../img/teenyicons_react-solid.svg) no-repeat center; background-size: contain; margin-right: 20px;}
+.figma-icon{background: url(../img/solar_figma-bold-duotone.svg) no-repeat center; background-size: contain; margin-right: 20px;}
+.photo-icon{background: url(../img/skill-icons_photoshop.svg) no-repeat center; background-size: contain; margin-right: 8px;}
+.illust-icon{background: url(../img/skill-icons_illustration.svg) no-repeat center; background-size: contain;}
+.mongo-icon{background: url(../img/simple-icons_mongodb.svg) no-repeat center; background-size: contain; margin-right: 20px; }
+
+.illust-icon, .photo-icon {
+  width: 60px;
+  height: 60px;
+}
+
+
+
+
+
+.icon-wrap {
+  display: flex;
+  flex: 0 0 160px;
+  justify-content: end;
+}
+
+.skill-txt {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.skill-sub {
+  line-height: 1.3;
+  font-family: "Nanum_Gothic";
+  font-size: 15px;
+}
+
+.skill-flex {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.skill-wrap {
+  /* border: 1px solid green; */
+  width: calc(33.33% - 20px);
+  display: flex;
+  align-items: center;
+}
+
+.skill-title {
+  font-family: "Gotham_Black";
+  font-size: 20px;
+  margin: 8px 0;
+
+}
+
 
