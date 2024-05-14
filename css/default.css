@@ -547,7 +547,9 @@ border: 1px solid rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
   padding-bottom: 120px;
-  background-color:#fbfbfb;
+  /* background-color:#fbfbfb; */
+
+  
 
 }
 
@@ -614,6 +616,11 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 .project-link:hover{
   background-color: var(--main-color);
 }
+
+.project-link:hover #web-link {
+  color: yellow;
+}
+
 
 .project-use {
   display: flex;
@@ -682,13 +689,42 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .new-wrap {
-  padding-top: 80px;
+  padding-top: 120px;
   overflow: hidden;
 }
 
 .new-wrap-top {
   /* float: left; */
 }
+
+.version-collect {
+  width: 164px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: block;
+}
+
+.version-collect a {
+  margin-top: 12px;
+  font-family: "Gotham_Bold";
+  /* white-space: nowrap; */
+  padding-bottom: 4px;
+  border-bottom: 1px solid black;
+}
+
+.version-collect a:nth-child(1){
+  margin-right: 8px;
+}
+
+
+.version-collect {
+  line-height: 30px;
+}
+
+/* .web-link:hover .version-collect {
+  color: yellow;
+} */
 
 
 
@@ -755,7 +791,8 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 
 .main-task {
   position: relative;
-  padding: 200px 0;
+  /* padding: 200px 0; */
+  padding-bottom: 160px;
 }
 
 .task-wrap {
