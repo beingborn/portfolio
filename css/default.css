@@ -972,6 +972,7 @@ nav {
   display: inline-block;
   width: 80px;
   height: 80px;
+  transition: all 0.5s;
 }
 
 .html-icon {

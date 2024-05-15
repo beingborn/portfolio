@@ -95,15 +95,39 @@ window.onload = function () {
 let skillIcon = $(".icon-wrap");
 let clickedItem;
 
-skillIcon.mouseover(function () {
-  clickedItem = $(this).find("a"); // 클릭된 요소의 a태그 찾기
-  clickedSrc = clickedItem.css("background-image"); // 해당 요소 배경 이미지 찾기
+$(document).ready(function () {
+  skillIcon.hover(
+    function () {
+      $(this)
+        .find("a")
+        .each(function () {
+          var clickedItem = $(this);
+          clickedSrc = clickedItem.css("background-image");
 
-  var extensionIndex = clickedSrc.lastIndexOf("."); // src값 확장자 값 찾기
-  var extension = clickedSrc.slice(extensionIndex); // 확장자 앞 텍스트 가져오기
-  var newSrc = clickedSrc.slice(0, extensionIndex) + "-on" + extension; // "-on" 텍스트 추가
+          clickedItem.data("originalSrc", clickedSrc);
 
-  console.log(newSrc);
-  // 해당 값으로 변경
-  clickedItem.css("background-image", newSrc);
+          var extensionIndex = clickedSrc.lastIndexOf("."); // src값 확장자 값 찾기
+          var extension = clickedSrc.slice(extensionIndex); // 확장자 앞 텍스트 가져오기
+          var newSrc = clickedSrc.slice(0, extensionIndex) + "-on" + extension; // "-on" 텍스트 추가
+
+          console.log(newSrc);
+
+          clickedItem.css("background-image", newSrc);
+        });
+      // 클릭된 요소의 a태그 찾기
+      // 해당 요소 배경 이미지 찾기
+    },
+    function () {
+      $(this)
+        .find("a")
+        .each(function () {
+          var clickedItem = $(this);
+          var originalSrc = clickedItem.data("originalSrc");
+          // 기존 src로 변경
+          clickedItem.css("background-image", originalSrc);
+        });
+    }
+  );
 });
+
+//  해결 방법 : each로 순회 돌면서 해당 a 값 개별로 src값 할당
