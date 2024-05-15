@@ -717,7 +717,6 @@ nav {
   width: 32px;
   height: 32px;
   background-color: #767676;
-  background-size: cover;
   margin-right: 12px;
 }
 
@@ -727,18 +726,22 @@ nav {
 
 .program-use .html {
   background: url(../img/html-icon.svg) no-repeat center;
+  background-size: contain;
 }
 
 .program-use .css {
   background: url(../img/css-icon.svg) no-repeat center;
+  background-size: contain;
 }
 
 .program-use .js {
   background: url(../img/javascript-icon.svg) no-repeat center;
+  background-size: contain;
 }
 
 .program-use .figma {
   background: url(../img/photoshop-icon.svg) no-repeat center;
+  background-size: contain;
 }
 
 .right-thumb {
@@ -980,35 +983,35 @@ nav {
   background-size: contain;
 }
 .js-icon {
-  background: url(../img/devicon_javascript.svg) no-repeat center;
+  background: url(../img/javascript-icon.svg) no-repeat center;
   background-size: contain;
 }
 .jq-icon {
-  background: url(../img/devicon_jquery.svg) no-repeat center;
+  background: url(../img/jquery-icon.svg) no-repeat center;
   background-size: contain;
 }
 .react-icon {
-  background: url(../img/teenyicons_react-solid.svg) no-repeat center;
+  background: url(../img/react-icon.svg) no-repeat center;
   background-size: contain;
   margin-right: 20px;
 }
 .figma-icon {
-  background: url(../img/solar_figma-bold-duotone.svg) no-repeat center;
+  background: url(../img/figma-icon.svg) no-repeat center;
   background-size: contain;
   margin-right: 20px;
 }
 .photo-icon {
-  background: url(../img/skill-icons_photoshop.svg) no-repeat center;
+  background: url(../img/photoshop-icon.svg) no-repeat center;
   background-size: contain;
   margin-right: 8px;
 }
 .illust-icon {
-  background: url(../img/skill-icons_illustration.svg) no-repeat center;
+  background: url(../img/illustration-icon.svg) no-repeat center;
   background-size: contain;
   margin-right: 12px;
 }
 .mongo-icon {
-  background: url(../img/simple-icons_mongodb.svg) no-repeat center;
+  background: url(../img/mongodb-icon.svg) no-repeat center;
   background-size: contain;
   margin-right: 20px;
 }
