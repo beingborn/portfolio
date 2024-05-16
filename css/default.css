@@ -228,7 +228,7 @@ nav {
   position: absolute;
   left: 0;
   top: 0;
-  width: 600px;
+  width: 640px;
   height: 400px;
   border-radius: 4px;
   background-color: #fff;
@@ -1146,7 +1146,6 @@ nav {
   display: flex;
   margin-bottom: 40px;
   justify-content: space-between;
-  position: relative;
 }
 
 .skill-wrap {
@@ -1154,6 +1153,8 @@ nav {
   width: calc(33.33% - 20px);
   display: flex;
   align-items: center;
+  position: relative;
+
 }
 
 .skill-title {

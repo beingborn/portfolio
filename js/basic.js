@@ -135,20 +135,23 @@ $(document).ready(function () {
 //  해결 방법 : each로 순회 돌면서 해당 a 값 개별로 src값 할당
 
 
-let modalBtn = $('.skill-box');
+// 해당 인덱스 번호 
+
+let modalBtn = $('.icon-wrap');
 let modal = $('.modal-body')
 let modalClose = $('.close-btn')
 let tempBg = $('.temp-bg')
 
+console.log(modalBtn[0],modalBtn[1])
+
 modal.hide()
 
 modalBtn.click(function(){
-  modal.fadeIn('swing');
-  // tempBg.css({
-  //   backgroundColor : "black",
-  //   opacity : "0.6",
-  //   zIndex : "696",
-  // })
+  let modalIndex = modalBtn.index(this);
+
+  modal.eq(modalIndex).fadeIn('swing');
+
+  console.log("현재 인덱스 번호",modalIndex)
 })
 
 modalClose.click(function(){
