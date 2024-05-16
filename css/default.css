@@ -259,16 +259,56 @@ nav {
 .modal-icon::before{
   content: '';
   display: inline-flex;
-  width: 160px;
-  height: 160px;
-  background: url(../img/react-icon-on.svg) no-repeat center;
-  background-size: cover;
+  width: 120px;
+  height: 120px;
+  /* background: url(../img/react-icon-on.svg) no-repeat center; */
+  /* background-size: cover; */
   margin-right: 12px;
   position: absolute;
-  bottom: 24px;
-  right: 0px;
+  bottom: 12px;
+  right: 12px;
   opacity: 0.3;
 }
+
+.html-detail::before {
+  background: url(../img/htmlcss-on.svg) no-repeat center;
+  background-size: contain;
+}
+
+.react-detail::before{
+  background: url(../img/react-icon-on.svg) no-repeat center;
+  background-size: cover;
+
+}
+
+.figma-detail::before{
+  background: url(../img/figma-icon-on.svg) no-repeat center;
+  background-size: cover;
+
+}
+
+.js-detail::before{
+  background: url(../img/js-jq-on.svg) no-repeat center;
+  background-size: contain;
+}
+.mongo-detail::before{
+  background: url(../img/mongodb-icon-on.svg) no-repeat center;
+  background-size: cover;
+}
+.photo-detail::before{
+  background: url(../img/ph-ai-on.svg) no-repeat center;
+  background-size: contain;
+}
+
+
+
+
+.modal-skill li {
+  font-family: "NanumGothic";
+  line-height: 1.8;
+}
+
+
 
 .modal-explain {
   padding: 0 32px;
@@ -509,7 +549,7 @@ nav {
   /* display: inline-block; */
   flex: 0 0 480px;
   /* padding-right: 20px; */
-  border-right: 1.5px solid rgb(0, 0, 0, 0.8);
+  /* border-right: 1.5px solid rgb(0, 0, 0, 0.8); */
   /* border: 1px solid pink; */
 }
 
