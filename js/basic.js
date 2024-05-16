@@ -130,4 +130,27 @@ $(document).ready(function () {
   );
 });
 
+
+
 //  해결 방법 : each로 순회 돌면서 해당 a 값 개별로 src값 할당
+
+
+let modalBtn = $('.skill-box');
+let modal = $('.modal-body')
+let modalClose = $('.close-btn')
+let tempBg = $('.temp-bg')
+
+modal.hide()
+
+modalBtn.click(function(){
+  modal.fadeIn('swing');
+  // tempBg.css({
+  //   backgroundColor : "black",
+  //   opacity : "0.6",
+  //   zIndex : "696",
+  // })
+})
+
+modalClose.click(function(){
+  modal.fadeOut('swing');
+})
