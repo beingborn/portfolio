@@ -141,6 +141,7 @@ let modalBtn = $('.icon-wrap');
 let modal = $('.modal-body')
 let modalClose = $('.close-btn')
 let tempBg = $('.temp-bg')
+let blackBg = $('.modal-bg')
 
 console.log(modalBtn[0],modalBtn[1])
 
@@ -148,12 +149,12 @@ modal.hide()
 
 modalBtn.click(function(){
   let modalIndex = modalBtn.index(this);
+  blackBg.show();
 
   modal.eq(modalIndex).fadeIn('swing');
-
-  console.log("현재 인덱스 번호",modalIndex)
 })
 
 modalClose.click(function(){
   modal.fadeOut('swing');
+  blackBg.hide();
 })
