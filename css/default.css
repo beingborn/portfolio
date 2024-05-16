@@ -70,7 +70,6 @@ body::after {
   display: none;
 }
 
-#wrap { border:2px solid red; }
 nav {
   height: 440px;
   display: flex;
