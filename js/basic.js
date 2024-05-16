@@ -143,6 +143,8 @@ let modalClose = $('.close-btn')
 let tempBg = $('.temp-bg')
 let blackBg = $('.modal-bg')
 
+blackBg.css({ height:$(document).height()  });
+
 console.log(modalBtn[0],modalBtn[1])
 
 modal.hide()
@@ -154,7 +156,10 @@ modalBtn.click(function(){
   modal.eq(modalIndex).fadeIn('swing');
 })
 
-modalClose.click(function(){
+blackBg.click(AA);
+modalClose.click(AA);
+
+function AA(){
   modal.fadeOut('swing');
   blackBg.hide();
-})
+}
