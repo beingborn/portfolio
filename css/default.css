@@ -1212,7 +1212,9 @@ nav {
 }
 
 .main-pg {
-  width: 80%;
+  width: 90%;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .sub-pg{
@@ -1223,6 +1225,10 @@ nav {
   /* width: 20%; */
 }
 
+
+.design-page {
+  padding-bottom: 200px;
+}
 
 .design-page .section-tit {
   margin-bottom: 8px;
@@ -1236,4 +1242,18 @@ nav {
   0 8px 16px rgba(0,0,0,0.07),
   0 16px 32px rgba(0,0,0,0.07), 
   0 32px 64px rgba(0,0,0,0.07);
+}
+
+.top-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
