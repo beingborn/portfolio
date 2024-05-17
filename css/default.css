@@ -1281,7 +1281,7 @@ nav {
 }
 
 .main-pg {
-  width: 90%;
+  width: 100%;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -1297,10 +1297,23 @@ nav {
 
 .design-page {
   padding-bottom: 200px;
+  position: relative;
+}
+
+.right-gnb {
+  position: fixed;
+  right: 80px;
+  bottom: 80px;
+  opacity: 1;
+}
+
+.right-gnb a {
+  display: block;
+  padding-bottom: 20px;
 }
 
 .design-page .section-tit {
-  margin-bottom: 8px;
+  margin-bottom: 80px;
 }
 
 .design-item {

@@ -183,15 +183,12 @@ function AA(){
   blackBg.hide();
 }
 
+// 애로우 화면 뷰포트 애니메이션
 
 var projectDown = $('.main-task')
-
 let observer = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
-
     (entries) => {
-
       entries.forEach((entry)=> {
-
         if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
           console.log(`${entry.target} is intersecting`);
           $('.arrow-down').css('opacity', 0)
@@ -202,15 +199,51 @@ let observer = new IntersectionObserver(   // 생성자 즉 대상 요소 감시
           // $('.top-btn').css('opacity', 0)
         }
      });
-
     },
-
     { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
-
 );
-
-             
-
 projectDown.each(function() {
   observer.observe(this);
 }); // 관찰 대상
+
+
+// TOP BTN 애니메이션
+
+var projectUp = $('.project-view')
+
+let observer2 = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
+    (entries) => {
+      entries.forEach((entry)=> {
+        if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
+          console.log(`${entry.target} is intersecting`);
+          $('.top-btn').css('opacity', 0)
+        } else {
+          console.log(`${entry.target} is not intersecting`);
+        }
+     });
+    },
+    { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
+);
+projectUp.each(function() {
+  observer2.observe(this);
+}); // 관찰 대상
+
+// var designView = $('.design-page')
+
+// let observer3 = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
+//     (entries) => {
+//       entries.forEach((entry)=> {
+//         if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
+//           console.log(`${entry.target} is intersecting`);
+//           $('.right-gnb').css('opacity', 1)  
+//         } else {
+//           console.log(`${entry.target} is not intersecting`);
+//         }
+//      });
+//     },
+//     { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
+// );
+// designView.each(function() {
+//   observer3.observe(this);
+// }); // 관찰 대상
+
