@@ -214,7 +214,21 @@ nav {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
+
+.left-title {
+  opacity: 0;
+  transform : translateY(80%);
+  transition: all 1.3s ease;
+}
+
+.right-sub {
+  opacity: 0;
+  transform : translateY(80%);
+  transition: all 1.3s ease;
+}
+
 
 /* 어바웃 */
 
@@ -373,12 +387,13 @@ nav {
 /* project change */
 
 .project {
-  margin-bottom: 160px;
+  margin-bottom: 180px;
 }
 
+/*
 .project-change {
   font-size: 24px;
-  /* font-weight: 900; */
+ 
   color: #1e1eca;
   opacity: 0.6;
 }
@@ -387,7 +402,7 @@ nav {
   font-family: "Gotham_Black";
   opacity: 1;
 }
-
+*/
 .project-sub {
   font-family: "Gotham_Medium";
   font-size: 1vw;
@@ -396,8 +411,24 @@ nav {
 
 .project .section-tit,
 .btn-group {
-  display: inline-block;
+  /* display: inline-block; */
 }
+
+.project .btn-group .project-change{
+  cursor: pointer;
+  font-size: 15px;
+  color: lightgray;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.project .btn-group .btn-active {
+  color: #000;
+  padding-bottom: 4px;
+  border-bottom : 2px solid #000;
+}
+
+
 
 .project .section-tit {
   margin-right: 120px;
@@ -410,6 +441,10 @@ nav {
   border-bottom: 2px solid lightgray;
   vertical-align: middle;
   cursor: pointer;
+}
+
+.project-total {
+  padding-top: 20px;
 }
 
 .project-tit {
@@ -461,7 +496,7 @@ nav {
   padding: 120px 0;
   position: relative;
   margin-bottom: 100px;
-  width: 1280px;
+  width: 1440px;
   margin: 0px auto;
   /*
   background: url(/img/vision-bg.png) no-repeat center;
@@ -1255,4 +1290,27 @@ nav {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* media query */
+
+@media screen and (min-width: 1440px) {
+  /* 화면 너비가 768px 이상인 경우에만 적용되는 스타일 */
+  .inner {
+    width: 1440px;
+  }
+
+  .my-vision {
+    width: 1440px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .inner {
+    width: 1280px;
+  }
+
+  .my-vision {
+    width: 1280px;
+  }
 }

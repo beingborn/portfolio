@@ -163,3 +163,17 @@ function AA(){
   modal.fadeOut('swing');
   blackBg.hide();
 }
+
+// 텍스트 애니메이션
+
+window.onload = function() {
+  $('.right-sub').css({
+    opacity : 1, 
+    transform : 'translateY(0)'
+  })
+
+  $('.left-title').css({
+    opacity : 1, 
+    transform : 'translateY(0)'
+  })
+};
