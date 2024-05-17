@@ -1,4 +1,23 @@
+// 텍스트 애니메이션
+
+
+
+
 window.onload = function () {
+
+  // 텍스트 애니메이션
+  $('.right-sub').css({
+    opacity : 1, 
+    transform : 'translateY(0)'
+  })
+
+  $('.left-title').css({
+    opacity : 1, 
+    transform : 'translateY(0)'
+  })
+
+
+
   var mainTask = $(".task-wrap li a");
   var taskExplain = $(".task-box");
   var taskBox = $(".code-real");
@@ -164,16 +183,34 @@ function AA(){
   blackBg.hide();
 }
 
-// 텍스트 애니메이션
 
-window.onload = function() {
-  $('.right-sub').css({
-    opacity : 1, 
-    transform : 'translateY(0)'
-  })
+var projectDown = $('.main-task')
 
-  $('.left-title').css({
-    opacity : 1, 
-    transform : 'translateY(0)'
-  })
-};
+let observer = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
+
+    (entries) => {
+
+      entries.forEach((entry)=> {
+
+        if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
+          console.log(`${entry.target} is intersecting`);
+          $('.arrow-down').css('opacity', 0)
+          $('.top-btn').css('opacity', 1)
+        } else {
+          console.log(`${entry.target} is not intersecting`);
+          $('.arrow-down').css('opacity', 1)
+          // $('.top-btn').css('opacity', 0)
+        }
+     });
+
+    },
+
+    { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
+
+);
+
+             
+
+projectDown.each(function() {
+  observer.observe(this);
+}); // 관찰 대상
