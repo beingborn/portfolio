@@ -270,7 +270,7 @@ let subGnbBtn = $('.right-gnb li a')
 
 // 스크롤 이벤트 추가
 $(window).on('scroll', function() {
-  if ($(window).scrollTop() + 40 >= contentTop) {
+  if ($(window).scrollTop() >= contentTop) {
     subGnb.addClass('fixed');
   } else {
     subGnb.removeClass('fixed');

@@ -55,6 +55,11 @@ body {
   margin: 0px auto;
   position: relative;
   /* background-color: #eee; */
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+ /* display: none; */
 }
 
 body::after {
@@ -972,7 +977,7 @@ nav {
 .main-task {
   position: relative;
   /* padding: 200px 0; */
-  padding-bottom: 160px;
+  height: 100vh;
 }
 
 .task-wrap {
@@ -1169,7 +1174,7 @@ nav {
 
 .code-real p {
   font-family: "Gotham_Medium";
-  white-space: pre;
+  /* white-space: pre; */
 }
 
 .code-number .numberline p {
@@ -1288,19 +1293,42 @@ nav {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 80px;
+
 }
 
-.mo-pg {
+/* .mo-back {
+  padding-bottom: 80px;
+} */
+
+#mo-main {
   width: 360px;
   height: 840px;
   border-radius: 12px;
-  /* position: sticky; */
-  bottom: 0;
   overflow-y: scroll;
-  border: 1px solid green;
-  margin: 0px auto;
+  margin-top: 40px;
+  scrollbar-color: darkgray lightgray;
+}
+
+#mo-sub{
+  width: 360px;
+  height: 840px;
+  border-radius: 12px;
+  overflow: hidden;
   margin-top: 40px;
 }
+
+
+.mo-pgwrap{
+  display: flex;
+  justify-content: start;
+}
+
+/* .mo-pg::-webkit-scrollbar {
+  width: 4px;
+} */
+
+
 
 
 .design-page {
@@ -1360,7 +1388,7 @@ nav {
 
 .how-design {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .how-design p {
@@ -1368,10 +1396,66 @@ nav {
 }
 
 .how-design h2 {
-  font-size: 24px;
+  font-size: 32px;
   padding-bottom: 8px;
 }
 
+
+.mo-back {
+  position: relative;
+}
+
+.mo-point-1 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+  width: 340px;
+}
+
+.mo-point-2 {
+  position: absolute;
+  top: 30%;
+  left: 70%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+  width: 340px;
+
+}
+
+.mo-point-3 {
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 20px;
+  width: 340px;
+
+}
+
+#mo-main {
+  margin-right: 40px;
+}
+
+#mo-sub img {
+  height: 100%;
+}
+
+.top {
+  position: relative;
+}
+
+
+.top::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 8px;
+  background: url(../img/arrow-up-line.svg) no-repeat center;
+}
 
 
 /* media query */
