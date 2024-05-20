@@ -4,7 +4,6 @@
 
 
 window.onload = function () {
-
   // 텍스트 애니메이션
   $('.right-sub').css({
     opacity : 1, 
@@ -105,7 +104,13 @@ window.onload = function () {
   }
 
   setInterval(moving, 10);
+
 };
+
+
+
+
+
 
 // 호버 시 배경 이미지 src 가져오기
 // 새로운 값에 담아서
@@ -285,3 +290,5 @@ subGnbBtn.on('click', function() {
   // 클릭된 요소가 아닌 것들
   subGnbBtn.not(this).css('color', 'lightgray'); 
 });
+
+
