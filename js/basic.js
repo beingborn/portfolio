@@ -207,6 +207,34 @@ projectDown.each(function() {
 }); // 관찰 대상
 
 
+
+
+
+// var designProject = $('.design-page')
+// let observer3 = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
+//     (entries) => {
+//       entries.forEach((entry)=> {
+//         if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
+//           $('.top-btn').css('opacity', 1)
+//         } else {
+//           console.log(`${entry.target} is not intersecting`);
+//         }
+//      });
+//     },
+//     { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
+// );
+// designProject.each(function() {
+//   observer3.observe(this);
+// }); // 관찰 대상
+
+
+
+
+
+
+
+
+
 // TOP BTN 애니메이션
 
 var projectUp = $('.project-view')
@@ -228,22 +256,32 @@ projectUp.each(function() {
   observer2.observe(this);
 }); // 관찰 대상
 
-// var designView = $('.design-page')
 
-// let observer3 = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
-//     (entries) => {
-//       entries.forEach((entry)=> {
-//         if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
-//           console.log(`${entry.target} is intersecting`);
-//           $('.right-gnb').css('opacity', 1)  
-//         } else {
-//           console.log(`${entry.target} is not intersecting`);
-//         }
-//      });
-//     },
-//     { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
-// );
-// designView.each(function() {
-//   observer3.observe(this);
-// }); // 관찰 대상
 
+const content = $('.design-page');
+
+// 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
+const contentTop = content.offset().top;
+console.log(contentTop);
+
+const subGnb = $('.right-gnb');
+let subGnbBtn = $('.right-gnb li a')
+
+
+// 스크롤 이벤트 추가
+$(window).on('scroll', function() {
+  if ($(window).scrollTop() + 40 >= contentTop) {
+    subGnb.addClass('fixed');
+  } else {
+    subGnb.removeClass('fixed');
+  }
+});
+
+subGnbBtn.eq(0).css('color', 'black')
+
+subGnbBtn.on('click', function() {
+  // 클릭된 요소의 폰트 색상 변경
+  $(this).css('color', 'black');
+  // 클릭된 요소가 아닌 것들
+  subGnbBtn.not(this).css('color', 'lightgray'); 
+});

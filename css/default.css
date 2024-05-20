@@ -82,7 +82,7 @@ nav {
 }
 
 .section-tit {
-  font-size: 32px;
+  font-size: 36px;
   font-family: "Gotham_Black";
   /* font-weight: 800; */
   /* color: var(--font-color); */
@@ -1275,23 +1275,31 @@ nav {
 
 /* 섹션 디자인 */
 
-.design-wrap {
-  display: flex;
-  justify-content: center;
-}
+
 
 .main-pg {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 80px;
 }
 
 .sub-pg{
-  /* width: 40%; */
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .mo-pg {
-  /* width: 20%; */
+  width: 360px;
+  height: 840px;
+  border-radius: 12px;
+  /* position: sticky; */
+  bottom: 0;
+  overflow-y: scroll;
+  border: 1px solid green;
+  margin: 0px auto;
+  margin-top: 40px;
 }
 
 
@@ -1301,11 +1309,19 @@ nav {
 }
 
 .right-gnb {
-  position: fixed;
-  right: 80px;
-  bottom: 80px;
-  opacity: 1;
+  position: absolute;
+  right: 60px;
+  top: 20px;
 }
+
+.right-gnb li a {
+  color: gray;
+}
+
+.fixed {
+  position: fixed;
+}
+
 
 .right-gnb a {
   display: block;
@@ -1341,6 +1357,22 @@ nav {
   transition: all 0.5s;
   opacity: 0;
 }
+
+.how-design {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.how-design p {
+  font-size: 15px;
+}
+
+.how-design h2 {
+  font-size: 24px;
+  padding-bottom: 8px;
+}
+
+
 
 /* media query */
 
