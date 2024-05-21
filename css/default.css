@@ -40,7 +40,7 @@
 }
 
 * {
-  font-family: "Gotham", sans-serif;
+  font-family: "Noto Sans KR", 'ad',  "Malgun Gothic", "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -224,6 +224,7 @@ nav {
 
 .left-title {
   opacity: 0;
+  font-family: "Gotham_Black";
   transform : translateY(80%);
   transition: all 1.3s ease;
 }
@@ -395,19 +396,6 @@ nav {
   margin-bottom: 180px;
 }
 
-/*
-.project-change {
-  font-size: 24px;
- 
-  color: #1e1eca;
-  opacity: 0.6;
-}
-
-.btn-active {
-  font-family: "Gotham_Black";
-  opacity: 1;
-}
-*/
 .btn-active {
   color: #000;
 }
@@ -429,6 +417,7 @@ nav {
   color: lightgray;
   padding: 0;
   margin-right: 20px;
+  font-family: "Gotham_Bold";
 }
 
 .project .btn-group .btn-active {
@@ -454,6 +443,7 @@ nav {
 
 .project-total {
   padding-top: 20px;
+  transition: all 0.5s;
 }
 
 .project-tit {
@@ -469,6 +459,7 @@ nav {
   color: #1e1eca;
   font-size: 32px;
   padding-right: 16px;
+  font-family: "Gotham_Bold";
 }
 
 .project-skill {
@@ -479,12 +470,7 @@ nav {
 }
 
 .more-btn {
-  /*
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  */
+  font-family: "Gotham_Bold";
   color: #1e1eca;
   font-weight: 600;
   font-size: 22px;
@@ -843,7 +829,7 @@ nav {
 }
 .project-wrapper .main-title {
   font-size: 48px;
-  font-weight: 900;
+  font-family: "Gotham_Black";
   white-space: nowrap;
   padding-top: 16px;
   padding-bottom: 28px;
@@ -957,9 +943,16 @@ nav {
 }
 
 .program-use .figma {
+  background: url(../img/figma-icon.svg) no-repeat center;
+  background-size: contain;
+}
+
+.program-use .photo {
   background: url(../img/photoshop-icon.svg) no-repeat center;
   background-size: contain;
 }
+
+
 
 .right-thumb {
   /* width: 1200px; */
@@ -1445,6 +1438,7 @@ nav {
 
 .top {
   position: relative;
+  padding-top: 20px;
 }
 
 
@@ -1515,4 +1509,14 @@ nav {
 
 .hundred-day .section-tit {
   margin-bottom: 12px;
+}
+
+.project-close {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 240px;
+  top: 40px;
+  background: url(../img/material-symbols_close.png) no-repeat center;
+  background-size: cover;
 }

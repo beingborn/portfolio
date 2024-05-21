@@ -26,6 +26,22 @@ $('#random-btn').click(function() { // 클릭 시
 });
 
 
+// 프로젝트 탭
+
+$('.project-total').hide();
+$('.project-total').eq(0).show();
+
+$('.project-change').on('click', function(){ // project change 버튼
+  let projectIndex = $('.project-change').index(this);
+  $('.project-total').hide(); // 모든 project-total을 숨깁니다.
+  $('.project-total').eq(projectIndex).show(); // 클릭한 버튼에 해당하는 project-total을 보여줍니다.
+
+
+  $(this).addClass('btn-active');
+  $('.project-change').not(this).removeClass('btn-active');
+});
+
+
 
 
 
@@ -77,14 +93,10 @@ window.onload = function () {
 
     $(this).css({
       color: "black",
-      //paddingBottom: "32px",
-      //fontSize: "22px",
     });
 
     mainTask.not(this).css({
       color: "lightgray",
-      //paddingBottom: "12px",
-      //fontSize: "20px",
     });
   });
 
@@ -285,6 +297,10 @@ subGnbBtn.on('click', function() {
   // 클릭된 요소가 아닌 것들
   subGnbBtn.not(this).css('color', 'lightgray'); 
 });
+
+
+
+
 
 
 
