@@ -1496,12 +1496,29 @@ nav {
   background-color: var(--main-color);
 }
 
+
+
 .img-area {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  z-index: -2000;
   border-radius: 4px;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+.img-area img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* left: 0; */
+  /* top: 0; */
 }
 
 .hundred-day {
+  position: relative;
   text-align: center;
   padding-bottom: 80px;
   height: 100vh;

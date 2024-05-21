@@ -1,29 +1,55 @@
-// 텍스트 애니메이션
 
-const imgArray = [];
+// const imgArray = [];
 
-// 1부터 100까지 반복
-for (let i = 1; i <= 100; i++) {
-  const imgSrc = `moday-(${i}).png`;
-  imgArray.push(imgSrc);
+// // 1부터 100까지 반복
+// for (let i = 1; i <= 100; i++) {
+//   const imgSrc = `moday-(${i}).png`;
+//   imgArray.push(imgSrc);
+// }
+
+// function getRandomImage(){
+//   const randomImage = imgArray[Math.floor(Math.random() * imgArray.length)]; // 이미지 길이 만큼 random 돌리기
+//   return  `../img/daily/${randomImage}`; 해당값 할당하기
+// }
+
+
+// const rdImg = $('<img>').attr('src', getRandomImage()).attr('width', 800);
+// const imgArea = $('.img-area');
+// imgArea.append(rdImg);
+
+// // random-btn을 누르면 src값을 무작위로 생성해서 이미지 교체ㅎ가ㅣ
+
+// $('#random-btn').click(function() { // 클릭 시
+//   const newImageSrc = getRandomImage(); // 새로운 Src에 함수 리턴 값 할당
+//   rdImg.attr('src', newImageSrc); // 해당 SRC 값으로 교체
+// });
+
+// 이미지 추가
+for ( i=1; i <=100; i++ ) {
+  $(".img-area").append("<img src='../img/daily/moday-("+i+").png' width='800' height='auto'>");
 }
 
-function getRandomImage(){
-  const randomImage = imgArray[Math.floor(Math.random() * imgArray.length)];
-  return  `../img/daily/${randomImage}`;
-}
+$(document).ready(function() {
+  $(".img-area img").css({ visibility: "hidden" });
+  $(".img-area img").eq(88).css({ visibility: "visible" })
 
+  // 버튼 클릭 시 랜덤 이미지를 표시합니다.
+  $('#random-btn').click(function() {
+      // 0부터 99까지의 랜덤 숫자를 생성합니다.
+      let randomNum = Math.floor(Math.random() * 100);
 
-const rdImg = $('<img>').attr('src', getRandomImage()).attr('width', 800);
-const imgArea = $('.img-area');
-imgArea.append(rdImg);
+      // 이미지를 모두 숨깁니다.
+      $(".img-area img").css({ visibility: "hidden" });
 
-// random-btn을 누르면 src값을 무작위로 생성해서 이미지 교체ㅎ가ㅣ
-
-$('#random-btn').click(function() { // 클릭 시
-  const newImageSrc = getRandomImage(); // 새로운 Src에 함수 리턴 값 할당
-  rdImg.attr('src', newImageSrc); // 해당 SRC 값으로 교체
+      // 랜덤 숫자에 해당하는 이미지를 표시합니다.
+      $(".img-area img").eq(randomNum).css({ visibility: "visible" });
+  });
 });
+
+
+
+
+
 
 
 // 프로젝트 탭
