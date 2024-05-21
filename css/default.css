@@ -1471,6 +1471,10 @@ nav {
     width: 1280px;
   }
 
+  .img-area {
+    top: 28%!important;
+  }
+
   .my-vision {
     width: 1280px;
   }
@@ -1485,7 +1489,7 @@ nav {
   display: block;
   margin: 0px auto;
   border-radius: 4px;
-  margin-top: 40px;
+  margin-top: 32px;
   margin-bottom: 20px;
   transition: all 0.5s;
   font-size: 18px;
@@ -1500,7 +1504,7 @@ nav {
 
 .img-area {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%,-50%);
   width: 100%;
@@ -1513,16 +1517,24 @@ nav {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 8px;
+  /* min-width: 800px; */
   /* left: 0; */
+
   /* top: 0; */
 }
 
 .hundred-day {
   position: relative;
   text-align: center;
-  padding-bottom: 80px;
   height: 100vh;
 }
+
+.hundred-txt {
+  padding-top: 40px;
+  text-align: center;
+}
+
 
 .hundred-day .section-tit {
   margin-bottom: 12px;

@@ -26,7 +26,7 @@
 
 // 이미지 추가
 for ( i=1; i <=100; i++ ) {
-  $(".img-area").append("<img src='../img/daily/moday-("+i+").png' width='800' height='auto'>");
+  $(".img-area").append("<img src='../img/daily/moday-("+i+").png' width='800' height='auto' style='padding-bottom:40px;'>");
 }
 
 $(document).ready(function() {
