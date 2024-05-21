@@ -1,5 +1,33 @@
 // 텍스트 애니메이션
 
+const imgArray = [];
+
+// 1부터 100까지 반복
+for (let i = 1; i <= 100; i++) {
+  const imgSrc = `moday-(${i}).png`;
+  imgArray.push(imgSrc);
+}
+
+function getRandomImage(){
+  const randomImage = imgArray[Math.floor(Math.random() * imgArray.length)];
+  return  `../img/daily/${randomImage}`;
+}
+
+
+const rdImg = $('<img>').attr('src', getRandomImage()).attr('width', 800);
+const imgArea = $('.img-area');
+imgArea.append(rdImg);
+
+// random-btn을 누르면 src값을 무작위로 생성해서 이미지 교체ㅎ가ㅣ
+
+$('#random-btn').click(function() { // 클릭 시
+  const newImageSrc = getRandomImage(); // 새로운 Src에 함수 리턴 값 할당
+  rdImg.attr('src', newImageSrc); // 해당 SRC 값으로 교체
+});
+
+
+
+
 
 
 
@@ -60,11 +88,6 @@ window.onload = function () {
     });
   });
 
-  // 과제 : 해당 인덱스를 다시 누르면 접기
-  // 지금 현재는 다른 버튼 not(this)를 눌러야만 원하는 인덱스를 접을 수 있음
-  // 바꾸려면 현재 버튼의 상태를 알 수 있는 변수를 선언해서 교차 시켜야 함
-
-  // 이동 갤러리 변수 선언
 
   let play = true;
   const movingWrap = $(".right-vision");
@@ -212,34 +235,6 @@ projectDown.each(function() {
 }); // 관찰 대상
 
 
-
-
-
-// var designProject = $('.design-page')
-// let observer3 = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
-//     (entries) => {
-//       entries.forEach((entry)=> {
-//         if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
-//           $('.top-btn').css('opacity', 1)
-//         } else {
-//           console.log(`${entry.target} is not intersecting`);
-//         }
-//      });
-//     },
-//     { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
-// );
-// designProject.each(function() {
-//   observer3.observe(this);
-// }); // 관찰 대상
-
-
-
-
-
-
-
-
-
 // TOP BTN 애니메이션
 
 var projectUp = $('.project-view')
@@ -290,5 +285,7 @@ subGnbBtn.on('click', function() {
   // 클릭된 요소가 아닌 것들
   subGnbBtn.not(this).css('color', 'lightgray'); 
 });
+
+
 
 

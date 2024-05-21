@@ -1481,3 +1481,38 @@ nav {
     width: 1280px;
   }
 }
+
+/* sub-3.html css */
+
+#random-btn {
+  padding: 8px 12px;
+  background-color: black;
+  color: #fff;
+  display: block;
+  margin: 0px auto;
+  border-radius: 4px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+
+
+#random-btn:hover {
+  background-color: var(--main-color);
+}
+
+.img-area {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hundred-day {
+  text-align: center;
+  padding-bottom: 80px;
+  height: 100vh;
+}
+
+.hundred-day .section-tit {
+  margin-bottom: 12px;
+}
