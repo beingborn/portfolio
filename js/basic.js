@@ -50,6 +50,10 @@ $('.project-change').on('click', function(){ // project change 버튼
 
 
 window.onload = function () {
+
+  alert("투명 아닌 png jpg로 변경, swiper-pagination 위치 수정");
+
+
   // 텍스트 애니메이션
   $('.right-sub').css({
     opacity : 1, 
@@ -204,16 +208,19 @@ let modalClose = $('.close-btn')
 let tempBg = $('.temp-bg')
 let blackBg = $('.modal-bg')
 
-blackBg.css({ height:$(document).height()  });
+
 
 
 modal.hide()
 
 modalBtn.click(function(){
   let modalIndex = modalBtn.index(this);
-  blackBg.show();
 
   modal.eq(modalIndex).fadeIn('swing');
+
+  blackBg.css({ height:$(document).height()  });
+  blackBg.show();
+
 })
 
 blackBg.click(AA);
@@ -231,10 +238,19 @@ function AA(){
 $(document).ready(function() {
   $('.etc-modal').hide();
 
+  //let k = $(document).height();
+  //alert(k);
+
   $('.etc-box').click(function(){
-    console.log("etc-box 클릭됨");
-    blackBg.show();
+    
     $('.etc-modal').fadeIn();
+
+	  blackBg.css({ height:$(document).height()  });
+	  blackBg.show();
+
+	  //let k = $(document).height();
+	  //alert(k);
+
   });
 
 

@@ -18,24 +18,24 @@
 
 @font-face {
   font-family: "Gotham_Bold";
-  src: url(/font/Gotham-Bold.woff) format("woff");
+  src: url("../font/Gotham-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gotham_Meduim";
-  src: url(/font/Gotham-Medium.woff) format("woff");
+  src: url("../font/Gotham-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Black Han Sans";
-  src: url(/font/BlackHanSans-Regular.ttf) format("ttf");
+  src: url("../font/BlackHanSans-Regular.ttf") format("ttf");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Nanum_Gothic";
-  src: url(../font/NanumGothic-ExtraBold.ttf) format("ttf");
+  src: url("../font/NanumGothic-ExtraBold.ttf") format("ttf");
   font-weight: 800;
 }
 
@@ -468,7 +468,7 @@ nav {
 
 
 #project-etc {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 
@@ -1632,12 +1632,12 @@ nav {
 }
 
 .project-close {
-  width: 60px;
-  height: 60px;
+  width: 28px;
+  height: 28px;
   position: absolute;
   right: 240px;
   top: 40px;
-  background: url(../img/material-symbols_close.png) no-repeat center;
+  background: url(../img/ic_baseline-close-thin.svg) no-repeat center;
   background-size: cover;
 }
 
@@ -1708,7 +1708,7 @@ nav {
 }
 
 .etc-modal {
-  /* border: 1px solid yellow; */
+  /* border: 10px solid yellow; */ 
 }
 
 .swiper-slide {
@@ -1747,12 +1747,20 @@ nav {
   font-size: 20px;
 }
 
-.etc-modal .swiper-pagination {
+.swiper.etcSwiper-1 { position:relative; border:2px dashed white; }
+
+#project-etc .swiper-pagination {
   /* right: 20px; */
-  /* border: 1px solid green; */
+   border: 1px solid green; 
   /* top: 0!important; */
+	position:absolute;
+	bottom:0px;
+	height:30px;
+
   /* left: 80%; */
 }
+
+/* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal */
 
 .etc-modal .swiper-pagination-bullet {
   background: #fff;
