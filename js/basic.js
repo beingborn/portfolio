@@ -242,6 +242,7 @@ $(document).ready(function() {
     console.log("BB 함수 실행됨"); // 디버깅 로그
     $('.etc-modal').hide();
     blackBg.hide();
+
   }
 
   // etc-close 클릭 시 모달 숨기기
@@ -330,8 +331,18 @@ subGnbBtn.on('click', function() {
   subGnbBtn.not(this).css('color', 'lightgray'); 
 });
 
+// 스와이퍼 자바스크립트
 
-
+// var swiper = new Swiper(".etcSwiper-1", {
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "fraction",
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 
 

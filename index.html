@@ -15,6 +15,10 @@
       rel="stylesheet"
     />
 
+
+    <!-- SWIPER CSS BUNDLE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <!-- 폰트-->
     <!--
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -240,15 +244,37 @@
                       </a>
 
                       <div class="etc-modal">
-                        <button type="button" class="etc-close"></button>
-
-                        <div class="etc-gall">
-                          <div class="gall-txt" style="padding: 20px;">
-                            <h2 style="font-size: 32px;">온기 메뉴판 디자인</h2>
-                            <p>이러쿵 저러쿵해서 이렇게 제작했어용</p>
+                        <div class="gall-txt">
+                          <h2 style="font-size: 32px">온기 메뉴판 디자인</h2>
+                          <p>외주 작업으로 진행한 패키지입니다. 작품별 확장성을 고려한 일러스트로 약 6개 상품에 적용되었습니다.</p>
+                        </div>
+                        <div class="swiper etcSwiper-1">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img src="./etcProject/압축버전/소미백목업1.png" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./etcProject/압축버전/소미백목업2.png" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./etcProject/압축버전/책 표지.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./etcProject/압축버전/텀블러 목업.jpg" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                              <img src="./etcProject/압축버전/한강대교-어플리.jpg" alt="" />
+                            </div>
                           </div>
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-pagination"></div>
                         </div>
                       </div>
+
+
+
+
                   </div>
 
                 <div class="etc-wrap">
@@ -592,11 +618,21 @@
 
     <div class="bg"></div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
     <script src="./js/basic.js"></script>
+
+    <script>
+      var swiper = new Swiper(".etcSwiper-1", {
+     pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      });
+    </script>
+
   </body>
 </html>
