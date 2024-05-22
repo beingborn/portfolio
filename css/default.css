@@ -541,7 +541,7 @@ nav {
 }
 
 .gall-txt h2 {
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 
 .gall-txt .title-line {
@@ -740,7 +740,7 @@ nav {
   text-align: center;
   display: inline-block;
   transition: all 0.5s;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .email-link:hover {
