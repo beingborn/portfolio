@@ -1,71 +1,57 @@
-
-
 // 이미지 추가
-for ( i=1; i <=100; i++ ) {
-  $(".img-area").append("<img src='../img/daily/moday-("+i+").png' width='800' height='auto' style='padding-bottom:40px;'>");
+for (i = 1; i <= 100; i++) {
+  $(".img-area").append(
+    "<img src='../img/daily/moday-(" +
+      i +
+      ").png' width='800' height='auto' style='padding-bottom:40px;'>"
+  );
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".img-area img").css({ visibility: "hidden" });
-  $(".img-area img").eq(88).css({ visibility: "visible" })
+  $(".img-area img").eq(88).css({ visibility: "visible" });
 
   // 버튼 클릭 시 랜덤 이미지를 표시합니다.
-  $('#random-btn').click(function() {
-      // 0부터 99까지의 랜덤 숫자를 생성합니다.
-      let randomNum = Math.floor(Math.random() * 100);
+  $("#random-btn").click(function () {
+    // 0부터 99까지의 랜덤 숫자를 생성합니다.
+    let randomNum = Math.floor(Math.random() * 100);
 
-      // 이미지를 모두 숨깁니다.
-      $(".img-area img").css({ visibility: "hidden" });
+    // 이미지를 모두 숨깁니다.
+    $(".img-area img").css({ visibility: "hidden" });
 
-      // 랜덤 숫자에 해당하는 이미지를 표시합니다.
-      $(".img-area img").eq(randomNum).css({ visibility: "visible" });
+    // 랜덤 숫자에 해당하는 이미지를 표시합니다.
+    $(".img-area img").eq(randomNum).css({ visibility: "visible" });
   });
 });
 
-
-
-
-
-
-
 // 프로젝트 탭
 
-$('.project-total').hide();
-$('.project-total').eq(0).show();
+$(".project-total").hide();
+$(".project-total").eq(0).show();
 
-$('.project-change').on('click', function(){ // project change 버튼
-  let projectIndex = $('.project-change').index(this);
-  $('.project-total').hide(); // 모든 project-total을 숨깁니다.
-  $('.project-total').eq(projectIndex).show(); // 클릭한 버튼에 해당하는 project-total을 보여줍니다.
+$(".project-change").on("click", function () {
+  // project change 버튼
+  let projectIndex = $(".project-change").index(this);
+  $(".project-total").hide(); // 모든 project-total을 숨깁니다.
+  $(".project-total").eq(projectIndex).show(); // 클릭한 버튼에 해당하는 project-total을 보여줍니다.
 
-
-  $(this).addClass('btn-active');
-  $('.project-change').not(this).removeClass('btn-active');
+  $(this).addClass("btn-active");
+  $(".project-change").not(this).removeClass("btn-active");
 });
 
-
-
-
-
-
-
 window.onload = function () {
-
-  alert("투명 아닌 png jpg로 변경, swiper-pagination 위치 수정");
-
+  // alert("투명 아닌 png jpg로 변경, swiper-pagination 위치 수정");
 
   // 텍스트 애니메이션
-  $('.right-sub').css({
-    opacity : 1, 
-    transform : 'translateY(0)'
-  })
+  $(".right-sub").css({
+    opacity: 1,
+    transform: "translateY(0)",
+  });
 
-  $('.left-title').css({
-    opacity : 1, 
-    transform : 'translateY(0)'
-  })
-
-
+  $(".left-title").css({
+    opacity: 1,
+    transform: "translateY(0)",
+  });
 
   var mainTask = $(".task-wrap li a");
   var taskExplain = $(".task-box");
@@ -106,7 +92,6 @@ window.onload = function () {
     });
   });
 
-
   let play = true;
   const movingWrap = $(".right-vision");
 
@@ -145,13 +130,7 @@ window.onload = function () {
   }
 
   setInterval(moving, 10);
-
 };
-
-
-
-
-
 
 // 호버 시 배경 이미지 src 가져오기
 // 새로운 값에 담아서
@@ -195,156 +174,134 @@ $(document).ready(function () {
   );
 });
 
-
-
 //  해결 방법 : each로 순회 돌면서 해당 a 값 개별로 src값 할당
 
+// 해당 인덱스 번호
 
-// 해당 인덱스 번호 
+let modalBtn = $(".icon-wrap");
+let modal = $(".modal-body");
+let modalClose = $(".close-btn");
+let tempBg = $(".temp-bg");
+let blackBg = $(".modal-bg");
 
-let modalBtn = $('.icon-wrap');
-let modal = $('.modal-body')
-let modalClose = $('.close-btn')
-let tempBg = $('.temp-bg')
-let blackBg = $('.modal-bg')
+modal.hide();
 
-
-
-
-modal.hide()
-
-modalBtn.click(function(){
+modalBtn.click(function () {
   let modalIndex = modalBtn.index(this);
 
-  modal.eq(modalIndex).fadeIn('swing');
+  modal.eq(modalIndex).fadeIn("swing");
 
-  blackBg.css({ height:$(document).height()  });
+  blackBg.css({ height: $(document).height() });
   blackBg.show();
-
-})
+});
 
 blackBg.click(AA);
 
 modalClose.click(AA);
 
-
-function AA(){
-  modal.fadeOut('swing');
+function AA() {
+  modal.fadeOut("swing");
   blackBg.hide();
 }
 
-
-
-$(document).ready(function() {
-  $('.etc-modal').hide();
+$(document).ready(function () {
+  $(".etc-modal").hide();
 
   //let k = $(document).height();
   //alert(k);
 
-  $('.etc-box').click(function(){
-    
-    $('.etc-modal').fadeIn();
+  $(".etc-box").click(function () {
+    $(".etc-modal").fadeIn();
 
-	  blackBg.css({ height:$(document).height()  });
-	  blackBg.show();
+    blackBg.css({ height: $(document).height() });
+    blackBg.show();
 
-	  //let k = $(document).height();
-	  //alert(k);
-
+    //let k = $(document).height();
+    //alert(k);
   });
 
-
-  function BB(){
+  function BB() {
     console.log("BB 함수 실행됨"); // 디버깅 로그
-    $('.etc-modal').hide();
+    $(".etc-modal").hide();
     blackBg.hide();
-
   }
 
   // etc-close 클릭 시 모달 숨기기
-  $('.etc-close').click(BB);
+  $(".etc-close").click(BB);
   blackBg.click(BB);
 });
 
-
-
-
-
-
-
 // 애로우 화면 뷰포트 애니메이션
 
-var projectDown = $('.main-task')
-let observer = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
-    (entries) => {
-      entries.forEach((entry)=> {
-        if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
-          console.log(`${entry.target} is intersecting`);
-          $('.arrow-down').css('opacity', 0)
-          $('.top-btn').css('opacity', 1)
-        } else {
-          console.log(`${entry.target} is not intersecting`);
-          $('.arrow-down').css('opacity', 1)
-          // $('.top-btn').css('opacity', 0)
-        }
-     });
-    },
-    { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
+var projectDown = $(".main-task");
+let observer = new IntersectionObserver( // 생성자 즉 대상 요소 감시자 설정
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 요소가 뷰 포트에 보일 시 해당 코드 실행
+        console.log(`${entry.target} is intersecting`);
+        $(".arrow-down").css("opacity", 0);
+        $(".top-btn").css("opacity", 1);
+      } else {
+        console.log(`${entry.target} is not intersecting`);
+        $(".arrow-down").css("opacity", 1);
+        // $('.top-btn').css('opacity', 0)
+      }
+    });
+  },
+  { threshold: 0.5 } // 보이는 영역 비율 50%, 넘을 시 함수 실행
 );
-projectDown.each(function() {
+projectDown.each(function () {
   observer.observe(this);
 }); // 관찰 대상
 
-
 // TOP BTN 애니메이션
 
-var projectUp = $('.project-view')
+var projectUp = $(".project-view");
 
-let observer2 = new IntersectionObserver(   // 생성자 즉 대상 요소 감시자 설정  
-    (entries) => {
-      entries.forEach((entry)=> {
-        if (entry.isIntersecting)  {   // 요소가 뷰 포트에 보일 시 해당 코드 실행 
-          console.log(`${entry.target} is intersecting`);
-          $('.top-btn').css('opacity', 0)
-        } else {
-          console.log(`${entry.target} is not intersecting`);
-        }
-     });
-    },
-    { threshold : 0.5}   // 보이는 영역 비율 50%, 넘을 시 함수 실행
+let observer2 = new IntersectionObserver( // 생성자 즉 대상 요소 감시자 설정
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 요소가 뷰 포트에 보일 시 해당 코드 실행
+        console.log(`${entry.target} is intersecting`);
+        $(".top-btn").css("opacity", 0);
+      } else {
+        console.log(`${entry.target} is not intersecting`);
+      }
+    });
+  },
+  { threshold: 0.5 } // 보이는 영역 비율 50%, 넘을 시 함수 실행
 );
-projectUp.each(function() {
+projectUp.each(function () {
   observer2.observe(this);
 }); // 관찰 대상
 
-
-
-const content = $('.design-page');
+const content = $(".design-page");
 
 // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
 const contentTop = content.offset().top;
 console.log(contentTop);
 
-const subGnb = $('.right-gnb');
-let subGnbBtn = $('.right-gnb li a')
-
+const subGnb = $(".right-gnb");
+let subGnbBtn = $(".right-gnb li a");
 
 // 스크롤 이벤트 추가
-$(window).on('scroll', function() {
+$(window).on("scroll", function () {
   if ($(window).scrollTop() >= contentTop) {
-    subGnb.addClass('fixed');
+    subGnb.addClass("fixed");
   } else {
-    subGnb.removeClass('fixed');
+    subGnb.removeClass("fixed");
   }
 });
 
-subGnbBtn.eq(0).css('color', 'black')
+subGnbBtn.eq(0).css("color", "black");
 
-subGnbBtn.on('click', function() {
+subGnbBtn.on("click", function () {
   // 클릭된 요소의 폰트 색상 변경
-  $(this).css('color', 'black');
+  $(this).css("color", "black");
   // 클릭된 요소가 아닌 것들
-  subGnbBtn.not(this).css('color', 'lightgray'); 
+  subGnbBtn.not(this).css("color", "lightgray");
 });
 
 // 스와이퍼 자바스크립트
@@ -359,8 +316,3 @@ subGnbBtn.on('click', function() {
 //     prevEl: ".swiper-button-prev",
 //   },
 // });
-
-
-
-
-
