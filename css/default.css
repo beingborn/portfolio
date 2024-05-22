@@ -375,6 +375,7 @@ nav {
   height:100%;
   background-color: rgba(0,0,0,0.5);
   z-index:999;
+  backdrop-filter: blur(4px);
 }  
 
 .section-tit {
@@ -530,14 +531,24 @@ nav {
   color: #fff;
 }
 
+.product-line {
+  padding-top: 8px;
+  color: lightgray;
+  font-size: 15px;
+}
+
 .gall-txt h2 {
-  padding-bottom: 12px;
+  padding-bottom: 20px;
 }
 
 .gall-txt {
   width: 80%;
   margin: 0px auto;
   margin-top: 20px;
+}
+
+.gall-sub {
+  line-height: 1.5;
 }
 
 
@@ -1693,6 +1704,11 @@ nav {
 
 .swiper {
   width: 100%;
+
+}
+
+.etcSwiper-1 {
+  height: 800px;
 }
 
 .etc-modal {
@@ -1746,6 +1762,14 @@ nav {
   background: #fff;
 }
 
+.etc-modal .swiper-pagination {
+  position: absolute;
+}
+
+.strong-txt {
+  font-weight: 600;
+  color: #fff;
+}
 
 
 .etc-modal .swiper-pagination-bullet-active {
