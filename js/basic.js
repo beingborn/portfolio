@@ -1,28 +1,4 @@
 
-// const imgArray = [];
-
-// // 1부터 100까지 반복
-// for (let i = 1; i <= 100; i++) {
-//   const imgSrc = `moday-(${i}).png`;
-//   imgArray.push(imgSrc);
-// }
-
-// function getRandomImage(){
-//   const randomImage = imgArray[Math.floor(Math.random() * imgArray.length)]; // 이미지 길이 만큼 random 돌리기
-//   return  `../img/daily/${randomImage}`; 해당값 할당하기
-// }
-
-
-// const rdImg = $('<img>').attr('src', getRandomImage()).attr('width', 800);
-// const imgArea = $('.img-area');
-// imgArea.append(rdImg);
-
-// // random-btn을 누르면 src값을 무작위로 생성해서 이미지 교체ㅎ가ㅣ
-
-// $('#random-btn').click(function() { // 클릭 시
-//   const newImageSrc = getRandomImage(); // 새로운 Src에 함수 리턴 값 할당
-//   rdImg.attr('src', newImageSrc); // 해당 SRC 값으로 교체
-// });
 
 // 이미지 추가
 for ( i=1; i <=100; i++ ) {
@@ -230,7 +206,6 @@ let blackBg = $('.modal-bg')
 
 blackBg.css({ height:$(document).height()  });
 
-console.log(modalBtn[0],modalBtn[1])
 
 modal.hide()
 
@@ -242,12 +217,43 @@ modalBtn.click(function(){
 })
 
 blackBg.click(AA);
+
 modalClose.click(AA);
+
 
 function AA(){
   modal.fadeOut('swing');
   blackBg.hide();
 }
+
+
+
+$(document).ready(function() {
+  $('.etc-modal').hide();
+
+  $('.etc-box').click(function(){
+    console.log("etc-box 클릭됨");
+    blackBg.show();
+    $('.etc-modal').fadeIn();
+  });
+
+
+  function BB(){
+    console.log("BB 함수 실행됨"); // 디버깅 로그
+    $('.etc-modal').hide();
+    blackBg.hide();
+  }
+
+  // etc-close 클릭 시 모달 숨기기
+  $('.etc-close').click(BB);
+  blackBg.click(BB);
+});
+
+
+
+
+
+
 
 // 애로우 화면 뷰포트 애니메이션
 

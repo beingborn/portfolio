@@ -350,6 +350,20 @@ nav {
   cursor: pointer;
 }
 
+.etc-close {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url(../img/ic_baseline-close.svg) no-repeat center;
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  top: -80px;
+  right: 0;
+}
+
+
+
 
  .modal-bg {
   position:absolute;
@@ -445,6 +459,29 @@ nav {
   padding-top: 20px;
   transition: all 0.5s;
 }
+
+
+
+
+#project-etc {
+  padding-bottom: 40px;
+}
+
+
+
+.etc-modal {
+  width: 1440px;
+  height: 700px;
+  background-color: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1005;
+  border-radius: 8px;
+}
+
+
+
 
 .project-tit {
   font-size: 40px;
@@ -1593,20 +1630,23 @@ nav {
 .etc-wrap {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .etc-box {
+  display: block;
   width: calc(33.33% - 16px);
   /* border: 1px solid blueviolet; */
   height: 300px;
-  overflow: hidden;
-  border-radius: 8px;
+  /* overflow: hidden; */
   position: relative;
   cursor: pointer;
 }
 
 .etc-box > div {
   height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 
