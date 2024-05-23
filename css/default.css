@@ -244,7 +244,7 @@ nav {
   /* position: relative; */
 }
 
-.modal-open {
+body.modal-open {
   overflow: hidden;
 }
 

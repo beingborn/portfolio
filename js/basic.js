@@ -197,7 +197,9 @@ modalBtn.click(function () {
 
   console.log(modalOffset.top)  
 
-  modal.addClass("modal-open");
+  // modal.addClass("modal-open");
+
+  $('body').css('overflowY', 'hidden');
 
 
   blackBg.css({ height: $(document).height() });
@@ -211,13 +213,11 @@ modalClose.click(AA);
 function AA() {
   modal.fadeOut("swing");
   blackBg.hide();
+  $('body').css('overflowY', 'auto');
 }
 
 $(document).ready(function () {
   $(".etc-modal").hide();
-
-  //let k = $(document).height();
-  //alert(k);
 
   $(".etc-box").click(function () {
     $(".etc-modal").fadeIn();
@@ -225,8 +225,6 @@ $(document).ready(function () {
     blackBg.css({ height: $(document).height() });
     blackBg.show();
 
-    //let k = $(document).height();
-    //alert(k);
   });
 
 
