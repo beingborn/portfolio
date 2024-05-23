@@ -1152,12 +1152,12 @@ body.modal-open {
   display: inline-flex;
   align-items: flex-start;
   position: relative;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 .code-title {
   position: absolute;
-  top: -62px;
+  top: 10px;
   left: 0;
 }
 
@@ -1369,7 +1369,6 @@ body.modal-open {
   border-radius: 12px;
   overflow: hidden;
   margin-top: 60px;
-  opacity: 0.5;
 }
 
 .mo-pgwrap {
@@ -1383,7 +1382,7 @@ body.modal-open {
 } */
 
 .design-page {
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   position: relative;
 }
 
@@ -1394,6 +1393,7 @@ body.modal-open {
 }
 
 .right-gnb li a {
+  font-family: "Gotham_Medium";
   color: gray;
 }
 
@@ -1476,38 +1476,44 @@ body.modal-open {
   left: 0%;
   border-bottom: 1px solid lightgray;
   padding-bottom: 24px;
-  width: 340px;
+  width: 500px;
+  z-index: -3;
 }
 
 .mo-point-2 {
   position: absolute;
-  top: 35%;
+  top: 45%;
   right: 0%;
   text-align: right;
   /* left: 65%; */
   border-bottom: 1px solid lightgray;
   padding-bottom: 24px;
-  width: 340px;
+  /* width: 340px; */
+  z-index: -3;
+  width: 500px;
 }
 
 .mo-point-3 {
   position: absolute;
-  top: 55%;
-  left: 2%;
+  top: 40%;
+  left: 40px;
   z-index: -3;
   border-bottom: 1px solid lightgray;
   padding-bottom: 24px;
-  width: 340px;
+  /* width: 340px; */
+  width: 500px;
+
 }
 
 .mo-point-4 {
   position: absolute;
-  top: 65%;
-  right: 4%;
+  top: 60%;
+  right: 20px;
   z-index: -3;
   border-bottom: 1px solid lightgray;
   padding-bottom: 24px;
-  width: 340px;
+  /* width: 340px; */
+  width: 500px;
   text-align: right;
 }
 

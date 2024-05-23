@@ -320,11 +320,11 @@ $(window).on("scroll", function () {
   }
 });
 
-subGnbBtn.eq(0).css("color", "black");
+subGnbBtn.eq(0).css("color", "#1e1eca");
 
 subGnbBtn.on("click", function () {
   // 클릭된 요소의 폰트 색상 변경
-  $(this).css("color", "black");
+  $(this).css("color", "#1e1eca");
   // 클릭된 요소가 아닌 것들
   subGnbBtn.not(this).css("color", "lightgray");
 });
