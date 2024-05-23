@@ -929,8 +929,9 @@ body.modal-open {
 .new-sub {
   font-size: 18px;
   padding-bottom: 20px;
-  font-weight: 600;
-  color: gray;
+  /* font-weight: 600; */
+  color: #000;
+  opacity: 0.8;
 }
 
 .btn-wrap {
@@ -958,10 +959,10 @@ body.modal-open {
   color: #000;
 }
 
-.sub-project-title p,
+/* .sub-project-title p,
 .sub-project-title span {
   font-family: "NanumGothic", sans-serif;
-}
+} */
 
 .program-use {
   display: flex;
@@ -975,7 +976,7 @@ body.modal-open {
 }
 
 .new-title {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .program-use .html {
@@ -1035,7 +1036,7 @@ body.modal-open {
   width: 100%;
   border-bottom: 1.5px solid lightgray;
   color: lightgray;
-  font-weight: 600;
+  font-weight: 500;
   padding: 16px 0;
   font-size: 20px;
   transition: all 0.5s;
@@ -1048,7 +1049,7 @@ body.modal-open {
 
 .task-wrap a,
 .task-wrap p {
-  font-family: "NanumGothic";
+  /* font-family: "NanumGothic"; */
 }
 
 /*
@@ -1153,7 +1154,7 @@ body.modal-open {
   display: inline-flex;
   align-items: flex-start;
   position: relative;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .code-title {
