@@ -182,8 +182,9 @@ let tempBg = $(".temp-bg");
 let blackBg = $(".modal-bg");
 let modalOffset = modal.offset()
 
-modal.hide();
 
+
+modal.hide();
 
 modalBtn.click(function () {
   let modalIndex = modalBtn.index(this);
@@ -194,10 +195,6 @@ modalBtn.click(function () {
       scrollTop: modalOffset.top - (modal.height() / 2)
     }, 'smooth');
   });
-
-  console.log(modalOffset.top)  
-
-  // modal.addClass("modal-open");
 
   $('body').css('overflowY', 'hidden');
 
@@ -216,28 +213,43 @@ function AA() {
   $('body').css('overflowY', 'auto');
 }
 
-$(document).ready(function () {
-  $(".etc-modal").hide();
 
-  $(".etc-box").click(function () {
-    $(".etc-modal").fadeIn();
+
+
+let etcModalOffset = $(".etc-modal").offset()
+$(".etc-modal").hide();
+
+$(".etc-box").click(function () {
+    // $(".etc-modal").fadeIn('swing',function(){
+
+    //   $('html, body').stop().animate({
+    //     scrollTop: etcModalOffset.top 
+        
+    //   }, 'smooth');
+    //   console.log(etcModalOffset.top);
+
+    // });
+    $(".etc-modal").fadeIn('swing')
+    $('body').css('overflowY', 'hidden');
+    
 
     blackBg.css({ height: $(document).height() });
-    blackBg.show();
+    blackBg.show();    
+});
 
-  });
 
 
   function BB() {
     console.log("BB 함수 실행됨"); // 디버깅 로그
     $(".etc-modal").hide();
     blackBg.hide();
+    $('body').css('overflowY', 'auto');
   }
 
   // etc-close 클릭 시 모달 숨기기
   $(".etc-close").click(BB);
   blackBg.click(BB);
-});
+
 
 
 

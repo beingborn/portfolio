@@ -463,6 +463,7 @@ body.modal-open {
   position: absolute;
   top: 0;
   left: 50%;
+  padding-top: 60px;
   transform: translateX(-50%);
   z-index: 1005;
   border-radius: 8px;
@@ -1371,7 +1372,7 @@ body.modal-open {
 
 .right-gnb {
   position: absolute;
-  right: 60px;
+  right: 40px;
   top: 20px;
 }
 
