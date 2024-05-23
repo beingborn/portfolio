@@ -53,7 +53,7 @@
                       WEBSITE
                       <ul class="version-collect">
                         <li><a href="#">MAIN PAGE</a></li>
-                        <li><a href="#">SUB PAGE</a></li>
+                        <li><a href="#none" target="_blank" onclick="openMo()">SUB PAGE</a></li>
                       </ul>
                     </li>
 
@@ -616,7 +616,7 @@
 
               <div class="design-item main-pg">
                 <img
-                  src="../img/jeep-main-page.png"
+                  src="../img/jeep-main-pg.jpg"
                   width="100%"
                   alt="지프 메인페이지"
                 />
@@ -722,5 +722,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/basic.js"></script>
+      
+    <script>
+        function openMo(){
+          var popup = window.open('https://beingborn.github.io/jeepmobile/', '네이버팝업', 'width=360px,scrollbars=yes');
+        }
+    </script>
   </body>
 </html>
