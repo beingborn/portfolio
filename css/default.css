@@ -1322,16 +1322,19 @@ body.modal-open {
 /* 섹션 디자인 */
 
 .main-pg {
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   overflow: hidden;
+  margin: 0px auto;
   margin-bottom: 80px;
 }
 
 .sub-pg {
-  width: 100%;
+  width: 90%;
+
   border-radius: 8px;
   overflow: hidden;
+  margin: 0px auto;
   margin-bottom: 80px;
 }
 
@@ -1339,26 +1342,40 @@ body.modal-open {
   padding-bottom: 80px;
 } */
 
-#mo-main {
-  width: 360px;
-  height: 840px;
-  border-radius: 12px;
-  overflow-y: scroll;
+.mo-main-frame {
+  position: relative;
+  height: 660px;
   margin-top: 40px;
-  scrollbar-color: darkgray lightgray;
 }
 
+#mo-main {
+  width: 320px;
+  height: 660px;
+  border-radius: 12px;
+  overflow-y: auto;
+  /* margin-top: 40px; */
+  /* scrollbar-color: darkgray lightgray; */
+  /* position: relative; */
+  scrollbar-width: auto; /* 스크롤 바의 너비: auto, thin, none */
+  scrollbar-color: #ffba00 #ffffff2d; /* 핸들의 색상과 트랙의 색상 */
+}
+
+.r1 { position:absolute; right:55px; top:0px;}
+.r2 { position:absolute; right:55px; bottom:0px; transform:rotate(90deg); }
+
 #mo-sub {
-  width: 360px;
-  height: 840px;
+  width: 280px;
+  height: auto;
   border-radius: 12px;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 60px;
+  opacity: 0.5;
 }
 
 .mo-pgwrap {
   display: flex;
-  justify-content: start;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /* .mo-pg::-webkit-scrollbar {
@@ -1390,7 +1407,7 @@ body.modal-open {
 }
 
 .design-page .section-tit {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .design-item {
@@ -1399,6 +1416,11 @@ body.modal-open {
     0 4px 8px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.05),
     0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05);
 }
+
+#mo-main {
+  box-shadow: none;
+}
+
 
 .top-btn {
   position: fixed;
@@ -1416,8 +1438,12 @@ body.modal-open {
   opacity: 0;
 }
 
+.mo-back .how-design {
+  margin-bottom: 0;
+}
+
 .how-design {
-  text-align: left;
+  text-align: center;
   margin-bottom: 40px;
   margin-left: 12px;
 }
@@ -1434,38 +1460,78 @@ body.modal-open {
 
 .mo-back {
   position: relative;
+  /* padding-top: 60px; */
+  height: 100vh;
 }
+
+#mo-title {
+  top: 15%;
+  border-bottom: 0px;
+}
+
 
 .mo-point-1 {
   position: absolute;
-  top: 20%;
-  left: 70%;
+  top: 25%;
+  left: 0%;
   border-bottom: 1px solid lightgray;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   width: 340px;
 }
 
 .mo-point-2 {
   position: absolute;
-  top: 30%;
-  left: 70%;
+  top: 35%;
+  right: 0%;
+  text-align: right;
+  /* left: 65%; */
   border-bottom: 1px solid lightgray;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   width: 340px;
 }
 
 .mo-point-3 {
   position: absolute;
-  top: 40%;
-  left: 70%;
+  top: 55%;
+  left: 2%;
+  z-index: -3;
   border-bottom: 1px solid lightgray;
-  padding-bottom: 20px;
+  padding-bottom: 24px;
   width: 340px;
 }
+
+.mo-point-4 {
+  position: absolute;
+  top: 65%;
+  right: 4%;
+  z-index: -3;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 24px;
+  width: 340px;
+  text-align: right;
+}
+
+
+
+
 
 #mo-main {
   margin-right: 40px;
 }
+
+.mo-pgwrap::-webkit-scrollbar {
+  width: 12px;
+}
+
+#mo-main::-webkit-scrollbar-track {
+  background: #f1f1f1; /* 트랙의 배경색 */
+  border-radius: 10px; /* 트랙의 모서리 둥글기 */
+}
+
+
+
+
+
 
 #mo-sub img {
   height: 100%;
