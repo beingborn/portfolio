@@ -1375,7 +1375,7 @@ body.modal-open {
 .mo-pgwrap {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* .mo-pg::-webkit-scrollbar {
