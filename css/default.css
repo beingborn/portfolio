@@ -244,6 +244,10 @@ nav {
   /* position: relative; */
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
 .modal-body {
   position: absolute;
   left: 0;
@@ -453,7 +457,7 @@ nav {
 }
 
 .etc-modal {
-  width: 1280px;
+  width: 1024px;
   /* height: 700px; */
   background: transparent;
   position: absolute;
@@ -1503,6 +1507,10 @@ nav {
     top: 28% !important;
   }
 
+  .modal-body {
+    left: -140px;
+  }
+
   /*
   .design-item {
     width: 90%;
@@ -1638,7 +1646,7 @@ nav {
 }
 
 .etcSwiper-1 {
-  height: 800px;
+  height: 640px;
 }
 
 .etc-modal {
@@ -1661,9 +1669,13 @@ nav {
 .swiper-slide img {
   display: block;
   width: 80%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
-  margin: 0px auto;
+  margin: auto auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .etc-modal .swiper-button-next,
@@ -1685,25 +1697,37 @@ nav {
 
 .swiper.etcSwiper-1 {
   position: relative;
-  border: 2px dashed white;
+  /* border: 2px dashed white; */
 }
 
 #project-etc .swiper-pagination {
-  /* right: 20px; */
-  border: 1px solid green;
-  /* top: 0!important; */
+  /* border: 1px solid green; */
   position: absolute;
-  bottom: 0px;
-  height: 30px;
+  height: 20px;
+  top: -10px;
+  left: 840px;
+  width: auto;
+  z-index: 1022;
+}
 
-  /* left: 80%; */
+.etc-modal .swiper {
+  overflow: visible;
 }
 
 /* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal */
 
 .etc-modal .swiper-pagination-bullet {
   background: #fff;
+  opacity: 1;
 }
+
+.etc-modal .swiper-slide {
+  /* transition: all 0.5s; */
+}
+
+.etc-modal .swiper-slide-prev{opacity: 0;}
+.etc-modal .swiper-slide-next{opacity: 0;}
+.etc-modal .swiper-slide-active{opacity: 1;}
 
 .etc-modal .swiper-pagination {
   position: absolute;

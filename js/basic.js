@@ -1,9 +1,6 @@
 // 이미지 추가
 for (i = 1; i <= 100; i++) {
-  $(".img-area").append(
-    "<img src='../img/daily/moday-(" +
-      i +
-      ").png' width='800' height='auto' style='padding-bottom:40px;'>"
+  $(".img-area").append("<img src='../img/daily/moday-(" + i + ").png' width='800' height='auto' style='padding-bottom:40px;'>"
   );
 }
 
@@ -183,13 +180,25 @@ let modal = $(".modal-body");
 let modalClose = $(".close-btn");
 let tempBg = $(".temp-bg");
 let blackBg = $(".modal-bg");
+let modalOffset = modal.offset()
 
 modal.hide();
+
 
 modalBtn.click(function () {
   let modalIndex = modalBtn.index(this);
 
-  modal.eq(modalIndex).fadeIn("swing");
+ 
+  modal.eq(modalIndex).fadeIn("swing",function(){ 
+    $('html, body').stop().animate({
+      scrollTop: modalOffset.top - (modal.height() / 2)
+    }, 'smooth');
+  });
+
+  console.log(modalOffset.top)  
+
+  modal.addClass("modal-open");
+
 
   blackBg.css({ height: $(document).height() });
   blackBg.show();
@@ -220,6 +229,7 @@ $(document).ready(function () {
     //alert(k);
   });
 
+
   function BB() {
     console.log("BB 함수 실행됨"); // 디버깅 로그
     $(".etc-modal").hide();
@@ -230,6 +240,11 @@ $(document).ready(function () {
   $(".etc-close").click(BB);
   blackBg.click(BB);
 });
+
+
+
+
+
 
 // 애로우 화면 뷰포트 애니메이션
 
