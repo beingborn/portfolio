@@ -1008,6 +1008,13 @@ body.modal-open {
   background-size: contain;
 }
 
+.program-use .illust {
+  background: url(../img/illustration-icon-on.svg) no-repeat center;
+  background-size: contain;
+}
+
+
+
 .right-thumb {
   /* width: 1200px; */
 }
@@ -1589,6 +1596,14 @@ body.modal-open {
 @media screen and (max-width: 1440px) {
   .inner {
     width: 1152px;
+  }
+
+  .project-wrapper {
+    width: 1280px;
+  }
+
+  .new-sub {
+    font-size: 16px;
   }
 
   .img-area {
