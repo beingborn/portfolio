@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+      body {
+        background: none !important;
+        overflow-x: hidden;
+      }
+
+      .right-gnb .top::after {
+        right: -8px;
+      }
+
+      .desub .right-gnb li a {
+        padding-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <a href="../index.html" class="project-close"></a>
+
+      <!-- <div class="inner"> -->
+      <section class="project-view">
+        <!-- <a href="/포트폴리오/index.html" style="font-family: 'Gotham_Bold';" class="prev-btn">PREV</a> -->
+        <div class="project-wrapper">
+          <div class="left-thumb">
+            <div class="sub-project-title">
+              <!-- <p class="sub-title">REDESIGN & PUBLISHING</p> -->
+              <ul class="program-use">
+                <li class="photo"></li>
+                <li class="figma"></li>
+              </ul>
+              <h2 class="main-title">UX/UI PROJECT PLEW!</h2>
+              <p class="project-article">
+                PLEW는 <b>친환경 걷기 어플</b>입니다. <b>UXUI 방법론과 프로토타입, A/B 타입 테스트</b> 등
+                <br />실무 UX를 적용시켜서 제작하였고 힙한 컨셉의 GUI로써 제작했습니다.
+              </p>
+              <div class="new-wrap">
+                <div class="new-wrap-top">
+                  <div>
+                    <p class="new-sub">
+                      <span class="new-title"> 기여도 </span> : 디자인 100%,
+                      개발 100%
+                    </p>
+                    <p class="new-sub">
+                      <span class="new-title">글꼴</span> : NOTOSANS
+                    </p>
+                  </div>
+
+                  <ul class="btn-wrap">
+                    <li class="project-link btn-active" id="web-linker">
+                      WEBSITE
+                      <ul class="version-collect">
+                        <li><a href="#">MAIN PAGE</a></li>
+                        <li><a href="#none" target="_blank" onclick="openMo()">SUB PAGE</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="project-link">MOBILE</li>
+                  </ul>
+                </div>
+
+                <!-- <a href="https://beingborn.github.io/jeepweb/" class="project-link btn-active" id="web-linker">WEBSITE</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- right-thumb -->
+          <div class="right-thumb">
+            <img
+              src="./designSub1-mockup-sample.png"
+              width="100%"
+              height="780px"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <p class="arrow-down" style="margin-bottom: 20px"></p>
+        <p class="arrow-down"></p>
+      </section>
+
+      <!-- 프로젝트 소개 -->
+
+      <section class="design-page desub">
+        <ul class="right-gnb">
+          <li><a href="#design-main">MAIN</a></li>
+          <!-- <li><a href="#design-sub">SUB</a></li> -->
+          <!-- <li><a href="#mobile-bg">MOBILE</a></li> -->
+          <li><a href="#" class="top">TOP</a></li>
+        </ul>
+
+        <div class="inner">
+          <h2 class="section-tit">
+          </h2>
+
+          <div class="design-wrap">
+            <div>
+              <div class="how-design" >
+                <h2>MAIN PAGE<span id="design-main" style="position: relative; top: -40px;"></span></h2>
+                <p style="line-height: 1.3">
+                  기존의 중복되는 기능들을 통합하고 GNB의 가시성과 기능을
+                  강화시켰습니다. <br />
+                  사용자들의 구매 가능성을 높일 수 있는 카탈로그 및 차량
+                  프리뷰의 비주얼을 향상시켰습니다.
+                </p>
+              </div>
+
+              <div class="design-item main-pg">
+                <img
+                  src="../designProject/fix_last.jpg"
+                  width="100%"
+                  alt="지프 메인페이지"
+                />
+              </div>
+            </div>
+
+
+
+
+          
+            </div>
+
+            
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <a href="#" class="top-btn">GO TOP</a> -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/basic.js"></script>
+      
+    <script>
+        function openMo(){
+          var popup = window.open('https://beingborn.github.io/jeepmobile/', '네이버팝업', 'width=360px,scrollbars=yes');
+        }
+    </script>
+  </body>
+</html>
