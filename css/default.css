@@ -1408,6 +1408,10 @@ body.modal-open {
   position: relative;
 }
 
+.desub {
+  padding-bottom: 40px;
+}
+
 .right-gnb {
   position: absolute;
   right: 40px;
@@ -1438,6 +1442,7 @@ body.modal-open {
     0 4px 8px rgba(0, 0, 0, 0.05), 0 8px 16px rgba(0, 0, 0, 0.05),
     0 16px 32px rgba(0, 0, 0, 0.05), 0 32px 64px rgba(0, 0, 0, 0.05);
 }
+
 
 #mo-main {
   box-shadow: none;
