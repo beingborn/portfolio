@@ -353,7 +353,7 @@ body.modal-open {
   background-size: contain;
   cursor: pointer;
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 20px;
 }
 
@@ -932,7 +932,7 @@ body.modal-open {
 
 .new-sub {
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   /* font-weight: 600; */
   color: #000;
   opacity: 0.8;
@@ -1408,7 +1408,7 @@ body.modal-open {
 }
 
 .right-gnb li a {
-  font-family: "Gotham_Medium";
+  font-family: "Gotham_Bold";
   color: gray;
 }
 
