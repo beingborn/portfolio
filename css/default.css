@@ -819,6 +819,10 @@ body.modal-open {
   cursor: pointer;
 }
 
+.btn-wrap .project-link a {
+  color: #fff;
+}
+
 .btn-wrap #web-linker:hover .version-collect {
   display: block;
 }
@@ -950,7 +954,7 @@ body.modal-open {
 
 .version-collect a {
   display: block;
-  font-family: "Gotham_Bold";
+  /* font-family: "Gotham_Bold"; */
   /* white-space: nowrap; */
   color: #fff;
 }
@@ -980,27 +984,27 @@ body.modal-open {
 }
 
 .program-use .html {
-  background: url(../img/html-icon.svg) no-repeat center;
+  background: url(../img/html-icon-on.svg) no-repeat center;
   background-size: contain;
 }
 
 .program-use .css {
-  background: url(../img/css-icon.svg) no-repeat center;
+  background: url(../img/css-icon-on.svg) no-repeat center;
   background-size: contain;
 }
 
 .program-use .js {
-  background: url(../img/javascript-icon.svg) no-repeat center;
+  background: url(../img/javascript-icon-on.svg) no-repeat center;
   background-size: contain;
 }
 
 .program-use .figma {
-  background: url(../img/figma-icon.svg) no-repeat center;
+  background: url(../img/figma-icon-on.svg) no-repeat center;
   background-size: contain;
 }
 
 .program-use .photo {
-  background: url(../img/photoshop-icon.svg) no-repeat center;
+  background: url(../img/photoshop-icon-on.svg) no-repeat center;
   background-size: contain;
 }
 
@@ -1021,6 +1025,7 @@ body.modal-open {
   position: relative;
   /* padding: 200px 0; */
   height: 100vh;
+  padding-top: 80px;
 }
 
 .task-wrap {
@@ -1036,7 +1041,7 @@ body.modal-open {
   width: 100%;
   border-bottom: 1.5px solid lightgray;
   color: lightgray;
-  font-weight: 500;
+  font-weight: 600;
   padding: 16px 0;
   font-size: 20px;
   transition: all 0.5s;
@@ -1063,9 +1068,9 @@ body.modal-open {
 }
 */
 .task-list {
-  color: #767676;
+  /* color: #767676; */
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   padding-top: 20px;
 }
 
@@ -1154,7 +1159,7 @@ body.modal-open {
   display: inline-flex;
   align-items: flex-start;
   position: relative;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 
 .code-title {
@@ -1169,6 +1174,7 @@ body.modal-open {
 }
 
 .code-title span {
+  font-size: 14px;
   font-weight: 400;
   padding-top: 8px;
 }
@@ -1385,6 +1391,7 @@ body.modal-open {
 
 .design-page {
   /* padding-bottom: 200px; */
+  padding-top: 80px;
   position: relative;
 }
 

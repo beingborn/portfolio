@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Seoul clone</title>
+    <link rel="icon" href="../img/seoul-pavicon.svg">
     <link rel="stylesheet" href="../css/default.css" />
     <link rel="stylesheet" href="../css/reset.css" />
     <style>
@@ -28,20 +29,19 @@
                 <li class="html"></li>
                 <li class="css"></li>
                 <li class="js"></li>
-                <li class="figma"></li>
+                <!-- <li class="figma"></li> -->
               </ul>
-              <h2 class="main-title">JEEP RENEWAL PROJECT</h2>
+              <h2 class="main-title">SEOUL CITY HALL CLONE</h2>
               <p class="project-article">
-                반응형 레이아웃을 이해하기 위해 진행한 클론 코딩 프로젝트입니다.
-                <br />media 쿼리 및 vw, vh 등 반응형 단위를 직접적으로 이해할 수
-                있었습니다.
+                css flex와 position을 적극 활용해 진행한 프로젝트입니다. 바닐라 자바스크립트로 슬라이드 및 탭 등을
+                직접 적용하여 기본 원리에 대한 개념을 강화시켰습니다. 
+                <br />
               </p>
               <div class="new-wrap">
                 <div class="new-wrap-top">
                   <div>
                     <p class="new-sub">
-                      <span class="new-title"> 기여도 </span> : 디자인 100%,
-                      개발 100%
+                      <span class="new-title"> 기여도 </span> : 개발 100%
                     </p>
                     <p class="new-sub">
                       <span class="new-title">글꼴</span> : NOTOSANS
@@ -50,14 +50,8 @@
 
                   <ul class="btn-wrap">
                     <li class="project-link btn-active" id="web-linker">
-                      WEBSITE
-                      <ul class="version-collect">
-                        <li><a href="#">MAIN PAGE</a></li>
-                        <li><a href="#none" target="_blank" onclick="openMo()">SUB PAGE</a></li>
-                      </ul>
+                      <a href="#none" target="_blank" onclick="openMo()">WEBSITE</a>
                     </li>
-
-                    <li class="project-link">MOBILE</li>
                   </ul>
                 </div>
 
@@ -68,7 +62,7 @@
           <!-- right-thumb -->
           <div class="right-thumb">
             <img
-              src="../img/sub1-mockup-example.png"
+              src="../img/sub2-mockup-example.png"
               width="100%"
               height="780px"
               alt=""
@@ -90,20 +84,18 @@
               <ul class="task-wrap">
                 <li>
                   <a
-                    >인터랙션 옵저버 (스크롤 애니메이션)
+                    >라이브러리 없이 자동 슬라이드 구현
                     <div class="task-box">
-                      <p class="task-list">1. 감시자 객체 설정하기</p>
-                      <p class="task-list">2. 관찰 대상 설정하기</p>
-                      <p class="task-list">
-                        3. if (관찰 대상 트루 조건 시) 실행 코드 입력
-                      </p>
+                      <p class="task-list">1. 변수 선언, 위치 초기 값 및 이동 값 설정</p>
+                      <p class="task-list">2. setInterval로 특정 값 n초마다 실행</p>
+                      <p class="task-list">3. 슬라이드 전부 이동 시 위치 초기화하기</p>
                     </div>
                   </a>
                 </li>
 
                 <li>
                   <a
-                    >로컬 스토리지를 활용한 페이지간 연동
+                    >슬라이드 정지, 플레이 구현
                     <div class="task-box">
                       <p class="task-list">
                         1. 서로 다른 페이지 버튼 간 클래스 통일하기
@@ -119,8 +111,8 @@
                 </li>
 
                 <li>
-                  <a
-                    >CSS Grid를 통한 액자식 레이아웃 구성
+                  <a 
+                    >글자별 find, 해당 css 변경하기
                     <div class="task-box">
                       <p class="task-list">
                         1. 아이템 컨테이너에 display grid 선언
@@ -135,7 +127,7 @@
 
                 <li>
                   <a
-                    >두 개 스와이퍼 버튼 별 실행
+                    >아이콘 background position으로 관리하기
                     <div class="task-box">
                       <p class="task-list">1. 스와이퍼 cdn 링크 설정</p>
                       <p class="task-list">2. 슬라이드 별 마크업 및 CSS 진행</p>
@@ -147,7 +139,7 @@
 
                 <li>
                   <a
-                    >선택 슬라이드 제목 바인딩(값 찾아서 할당하기)
+                    >접고 펼쳐지는 느낌의 tab 메뉴 만들기
                     <div class="task-box">
                       <p class="task-list">
                         1. 클릭된 상태가 될 요소 변수 선언
@@ -166,10 +158,10 @@
               <!-- 1번 태스크 코드 -->
               <div class="code-real">
                 <div class="code-title">
-                  <h4>인터랙션 옵저버?</h4>
-                  <span>
-                    감시하는 객체를 만들어 요소의 스크롤 애니메이션을 보다
-                    정확하게 수행 할 수 있게 도와주는 수단
+                  <h4>slideInterval</h4>
+                  <span style="font-size: 14px">
+                    setInterval 은 일정시간 마다 함수가 실행되도록 처리하는 내장 함수
+                    clearInterval 은 setInterval 로 설정한 작업을 취소하는 내장 함수입니다.
                   </span>
                 </div>
 
@@ -188,51 +180,48 @@
                   <li class="numberline"><p>12</p></li>
                   <li class="numberline"><p>13</p></li>
                   <li class="numberline"><p>14</p></li>
+                  <li class="numberline"><p>15</p></li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
                     <p>
-                      let observer = new IntersectionObserver(
+                      var slideFirstClone = slideBox.firstElementChild;
                       <span class="code-explain"
-                        >// 생성자 즉 대상 요소 감시자 설정</span
+                        >// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에 추가하기</span
                       >
                     </p>
                   </div>
-                  <div class="line02"><p>(entries) => {</p></div>
-                  <div class="line01"><p>entries.forEach((entry)=> {</p></div>
+                  <div class="line02"><p>var cloneFirst = slideFirstClone.cloneNode(true);</p></div>
+                  <div class="line01"><p>slideBox.appendChild(cloneFirst);</p></div>
                   <div class="line02">
                     <p>
-                      if (entry.isIntersecting) {
-                      <span class="code-explain"
-                        >// 요소가 뷰 포트에 보일 시 해당 코드 실행</span
-                      >
+                      
+                      <span class="code-explain">// var slideInterval; 선언 생략</span>
                     </p>
                   </div>
                   <div class="line01">
-                    <p>$(entry.target).css({ opacity : 1});</p>
+                    <p>slideInterval = setInterval(transitionSlide, 3000); <span class="code-explain">함수 실행 시 마다 새로운 타이머를 3초마다 실행</span></p>
                   </div>
-                  <div class="line02"><p>} else {</p></div>
-                  <div class="line01">
-                    <p>$(entry.target).css({ opacity : 0});</p>
-                  </div>
-                  <div class="line01"><p>}</p></div>
-                  <div class="line02"><p>});</p></div>
-                  <div class="line01"><p>},</p></div>
                   <div class="line02">
-                    <p>
-                      { threshold : 0.5}
-                      <span class="code-explain"
-                        >// 보이는 영역 비율 50%, 넘을 시 함수 실행</span
-                      >
-                    </p>
+                    <p></p>
                   </div>
-                  <div class="line01"><p>);</p></div>
-                  <div class="line02"><p></p></div>
+                  <div class="line01"><p>if (currentView >= 1) { <span class="code-explain">// 초기값이 1보다 큰 상태일 시 실행</span></p></div>
+                  <div class="line02">
+                    <p>currentView++;<span class="code-explain"> // 상태값 + 1 하기</span></p>
+                  </div>
+                  <div class="line01"><p>slideBox.style.transform = "translateX(-" + 690 * currentView + "px)";<span class="code-explain"> // 상태 값 x 위치 이동 값</span></p></div> 
+                  <div class="line02"><p>document.querySelector('#con-counter').innerHTML = currentView + "/3" <span class="code-explain"> // 해당 상태 바인딩하기</span></p></div>
+                  <div class="line01"><p>if (currentView === slideImg.length + 1) {<span class="code-explain"> // 슬라이드가 끝 도달 시 위치 초기화, 상태 값 초기화</span></p></div>
+                  <div class="line02">
+                    <p>slideBox.style.transition = "0s";</p>
+                  </div>
+                  <div class="line01"><p>slideBox.style.transform = "translateX(0px)";</p></div>
+                  <div class="line02"><p>currentView = 1;</p></div>
                   <div class="line01">
                     <p>
-                      observer.observe(opacityText1[0])
-                      <span class="code-explain">// 관찰 대상 설정</span>
+                      return slideInterval; , moveAuto();
+                      <span class="code-explain">// 슬라이드 정지 매개변수를 위해 리턴하기, 함수 실행하기</span>
                     </p>
                   </div>
                 </div>
@@ -240,11 +229,10 @@
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>로컬스토리지</h4>
-                  <span
-                    >웹 브라우저 내부에 데이터를 저장하는 기술로, 사용자의 로컬
-                    컴퓨터에 데이터를 저장하여 <br />오프라인 상태에서도
-                    애플리케이션을 사용할 수 있게 해준다.</span
+                  <h4>clearInterval로 함수 종료, class 추가 삭제로 디자인 변경하기</h4>
+                  <span>
+                    버튼 클릭 시 상태 값 카운트를 통해 재생, 정지를 구현하였습니다. 
+                  </span
                   >
                 </div>
 
@@ -260,77 +248,33 @@
                   <li class="numberline"><p>9</p></li>
                   <li class="numberline"><p>10</p></li>
                   <li class="numberline"><p>11</p></li>
-                  <li class="numberline"><p>12</p></li>
-                  <li class="numberline"><p>13</p></li>
-                  <li class="numberline"><p>14</p></li>
-                  <li class="numberline"><p>15</p></li>
-                  <li class="numberline"><p>16</p></li>
-                  <li class="numberline"><p>17</p></li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
-                    <p>
-                      <span class="code-explain"
-                        >// input 버튼에 변경이 있을 때 로컬 스토리지의 밸류 값
-                        설정하기</span
-                      >
-                    </p>
+                    <p>var mainPausePlayBtn = document.querySelector('#main-pauseBtn');</p>
                   </div>
                   <div class="line02">
-                    <p>indexPersonal.on("change", function () {</p>
+                    <p>var mainPauseCount = 0 <span class="code-explain">// 상태 초기 값 설정</span></p>
                   </div>
                   <div class="line01">
-                    <p>
-                      localStorage.setItem("checkboxState",
-                      indexPersonal.prop("checked"));
-                    </p>
+                    <p>if (mainPauseCount % 2 == 1) { <span class="code-explain">// 상태 값이 홀수일시 == 재생되고 있을 때</span></p>
                   </div>
-                  <div class="line01"><p>});</p></div>
-                  <div class="line02"><p></p></div>
-                  <div class="line01">
-                    <p>
-                      <span class="code-explain"
-                        >// 브라우저 불러올 시 상태 값 가져오기</span
-                      >
-                    </p>
-                  </div>
+                  <div class="line01"><p>clearInterval(slideInterval); <span class="code-explain">기존 함수 안 setInterval 종료</span></p></div>
+                  <div class="line02"><p>mainPausePlayBtn.classList.remove("fa-pause");</p></div>
+                  <div class="line01"><p>mainPausePlayBtn.classList.remove("fa-play"); <span class="code-explain">// 다른 url값 가진 class 탈부착하기</span></p></div>
                   <div class="line02">
-                    <p>$(document).ready(function () {</p>
+                    <p>}</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      var checkboxState = localStorage.getItem("checkboxState");
-                    </p>
+                    <p>if (mainPauseCount % 2 == 0) { <span class="code-explain">// 상태 값이 짝수 일 시 == 정지되어 있을 때</span></p>
                   </div>
-                  <div class="line01"><p>}</p></div>
-                  <div class="line02"><p>// 가져온 값 자동 적용</p></div>
+                  <div class="line01"><p><span class="code-explain">// 위와 동일하므로 생략</span></p></div>
+                  <div class="line02"><p>moveAuto(); <span class="code-explain">함수 재시작</span></p></div>
                   <div class="line01">
-                    <p>var interval = setInterval(function () {</p>
+                    <p>}</p>
                   </div>
-                  <div class="line02">
-                    <p>
-                      if (childWindow.closed) {
-                      <span class="code-explain"
-                        >// 일정 시간 간격으로 자식 창이 닫혔는지 확인</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      clearInterval(interval);
-                      <span class="code-explain">// interval 제거</span>
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>
-                      window.location.reload(true);
-                      <span class="code-explain">// 부모 창 새로고침</span>
-                    </p>
-                  </div>
-                  <div class="line01"><p>}</p></div>
-                  <div class="line02"><p>}, 1000); // 1초마다 확인</p></div>
-                  <div class="line01"><p>});</p></div>
+
                 </div>
               </div>
 
@@ -587,151 +531,7 @@
         </div>
       </section>
 
-      <section class="design-page">
-        <ul class="right-gnb">
-          <li><a href="#design-main">MAIN</a></li>
-          <li><a href="#design-sub">SUB</a></li>
-          <li><a href="#mobile-bg">MOBILE</a></li>
-          <li><a href="#" class="top">TOP</a></li>
-        </ul>
-
-        <div class="inner">
-          <h2 class="section-tit">
-            DESIGN DETAIL
-            <!-- <p style=" font-size: 15px; padding-top: 8px;">디자인 원본입니다. 오른쪽 네비게이션을 이용해보세요</p> -->
-          </h2>
-
-          <div class="design-wrap">
-            <div>
-              <div class="how-design" >
-                <h2>MAIN PAGE<span id="design-main" style="position: relative; top: -40px;"></span></h2>
-                <p style="line-height: 1.3">
-                  기존의 중복되는 기능들을 통합하고 GNB의 가시성과 기능을
-                  강화시켰습니다. <br />
-                  사용자들의 구매 가능성을 높일 수 있는 카탈로그 및 차량
-                  프리뷰의 비주얼을 향상시켰습니다.
-                </p>
-              </div>
-
-              <div class="design-item main-pg">
-                <img
-                  src="../img/jeep-main-pg.jpg"
-                  width="100%"
-                  alt="지프 메인페이지"
-                />
-              </div>
-            </div>
-
-            <div>
-              <div class="how-design" >
-                <h2>SUB PAGE<span id="design-sub" style="position: relative; top: -40px;"></span></h2>
-                <p style="line-height: 1.3">
-                  차량 이미지를 함께 배치함으로써 사용자의 인지적 부담과
-                  사용성을 높였습니다.
-                </p>
-              </div>
-
-              <div class="design-item sub-pg">
-                <img
-                  src="../img/jeep-sub-page.png"
-                  width="100%"
-                  alt="지프 서브페이지"
-                />
-              </div>
-            </div>
-
-            <div class="mo-back">
-              <div class="how-design">
-                <h2>MOBILE PAGE<span  id= "mobile-bg" style="position: relative; top: -40px;"></span></h2>
-                <p style="line-height: 1.3">적응형으로 만든 모바일 사이트입니다. 레이아웃을 조정하여도 PC 사이트와 달라보이지 않도록 제작하였습니다.</p>
-              </div>
-
-              <div class="mo-pgwrap">
-
-              <div class="mo-main-frame"> 
-                <div class="design-item mo-pg" id="mo-main">
-                  <img
-                    src="../img/jeep-mobile-sub.jpg"
-                    width="100%"
-                    alt="지프 서브페이지"
-                  />
-                  <svg width="12px" height="12px" class="r1"><path fill="#fff" d="M0,0c6.627,0,12,5.373,12,12V0H0z"></svg>
-                  <svg width="12px" height="12px" class="r2"><path fill="#fff" d="M0,0c6.627,0,12,5.373,12,12V0H0z"/></svg>
-
-                </div>
-              </div> 
-
-              <div class="design-item mo-pg" id="mo-sub">
-                <img
-                  src="../img/mo-sub.png"
-                  width="100%"
-                  alt="지프 서브페이지"
-                />
-              </div>
-            </div>
-
-            <!-- <div class="mo-point-1" id="mo-title">
-              <h2>모바일 퍼블리싱 체크포인트</h2>
-            </div> -->
-              
-
-              <div class="mo-point-1">
-                <h2
-                  class="design-point"
-                  style="
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin-bottom: 12px;
-                  "
-                >
-                  모바일 최소 사이즈 준수
-                </h2>
-                <p>안드로이드 기준 디바이스 폰트, 가로 px 설정</p>
-              </div>
-
-              <div class="mo-point-2">
-                <h2
-                  class="design-point"
-                  style="
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin-bottom: 12px;
-                  "
-                >
-                  정보 가독성 고려 1단 레이아웃
-                </h2>
-                <p>안드로이드 기준 디바이스 폰트, 가로 px 설정</p>
-              </div>
-
-              <div class="mo-point-3">
-                <h2 class="design-point" style="
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin-bottom: 12px;
-                  "
-                >
-                GRID 활용해 동적인 갤러리 생성
-                </h2>
-                <p>그리드를 이용했더니 이렇게 좋은 일이 일어났</p>
-              </div>
-
-              <div class="mo-point-4">
-                <h2 class="design-point" style="
-                    font-weight: bold;
-                    font-size: 20px;
-                    margin-bottom: 12px;
-                  "
-                >
-                폼 전달, 반응형으로 함께 진행
-                </h2>
-                <p>반응형 vw, vh so difficult</p>
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       <!-- <a href="#" class="top-btn">GO TOP</a> -->
     </div>
