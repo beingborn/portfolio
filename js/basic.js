@@ -1,6 +1,9 @@
 // 이미지 추가
 for (i = 1; i <= 100; i++) {
-  $(".img-area").append("<img src='../img/daily/moday-(" + i + ").png' width='800' height='auto' style='padding-bottom:40px;'>"
+  $(".img-area").append(
+    "<img src='../img/daily/moday-(" +
+      i +
+      ").png' width='800' height='auto' style='padding-bottom:40px;'>"
   );
 }
 
@@ -37,18 +40,20 @@ $(".project-change").on("click", function () {
 });
 
 window.onload = function () {
-  // alert("투명 아닌 png jpg로 변경, swiper-pagination 위치 수정");
+  setTimeout(function () {
+    $(".l-wrapper").fadeOut(1000);
+    $(".left-title").addClass("animate__animated animate__fadeInLeft");
+  }, 3000);
 
-  // 텍스트 애니메이션
-  $(".right-sub").css({
-    opacity: 1,
-    transform: "translateY(0)",
-  });
+  // $("body").css({
+  //   height: "100vh",
+  //   overflowY: "hidden",
+  // });
 
-  $(".left-title").css({
-    opacity: 1,
-    transform: "translateY(0)",
-  });
+  setTimeout(function () {
+    $(".l-wrapper").fadeOut(1000);
+    $(".left-title").addClass("animate__animated animate__fadeInLeft");
+  }, 3000);
 
   var mainTask = $(".task-wrap li a");
   var taskExplain = $(".task-box");
@@ -180,24 +185,25 @@ let modal = $(".modal-body");
 let modalClose = $(".close-btn");
 let tempBg = $(".temp-bg");
 let blackBg = $(".modal-bg");
-let modalOffset = modal.offset()
-
-
+let modalOffset = modal.offset();
 
 modal.hide();
 
 modalBtn.click(function () {
   let modalIndex = modalBtn.index(this);
 
- 
-  modal.eq(modalIndex).fadeIn("swing",function(){ 
-    $('html, body').stop().animate({
-      scrollTop: modalOffset.top - (modal.height() / 2)
-    }, 'smooth');
+  modal.eq(modalIndex).fadeIn("swing", function () {
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: modalOffset.top - modal.height() / 2,
+        },
+        "smooth"
+      );
   });
 
-  $('body').css('overflowY', 'hidden');
-
+  $("body").css("overflowY", "hidden");
 
   blackBg.css({ height: $(document).height() });
   blackBg.show();
@@ -210,51 +216,39 @@ modalClose.click(AA);
 function AA() {
   modal.fadeOut("swing");
   blackBg.hide();
-  $('body').css('overflowY', 'auto');
+  $("body").css("overflowY", "auto");
 }
 
-
-
-
-let etcModalOffset = $(".etc-modal").offset()
+let etcModalOffset = $(".etc-modal").offset();
 $(".etc-modal").hide();
 
 $(".etc-box").click(function () {
-    // $(".etc-modal").fadeIn('swing',function(){
+  // $(".etc-modal").fadeIn('swing',function(){
 
-    //   $('html, body').stop().animate({
-    //     scrollTop: etcModalOffset.top 
-        
-    //   }, 'smooth');
-    //   console.log(etcModalOffset.top);
+  //   $('html, body').stop().animate({
+  //     scrollTop: etcModalOffset.top
 
-    // });
-    $(".etc-modal").fadeIn('swing')
-    $('body').css('overflowY', 'hidden');
-    
+  //   }, 'smooth');
+  //   console.log(etcModalOffset.top);
 
-    blackBg.css({ height: $(document).height() });
-    blackBg.show();    
+  // });
+  $(".etc-modal").fadeIn("swing");
+  $("body").css("overflowY", "hidden");
+
+  blackBg.css({ height: $(document).height() });
+  blackBg.show();
 });
 
+function BB() {
+  console.log("BB 함수 실행됨"); // 디버깅 로그
+  $(".etc-modal").hide();
+  blackBg.hide();
+  $("body").css("overflowY", "auto");
+}
 
-
-  function BB() {
-    console.log("BB 함수 실행됨"); // 디버깅 로그
-    $(".etc-modal").hide();
-    blackBg.hide();
-    $('body').css('overflowY', 'auto');
-  }
-
-  // etc-close 클릭 시 모달 숨기기
-  $(".etc-close").click(BB);
-  blackBg.click(BB);
-
-
-
-
-
-
+// etc-close 클릭 시 모달 숨기기
+$(".etc-close").click(BB);
+blackBg.click(BB);
 
 // 애로우 화면 뷰포트 애니메이션
 
