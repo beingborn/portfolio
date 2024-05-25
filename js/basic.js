@@ -1,4 +1,13 @@
+$(document).ready(function () {
+  setTimeout(function () {
+    $(".l-wrapper").fadeOut(500);
+    $(".left-title").addClass("animate__animated animate__fadeInLeft");
+    $(".sub-year").addClass("animate__animated animate__fadeInLeft");
+  }, 3500);
+});
+
 // 이미지 추가
+
 for (i = 1; i <= 100; i++) {
   $(".img-area").append(
     "<img src='../img/daily/moday-(" +
@@ -39,22 +48,11 @@ $(".project-change").on("click", function () {
   $(".project-change").not(this).removeClass("btn-active");
 });
 
+// window.onload = function () {
+
+// };
+
 window.onload = function () {
-  setTimeout(function () {
-    $(".l-wrapper").fadeOut(1000);
-    $(".left-title").addClass("animate__animated animate__fadeInLeft");
-  }, 3000);
-
-  // $("body").css({
-  //   height: "100vh",
-  //   overflowY: "hidden",
-  // });
-
-  setTimeout(function () {
-    $(".l-wrapper").fadeOut(1000);
-    $(".left-title").addClass("animate__animated animate__fadeInLeft");
-  }, 3000);
-
   var mainTask = $(".task-wrap li a");
   var taskExplain = $(".task-box");
   var taskBox = $(".code-real");

@@ -190,7 +190,8 @@ nav {
 }
 
 .right-sub h2,
-.right-sub p {
+.right-sub p,
+.right-sub span {
   color: #fff;
 }
 
@@ -1880,20 +1881,20 @@ body.modal-open {
 
 #load-wrap {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .load-message {
   margin-top: 16px;
-  font-size: 20px;
+  font-size: 44px;
   font-family: "Gotham_Black";
 }
 
 .loader {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin: 3em;
   display: inline-block;
@@ -1913,10 +1914,6 @@ body.modal-open {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.loader-black {
-  background-color: #333;
 }
 
 .loader-1 {
@@ -1940,11 +1937,11 @@ body.modal-open {
 .loader-6:before,
 .loader-6:after {
   content: "";
-  margin: -25px 0 0 -25px;
+  margin: -50px 0 0 -50px;
   top: 50%;
   left: 50%;
   /* background-color: rgba(30, 30, 30, 0.7); */
-  background-color: #1e1eca;
+  /* background-color: #1e1eca; */
   opacity: 0.7;
   animation-name: loader6-2;
   filter: blur(15px);
@@ -1965,6 +1962,8 @@ body.modal-open {
 
 @keyframes loader6-2 {
   0% {
+    background-color: #000;
+
     transform: scale(0.2);
     left: 0%;
   }
@@ -1973,6 +1972,7 @@ body.modal-open {
     left: 50%;
   }
   100% {
+    background-color: #1e1eca;
     transform: scale(0.2);
     left: 100%;
   }
