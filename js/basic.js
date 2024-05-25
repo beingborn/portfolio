@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(".l-wrapper").fadeOut(500);
     $(".left-title").addClass("animate__animated animate__fadeInLeft");
     $(".sub-year").addClass("animate__animated animate__fadeInLeft");
-  }, 3500);
+  }, 3000);
 });
 
 // 이미지 추가
