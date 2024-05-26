@@ -86,7 +86,7 @@ nav {
 .inner {
   width: 1440px;
   margin: 0px auto;
-  /* border: 1px solid blue;   */
+  /* border: 1px solid blue; */
 }
 
 .section-tit {
@@ -195,10 +195,15 @@ nav {
   color: #fff;
 }
 
+.right-sub .sub-tit p {
+  padding-bottom: 0;
+}
+
 .right-sub .sub-tit {
   font-size: 2.5vw;
   font-family: "Gotham_Black";
   /* font-weight: 900; */
+  padding-bottom: 8px;
 }
 
 .right-sub p {
@@ -898,7 +903,7 @@ body.modal-open {
 .project-wrapper .main-title {
   font-size: 48px;
   font-family: "Gotham_Black";
-  white-space: nowrap;
+  /* white-space: nowrap; */
   padding-top: 16px;
   padding-bottom: 28px;
 }
@@ -916,13 +921,14 @@ body.modal-open {
   /* margin-left: 240px; */
   /* width: 640px; */
   height: 600px;
-  /* border: 1px solid blue; */
-  width: 600px;
+  border: 1px solid blue;
+  /* width: 600px; */
+  width: 60%;
   position: relative;
 }
 
 .right-thumb {
-  width: 840px;
+  /* width: 40%; */
 }
 
 .right-thumb img {
@@ -954,6 +960,7 @@ body.modal-open {
 }
 
 .new-wrap-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -978,6 +985,15 @@ body.modal-open {
 .sub-project-title span {
   font-family: "NanumGothic", sans-serif;
 } */
+
+.sub-project-title {
+  width: 100%;
+  /* border: 1px solid green; */
+}
+
+.new-wrap-top {
+  border: 1px solid red;
+}
 
 .program-use {
   display: flex;
@@ -1435,7 +1451,7 @@ body.modal-open {
 
 .right-gnb {
   position: absolute;
-  right: 40px;
+  right: 20px;
   top: 20px;
 }
 
@@ -1601,18 +1617,42 @@ body.modal-open {
     width: 1440px;
   }
 
+  .right-thumb {
+    width: 840px;
+  }
+
   .my-vision {
     width: 1440px;
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1550px) {
+  /* .inner {
+    width: 1152px;
+  } */
+  .right-thumb {
+    width: 800px;
+  }
+
   .inner {
     width: 1152px;
   }
 
+  .project-wrapper .main-title {
+    font-size: 40px;
+  }
+
+  .code-real {
+    width: 600px;
+  }
+
+  /* #note-close {
+    right: 40px;
+    border: 1px solid red;
+  } */
+
   .project-wrapper {
-    width: 1280px;
+    width: 1152px;
   }
 
   .new-sub {
@@ -1698,7 +1738,7 @@ body.modal-open {
   width: 28px;
   height: 28px;
   position: absolute;
-  right: 240px;
+  right: 80px;
   top: 40px;
   background: url(../img/ic_baseline-close-thin.svg) no-repeat center;
   background-size: cover;
@@ -1877,6 +1917,7 @@ body.modal-open {
   overflow: hidden;
   background-color: #fff;
   z-index: 9999;
+  display: none;
 }
 
 #load-wrap {

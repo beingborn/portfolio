@@ -1,10 +1,63 @@
-$(document).ready(function () {
-  setTimeout(function () {
-    $(".l-wrapper").fadeOut(500);
-    $(".left-title").addClass("animate__animated animate__fadeInLeft");
-    $(".sub-year").addClass("animate__animated animate__fadeInLeft");
-  }, 3000);
+let num = 0.5;
+$(".name").each(function () {
+  // 각 엘리먼트의 animation-delay를 0.5, 1.0, 1.5 ~ 차례로 준다.
+  $(this).css("animation-delay", `${num}s`);
+  num += 0.25;
 });
+
+let documentLoadCount = 0;
+$(".l-wrapper").hide(); //
+$(".left-title").addClass("animate__animated animate__fadeInLeft");
+$(".sub-year").addClass("animate__animated animate__fadeInLeft");
+
+// 1번이 약 1.25가 되어야함
+let projectNum = 1.25;
+
+$(".project-sub").each(function () {
+  $(this).css("animation-delay", `${projectNum}s`);
+  projectNum += 0.25;
+});
+
+// $(document).ready(function () {
+//   if (documentLoadCount == 0) {
+//     $(".l-wrapper").show(); // 로딩 애니메이션 페이지를 보여줍니다.
+
+//     setTimeout(function () {
+//       // 카운트를 1로 바꿔서 로드 되어도 로딩 애니메이션이 안뜨게 만듭니다.
+//       $(".l-wrapper").fadeOut(500);
+//       $(".left-title").addClass("animate__animated animate__fadeInLeft");
+//       $(".sub-year").addClass("animate__animated animate__fadeInLeft");
+
+//       documentLoadCount = 1;
+//       console.log(documentLoadCount);
+//       // $(".l-wrapper").hide();
+//     }, 3000);
+//   }
+// });
+
+// console.log(documentLoadCount);
+// console.log(documentLoadCount);
+
+// // console.log(window.screen.width + "x" + window.screen.height); // screen dimension
+
+// $(document).ready(function () {
+//   // 'visited' 라는 키로 localStorage를 확인합니다.
+//   if (!localStorage.getItem("visited")) {
+//     // 'visited' 값이 없다면 처음 방문이므로 로딩 애니메이션을 실행합니다.
+//     $(".l-wrapper").show();
+
+//     setTimeout(function () {
+//       $(".l-wrapper").fadeOut(500);
+//       $(".left-title").addClass("animate__animated animate__fadeInLeft");
+//       $(".sub-year").addClass("animate__animated animate__fadeInLeft");
+//     }, 3000);
+//     // 방문 기록을 저장합니다.
+//     localStorage.setItem("visited", "true");
+//   } else {
+//     // 이미 방문한 적이 있다면 로딩 애니메이션을 건너뜁니다.
+//     // $(".l-wrapper").hide();
+//   }
+// });
 
 // 이미지 추가
 
