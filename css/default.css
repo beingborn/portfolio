@@ -150,7 +150,8 @@ nav {
   height: 120%;
   z-index: -1000;
 
-  background: url(../img/main-bg3.png) no-repeat;
+  /* background: url(../img/main-bg3.png) no-repeat; */
+  background: url(../img/main-bg3_optimized.png) no-repeat;
   background-position: center -15vw;
   background-size: cover;
 }
