@@ -922,7 +922,7 @@ body.modal-open {
   /* margin-left: 240px; */
   /* width: 640px; */
   height: 600px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* width: 600px; */
   width: 60%;
   position: relative;
@@ -993,7 +993,7 @@ body.modal-open {
 }
 
 .new-wrap-top {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .program-use {
