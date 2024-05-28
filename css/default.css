@@ -1684,6 +1684,19 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1200px) {
+  .top-gnb {
+    width: 100vw;
+    margin-left: 20px;
+  }
+
+  .vision-wrap {
+    flex-wrap: wrap;
+  }
+
+  .viewport-wrap {
+    padding-top: 20px;
+  }
+
   body .inner {
     width: 80%;
   }
