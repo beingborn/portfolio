@@ -1675,7 +1675,60 @@ body.modal-open {
   */
 
   .my-vision {
-    width: 1280px;
+    width: 1152px;
+  }
+
+  .bottom-bg {
+    height: 180%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body .inner {
+    width: 80%;
+  }
+
+  .project-tit {
+    font-size: 24px;
+  }
+
+  .project-wrap .project-index {
+    font-size: 20px;
+  }
+
+  .my-vision {
+    width: 80%;
+  }
+
+  .skill-flex {
+    align-items: center;
+  }
+
+  .skill-wrap {
+    display: block;
+  }
+
+  .skill-txt {
+    padding-left: 0;
+    margin-top: 8px;
+  }
+
+  .illust-icon,
+  .photo-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bottom-bg {
+    height: 200%;
+  }
+
+  .icon-wrap {
+    justify-content: start;
+  }
+
+  .section-tit {
+    margin-bottom: 40px;
   }
 }
 

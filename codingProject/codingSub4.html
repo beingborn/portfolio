@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ossulloc clone</title>
-    <link rel="icon" href="../img/seoul-pavicon.svg">
     <link rel="stylesheet" href="../css/default.css" />
     <link rel="stylesheet" href="../css/reset.css" />
+
+    <link rel="icon" href="../img/main-pavicon.svg" />
+
     <style>
       body {
         background: none !important;
         overflow-x: hidden;
       }
 
-      .new-subwrap{
+      .new-subwrap {
         display: flex;
         align-items: center;
       }
@@ -26,10 +28,9 @@
         font-size: 20px;
       }
 
-      .new-sub:nth-child(1){
+      .new-sub:nth-child(1) {
         margin-right: 12px;
       }
-
     </style>
   </head>
   <body>
@@ -49,8 +50,10 @@
               </ul>
               <h2 class="main-title">OSSULLOC CLONE CODING</h2>
               <p class="project-article">
-                <b>반응형 단위와 미디어쿼리</b>를 적극 활용해 진행한 프로젝트입니다. <b>태블릿, 모바일, PC</b> 모두 대응해보았고
-                보다 <b>직접적인 예제를 통해</b> 반응형 CSS에 대한 감을 익힐 수 있었습니다. 
+                <b>반응형 단위와 미디어쿼리</b>를 적극 활용해 진행한
+                프로젝트입니다. <b>태블릿, 모바일, PC</b> 모두 대응해보았고 보다
+                <b>직접적인 예제를 통해</b> 반응형 CSS에 대한 감을 익힐 수
+                있었습니다.
                 <br />
               </p>
               <div class="new-wrap">
@@ -66,7 +69,9 @@
 
                   <ul class="btn-wrap">
                     <li class="project-link btn-active" id="web-linker">
-                      <a href="#none" target="_blank" onclick="openMo()">WEBSITE</a>
+                      <a href="#none" target="_blank" onclick="openMo()"
+                        >WEBSITE</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -100,9 +105,15 @@
                   <a
                     >라이브러리 없이 자동 슬라이드 구현
                     <div class="task-box">
-                      <p class="task-list">1. 변수 선언, 위치 초기 값 및 이동 값 설정</p>
-                      <p class="task-list">2. setInterval로 특정 값 n초마다 실행</p>
-                      <p class="task-list">3. 슬라이드 전부 이동 시 위치 초기화하기</p>
+                      <p class="task-list">
+                        1. 변수 선언, 위치 초기 값 및 이동 값 설정
+                      </p>
+                      <p class="task-list">
+                        2. setInterval로 특정 값 n초마다 실행
+                      </p>
+                      <p class="task-list">
+                        3. 슬라이드 전부 이동 시 위치 초기화하기
+                      </p>
                     </div>
                   </a>
                 </li>
@@ -111,25 +122,27 @@
                   <a
                     >슬라이드 정지, 플레이 구현
                     <div class="task-box">
-                      <p class="task-list">
-                        1. 상태 초기 값 설정하기
-                      </p>
+                      <p class="task-list">1. 상태 초기 값 설정하기</p>
                       <p class="task-list">
                         2. if문으로 해당 상태 값 마다 코드 실행하기
                       </p>
                       <p class="task-list">
-                        3. 버튼 클릭 시 마다 src값 변경 혹은 display 변경하기 
+                        3. 버튼 클릭 시 마다 src값 변경 혹은 display 변경하기
                       </p>
                     </div>
                   </a>
                 </li>
 
                 <li>
-                  <a 
+                  <a
                     >글자별 find, 해당 css 변경하기
                     <div class="task-box">
-                      <p class="task-list">1. 해당 태그에 특정 문자열이 포함되는 지 확인하기</p>
-                      <p class="task-list">2. html 코드 직접 삽입 혹은 클래스 추가하기</p>
+                      <p class="task-list">
+                        1. 해당 태그에 특정 문자열이 포함되는 지 확인하기
+                      </p>
+                      <p class="task-list">
+                        2. html 코드 직접 삽입 혹은 클래스 추가하기
+                      </p>
                     </div>
                   </a>
                 </li>
@@ -139,7 +152,9 @@
                     >아이콘 background position으로 관리하기
                     <div class="task-box">
                       <p class="task-list">1. 전체 아이콘 세트 png 설정</p>
-                      <p class="task-list">2. 개별 아이콘 background-position 변경</p>
+                      <p class="task-list">
+                        2. 개별 아이콘 background-position 변경
+                      </p>
                     </div>
                   </a>
                 </li>
@@ -167,8 +182,9 @@
                 <div class="code-title">
                   <h4>slideInterval</h4>
                   <span style="font-size: 14px">
-                    setInterval 은 일정시간 마다 함수가 실행되도록 처리하는 내장 함수
-                    clearInterval 은 setInterval 로 설정한 작업을 취소하는 내장 함수입니다.
+                    setInterval 은 일정시간 마다 함수가 실행되도록 처리하는 내장
+                    함수 clearInterval 은 setInterval 로 설정한 작업을 취소하는
+                    내장 함수입니다.
                   </span>
                 </div>
 
@@ -195,40 +211,89 @@
                     <p>
                       var slideFirstClone = slideBox.firstElementChild;
                       <span class="code-explain"
-                        >// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에 추가하기</span
+                        >// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에
+                        추가하기</span
                       >
                     </p>
                   </div>
-                  <div class="line02"><p>var cloneFirst = slideFirstClone.cloneNode(true);</p></div>
-                  <div class="line01"><p>slideBox.appendChild(cloneFirst);</p></div>
+                  <div class="line02">
+                    <p>var cloneFirst = slideFirstClone.cloneNode(true);</p>
+                  </div>
+                  <div class="line01">
+                    <p>slideBox.appendChild(cloneFirst);</p>
+                  </div>
                   <div class="line02">
                     <p>
-                      
-                      <span class="code-explain">// var slideInterval; 선언 생략</span>
+                      <span class="code-explain"
+                        >// var slideInterval; 선언 생략</span
+                      >
                     </p>
                   </div>
                   <div class="line01">
-                    <p>slideInterval = setInterval(transitionSlide, 3000); <span class="code-explain">함수 실행 시 마다 새로운 타이머를 3초마다 실행</span></p>
+                    <p>
+                      slideInterval = setInterval(transitionSlide, 3000);
+                      <span class="code-explain"
+                        >함수 실행 시 마다 새로운 타이머를 3초마다 실행</span
+                      >
+                    </p>
                   </div>
                   <div class="line02">
                     <p></p>
                   </div>
-                  <div class="line01"><p>if (currentView >= 1) { <span class="code-explain">// 초기값이 1보다 큰 상태일 시 실행</span></p></div>
-                  <div class="line02">
-                    <p>currentView++;<span class="code-explain"> // 상태값 + 1 하기</span></p>
+                  <div class="line01">
+                    <p>
+                      if (currentView >= 1) {
+                      <span class="code-explain"
+                        >// 초기값이 1보다 큰 상태일 시 실행</span
+                      >
+                    </p>
                   </div>
-                  <div class="line01"><p>slideBox.style.transform = "translateX(-" + 690 * currentView + "px)";<span class="code-explain"> // 상태 값 x 위치 이동 값</span></p></div> 
-                  <div class="line02"><p>document.querySelector('#con-counter').innerHTML = currentView + "/3" <span class="code-explain"> // 해당 상태 바인딩하기</span></p></div>
-                  <div class="line01"><p>if (currentView === slideImg.length + 1) {<span class="code-explain"> // 슬라이드가 끝 도달 시 위치 초기화, 상태 값 초기화</span></p></div>
+                  <div class="line02">
+                    <p>
+                      currentView++;<span class="code-explain">
+                        // 상태값 + 1 하기</span
+                      >
+                    </p>
+                  </div>
+                  <div class="line01">
+                    <p>
+                      slideBox.style.transform = "translateX(-" + 690 *
+                      currentView + "px)";<span class="code-explain">
+                        // 상태 값 x 위치 이동 값</span
+                      >
+                    </p>
+                  </div>
+                  <div class="line02">
+                    <p>
+                      document.querySelector('#con-counter').innerHTML =
+                      currentView + "/3"
+                      <span class="code-explain"> // 해당 상태 바인딩하기</span>
+                    </p>
+                  </div>
+                  <div class="line01">
+                    <p>
+                      if (currentView === slideImg.length + 1) {<span
+                        class="code-explain"
+                      >
+                        // 슬라이드가 끝 도달 시 위치 초기화, 상태 값
+                        초기화</span
+                      >
+                    </p>
+                  </div>
                   <div class="line02">
                     <p>slideBox.style.transition = "0s";</p>
                   </div>
-                  <div class="line01"><p>slideBox.style.transform = "translateX(0px)";</p></div>
+                  <div class="line01">
+                    <p>slideBox.style.transform = "translateX(0px)";</p>
+                  </div>
                   <div class="line02"><p>currentView = 1;</p></div>
                   <div class="line01">
                     <p>
                       return slideInterval; , moveAuto();
-                      <span class="code-explain">// 슬라이드 정지 매개변수를 위해 리턴하기, 함수 실행하기</span>
+                      <span class="code-explain"
+                        >// 슬라이드 정지 매개변수를 위해 리턴하기, 함수
+                        실행하기</span
+                      >
                     </p>
                   </div>
                 </div>
@@ -236,11 +301,13 @@
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>clearInterval로 함수 종료, class 추가 삭제로 디자인 변경하기</h4>
+                  <h4>
+                    clearInterval로 함수 종료, class 추가 삭제로 디자인 변경하기
+                  </h4>
                   <span>
-                    버튼 클릭 시 상태 값 카운트를 통해 재생, 정지를 구현하였습니다. 
-                  </span
-                  >
+                    버튼 클릭 시 상태 값 카운트를 통해 재생, 정지를
+                    구현하였습니다.
+                  </span>
                 </div>
 
                 <ul class="code-number">
@@ -259,38 +326,83 @@
 
                 <div class="code">
                   <div class="line01">
-                    <p>var mainPausePlayBtn = document.querySelector('#main-pauseBtn');</p>
+                    <p>
+                      var mainPausePlayBtn =
+                      document.querySelector('#main-pauseBtn');
+                    </p>
                   </div>
                   <div class="line02">
-                    <p>var mainPauseCount = 0 <span class="code-explain">// 상태 초기 값 설정</span></p>
+                    <p>
+                      var mainPauseCount = 0
+                      <span class="code-explain">// 상태 초기 값 설정</span>
+                    </p>
                   </div>
                   <div class="line01">
-                    <p>if (mainPauseCount % 2 == 1) { <span class="code-explain">// 상태 값이 홀수일시 == 재생되고 있을 때</span></p>
+                    <p>
+                      if (mainPauseCount % 2 == 1) {
+                      <span class="code-explain"
+                        >// 상태 값이 홀수일시 == 재생되고 있을 때</span
+                      >
+                    </p>
                   </div>
-                  <div class="line01"><p>clearInterval(slideInterval); <span class="code-explain">기존 함수 안 setInterval 종료</span></p></div>
-                  <div class="line02"><p>mainPausePlayBtn.classList.remove("fa-pause");</p></div>
-                  <div class="line01"><p>mainPausePlayBtn.classList.remove("fa-play"); <span class="code-explain">// 다른 url값 가진 class 탈부착하기</span></p></div>
+                  <div class="line01">
+                    <p>
+                      clearInterval(slideInterval);
+                      <span class="code-explain"
+                        >기존 함수 안 setInterval 종료</span
+                      >
+                    </p>
+                  </div>
+                  <div class="line02">
+                    <p>mainPausePlayBtn.classList.remove("fa-pause");</p>
+                  </div>
+                  <div class="line01">
+                    <p>
+                      mainPausePlayBtn.classList.remove("fa-play");
+                      <span class="code-explain"
+                        >// 다른 url값 가진 class 탈부착하기</span
+                      >
+                    </p>
+                  </div>
                   <div class="line02">
                     <p>}</p>
                   </div>
                   <div class="line01">
-                    <p>if (mainPauseCount % 2 == 0) { <span class="code-explain">// 상태 값이 짝수 일 시 == 정지되어 있을 때</span></p>
+                    <p>
+                      if (mainPauseCount % 2 == 0) {
+                      <span class="code-explain"
+                        >// 상태 값이 짝수 일 시 == 정지되어 있을 때</span
+                      >
+                    </p>
                   </div>
-                  <div class="line01"><p><span class="code-explain">// 위와 동일하므로 생략</span></p></div>
-                  <div class="line02"><p>moveAuto(); <span class="code-explain">함수 재시작</span></p></div>
+                  <div class="line01">
+                    <p>
+                      <span class="code-explain">// 위와 동일하므로 생략</span>
+                    </p>
+                  </div>
+                  <div class="line02">
+                    <p>
+                      moveAuto(); <span class="code-explain">함수 재시작</span>
+                    </p>
+                  </div>
                   <div class="line01">
                     <p>}</p>
                   </div>
-
                 </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
                   <h4>replace() , :contains</h4>
-                  <span>replace 함수는 첫 번째로 발견한 문자열을 지정한 문자열로 치환하여 줍니다.</span>
-                  <br>
-                  <span>:contains는 해당 문자열의 특정 문자열이 있는 지 검수하여 추가 코드를 작성할 수 있도록 합니다.</span>
+                  <span
+                    >replace 함수는 첫 번째로 발견한 문자열을 지정한 문자열로
+                    치환하여 줍니다.</span
+                  >
+                  <br />
+                  <span
+                    >:contains는 해당 문자열의 특정 문자열이 있는 지 검수하여
+                    추가 코드를 작성할 수 있도록 합니다.</span
+                  >
                 </div>
 
                 <ul class="code-number">
@@ -359,11 +471,14 @@
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>아이콘 한꺼번에 배경이미지처리 후 background-position 처리</h4>
+                  <h4>
+                    아이콘 한꺼번에 배경이미지처리 후 background-position 처리
+                  </h4>
                   <span>
-                    대규모 웹사이트의 경우 아이콘이 너무 많아질 시 이를 그룹화 및 정리하기 쉽지 않습니다. 그래서 
-                    png 파일로 해당 아이콘들을 모두 모은 뒤 background-position 처리를 하는 네이버 홈페이지의 코드를 참고해
-                    제작해보았습니다.
+                    대규모 웹사이트의 경우 아이콘이 너무 많아질 시 이를 그룹화
+                    및 정리하기 쉽지 않습니다. 그래서 png 파일로 해당 아이콘들을
+                    모두 모은 뒤 background-position 처리를 하는 네이버
+                    홈페이지의 코드를 참고해 제작해보았습니다.
                   </span>
                 </div>
 
@@ -376,39 +491,50 @@
                   <li class="numberline"><p>6</p></li>
                   <li class="numberline"><p>7</p></li>
                   <li class="numberline"><p>8</p></li>
-
                 </ul>
 
                 <div class="code">
                   <div class="line01">
-                    <p>.link-set > li a::before { <span class="code-explain">부모와 같은 역할을 할 수 있도록 지정</span></p>
+                    <p>
+                      .link-set > li a::before {
+                      <span class="code-explain"
+                        >부모와 같은 역할을 할 수 있도록 지정</span
+                      >
+                    </p>
                   </div>
                   <div class="line02">
                     <p>content: "";</p>
                   </div>
                   <div class="line01">
-                    <p>background-image: url(../images/icon_set_service.png);</p>
+                    <p>
+                      background-image: url(../images/icon_set_service.png);
+                    </p>
                   </div>
                   <div class="line02">
                     <p>}</p>
                   </div>
                   <div class="line01">
+                    <p></p>
+                  </div>
+                  <div class="line02">
+                    <p>.link-set li.link1 a::before {</p>
+                  </div>
+                  <div class="line01">
                     <p>
+                      background-position: -360px 0;
+                      <span class="code-expain">해당 값으로 position 변경</span>
                     </p>
                   </div>
-                  <div class="line02"><p>.link-set li.link1 a::before {</p></div>
-                  <div class="line01">
-                    <p>background-position: -360px 0; <span class="code-expain">해당 값으로 position 변경</span></p>
-                  </div>
                   <div class="line02"><p>}</p></div>
-                  
                 </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
                   <h4>데이터 바인딩</h4>
-                  <span>요소에 객체 및 데이터 값을 주소를 통해 전달해주는 것</span>
+                  <span
+                    >요소에 객체 및 데이터 값을 주소를 통해 전달해주는 것</span
+                  >
                 </div>
 
                 <ul class="code-number">
@@ -486,8 +612,6 @@
         </div>
       </section>
 
-      
-
       <!-- <a href="#" class="top-btn">GO TOP</a> -->
     </div>
 
@@ -497,11 +621,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="../js/basic.js"></script>
-      
+
     <script>
-        function openMo(){
-          var popup = window.open('https://beingborn.github.io/ossullocweb/', '오설록팝업', 'width=1024px,scrollbars=yes');
-        }
+      function openMo() {
+        var popup = window.open(
+          "https://beingborn.github.io/ossullocweb/",
+          "오설록팝업",
+          "width=1024px,scrollbars=yes"
+        );
+      }
     </script>
   </body>
 </html>
