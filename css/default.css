@@ -1046,6 +1046,12 @@ body.modal-open {
   background-size: cover;
 }
 
+.program-use .react {
+  background: url(../img/react-icon-on.svg) no-repeat center;
+  background-size: cover;
+}
+
+
 .right-thumb {
   /* width: 1200px; */
 }
