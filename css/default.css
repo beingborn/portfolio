@@ -445,6 +445,14 @@ body.modal-open {
   font-weight: 400;
 }
 
+.project .section-tit {
+  margin-bottom: 20px;
+}
+
+.project .plus-sub {
+  margin-bottom: 60px;
+}
+
 .project .section-tit,
 .btn-group {
   /* display: inline-block; */
@@ -1630,6 +1638,10 @@ body.modal-open {
   padding-top: 20px;
 }
 
+.sns-links .email {
+  display: none;
+}
+
 .top::after {
   content: "";
   display: inline-block;
@@ -2066,6 +2078,7 @@ body.modal-open {
   
   .footer-sns .section-tit {
     margin-right: 0;
+    text-align: center;
   }
 
   .project .btn-group {
