@@ -113,11 +113,12 @@ nav {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: rgba(255, 255, 255, 0.1);
-  /* border-radius: 16px; */
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  */
+
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    /* border-radius: 16px; */
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  */
 }
 
 .top-gnb {
@@ -1808,11 +1809,24 @@ body.modal-open {
 
 .top-gnb-mo {
   /* display: none; */
-  padding: 12px 0;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 12px 8px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* padding: 12px 0; */
+}
+
+.top-gnb-mo li a {
+  /* font-family: "Gotham_Bold"; */
 }
 
 .top-gnb-mo li {
-  margin-top: 12px;
+  /* margin-top: 12px; */
 }
 
 
