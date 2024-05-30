@@ -87,6 +87,7 @@ nav {
   width: 1440px;
   margin: 0px auto;
   /* border: 1px solid blue; */
+  /* border: 1px solid red; */
 }
 
 .section-tit {
@@ -100,6 +101,7 @@ nav {
 
 .header {
   width: 100%;
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -119,12 +121,12 @@ nav {
 }
 
 .top-gnb {
-  border: 1px dashed green;
-  width: 1440px;
+  /* border: 1px dashed green; */
+  width: 100%;
   margin: 0px auto;
   /* width: 100vw; */
   /* margin-left: calc(-50vw + 50%); */
-  padding: 10px 0;
+  padding: 12px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -133,7 +135,7 @@ nav {
   font-size: 15px;
   font-family: "Gotham_Bold";
   /* font-weight: 600; */
-  margin-right: 40px;
+  margin-left: 40px;
   transition: all 0.5s;
 }
 
@@ -236,7 +238,7 @@ nav {
   align-items: center;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
@@ -1628,7 +1630,7 @@ body.modal-open {
 /* media query */
 
 @media screen and (min-width: 1440px) {
-  /* 화면 너비가 768px 이상인 경우에만 적용되는 스타일 */
+  /* 화면 너비가 1440px 이상인 경우에만 적용되는 스타일 */
   .inner {
     width: 1440px;
   }
@@ -1643,6 +1645,7 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1550px) {
+  /* 화면 너비가 1550px 이하인 경우에만 적용되는 스타일 */
   /* .inner {
     width: 1152px;
   } */
@@ -1699,13 +1702,9 @@ body.modal-open {
 }
 
 @media screen and (max-width: 1200px) {
+  /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
   .section-tit {
     font-size: 28px;
-  }
-
-  .top-gnb {
-    width: 100vw;
-    /* margin-left: 20px; */
   }
 
   .vision-wrap {
@@ -1745,7 +1744,7 @@ body.modal-open {
     margin-top: 8px;
   }
 
-  /* .hero {
+   .hero {
     height: 50vh;
     border: 1px dashed darkblue;
   }
@@ -1755,10 +1754,7 @@ body.modal-open {
   }
 
   
-  .bg {
-    height: 50vh;
-    background-position: center;
-  } */
+
 
 
   .illust-icon,
@@ -1780,7 +1776,10 @@ body.modal-open {
   }
 }
 
+
+
 @media all and (max-width:767px) {
+  /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
   .hero-tit {
     font-size: 12vw;
   }
