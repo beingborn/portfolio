@@ -173,7 +173,7 @@ nav {
   width: 110%;
   height: 170%;
   z-index: -1000;
-  background: url(../img/bottom-bg.png) no-repeat;
+  background: url(../img/bottom-bg_optimized.png) no-repeat;
   background-position: center bottom -15vh;
   background-size: cover;
   /* transform: rotate(20deg); */
