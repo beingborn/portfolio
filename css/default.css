@@ -1833,6 +1833,8 @@ body.modal-open {
     letter-spacing: 1.5px;
   }
 
+
+
   
 
   .modal-body {
@@ -1847,16 +1849,44 @@ body.modal-open {
     text-align: left;
   }
 
-  .sns-links a:nth-child(1) {
+  /* .sns-links a:nth-child(1) {
     margin-right: 0;
     margin-bottom: 8px;
     display: block;
+  } */
+  .footer-top .sns-links a {
+    color: transparent;
+    width: 32px;
+    height: 32px;
+    /* background-color: #757575; */
+    display: inline-block;
+    border-bottom: 0px;
+  }
+
+  .footer-top .sns-links .notion {
+    background: url(../img/devicon_notion.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  .footer-top .sns-links .github {
+    background: url(../img/devicon_github.svg) no-repeat center;
+    background-size: cover;
+  }
+
+
+  .footer-top .section-tit {
+    margin-bottom: 0px;
+  }
+
+  .sns-links {
+    display: flex;
+    align-items: center;
   }
 
   .footer-box {
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 60px;
   }
 
   .text-align {
