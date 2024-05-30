@@ -238,7 +238,8 @@ modalBtn.click(function () {
   let modalIndex = modalBtn.index(this);
 
   modal.eq(modalIndex).fadeIn("swing", function () {
-    $("html, body")
+    
+   /* $("html, body")
       .stop()
       .animate(
         {
@@ -246,12 +247,13 @@ modalBtn.click(function () {
         },
         "smooth"
       );
-  });
+  }); */
 
   $("body").css("overflowY", "hidden");
-
+})
   blackBg.css({ height: $(document).height() });
   blackBg.show();
+  
 });
 
 blackBg.click(AA);

@@ -1829,11 +1829,12 @@ body.modal-open {
 @media all and (max-width:767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
   .right-vision .korean-vision {
-    -webkit-text-stroke: 1.5px #000;
+    -webkit-text-stroke: 1px #000;
   }
 
   .modal-body {
     width: calc(100% - 40px);
+    overflow: auto;
     /* margin-left: calc(-50vw + 50% + 20px); */
     /* left: 50%; */
     /* transform: translateX(-50%); */
