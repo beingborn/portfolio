@@ -765,8 +765,9 @@ body.modal-open {
   border-bottom: 1px solid var(--font-color-900);
 }
 
-.sns-links a:nth-child(1) {
-  margin-right: 20px;
+.sns-links a:nth-child(2) {
+  /* margin-right: 20px; */
+  margin: 0 20px;
 }
 
 .footer-box {
@@ -1872,6 +1873,8 @@ body.modal-open {
 
   .footer-top .section-tit {
     text-align: left;
+    width: 100%;
+
   }
 
   /* .sns-links a:nth-child(1) {
@@ -1888,6 +1891,17 @@ body.modal-open {
     border-bottom: 0px;
   }
 
+  .footer-top {
+    flex-wrap: wrap;
+  }
+
+  .footer-top .sns-links {
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    justify-content: center;
+  }
+
   .footer-top .sns-links .notion {
     background: url(../img/devicon_notion.svg) no-repeat center;
     background-size: cover;
@@ -1895,6 +1909,11 @@ body.modal-open {
 
   .footer-top .sns-links .github {
     background: url(../img/devicon_github.svg) no-repeat center;
+    background-size: cover;
+  }
+
+  .footer-top .sns-links .email {
+    background: url(../img/devicon-outlook.svg) no-repeat center;
     background-size: cover;
   }
 
@@ -1911,7 +1930,7 @@ body.modal-open {
   .footer-box {
     align-items: center;
     flex-wrap: wrap;
-    padding-top: 60px;
+    padding-top: 40px;
   }
 
   .text-align {
@@ -1927,8 +1946,10 @@ body.modal-open {
   }
 
   .text-align .email-link {
-    display: block;
+    display: none;
   }
+
+
 
   .more-btn {
     display: none;
