@@ -1771,6 +1771,12 @@ body.modal-open {
   }
 }
 
+@media all and (max-width:767px) {
+  .hero-tit {
+    font-size: 10vw;
+  }
+}
+
 /* sub-3.html css */
 
 #random-btn {
