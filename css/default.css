@@ -1847,6 +1847,14 @@ body.modal-open {
     letter-spacing: 1.5px;
   }
 
+  .bottom-bg {
+    height: 180%;
+  }
+
+  .react-icon {
+    background-size: cover;
+  }
+
   .button-box {
     padding-top: 20px;
   }
@@ -1983,11 +1991,11 @@ body.modal-open {
   }
 
   .about {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
 
   .project {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
 
   .right-vision p {
