@@ -1819,6 +1819,10 @@ body.modal-open {
 
 @media all and (max-width:767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
+  .right-vision .korean-vision {
+    -webkit-text-stroke: 0.2px #000;
+  }
+
   .more-btn {
     display: none;
   }

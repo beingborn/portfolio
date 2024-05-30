@@ -1,4 +1,5 @@
 // mobileJs 
+$('.top-gnb-mo').hide()
 
 let moBtn = $('#mo-btn')
 console.log(moBtn)
