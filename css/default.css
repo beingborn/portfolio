@@ -1830,7 +1830,10 @@ body.modal-open {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
   .right-vision .korean-vision {
     -webkit-text-stroke: 1px #000;
+    letter-spacing: 1.5px;
   }
+
+  
 
   .modal-body {
     width: calc(100% - 40px);
@@ -1889,6 +1892,7 @@ body.modal-open {
     width: 100%;
     text-align: center;
     margin-top: 12px;
+    font-size: 30px;
   }
 
   .project-skill {
@@ -1900,6 +1904,10 @@ body.modal-open {
     flex-wrap: wrap;
     width: 100%;
     /* text-align: center; */
+  }
+
+  .project-wrap {
+    border-bottom: 1px solid lightgray;
   }
 
   .plus-sub {
