@@ -1794,7 +1794,7 @@ body.modal-open {
 .mo-gnb-wrap {
   text-align: right;
   width: 100%;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   display: none;
 }
 
@@ -1810,7 +1810,7 @@ body.modal-open {
 .top-gnb-mo {
   /* display: none; */
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: 12px;
   padding: 12px 8px;
   /* border: 1px solid red; */
   display: flex;
@@ -1847,6 +1847,9 @@ body.modal-open {
     letter-spacing: 1.5px;
   }
 
+  .button-box {
+    padding-top: 20px;
+  }
 
 
   
@@ -2042,10 +2045,10 @@ body.modal-open {
 
 
   .hero-tit {
-    font-size: 10vw;
+    font-size: 14vw;
   }
 
-  .tit-wrap {top: 50%;}
+  .tit-wrap {top: 50%; width: 100%;}
 
   .hero {
     height: 50vh;
