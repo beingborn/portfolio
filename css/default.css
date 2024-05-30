@@ -1823,6 +1823,38 @@ body.modal-open {
     -webkit-text-stroke: 0.5px #000;
   }
 
+  .footer-top .section-tit {
+    text-align: left;
+  }
+
+  .sns-links a:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  .footer-box {
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+
+  .text-align {
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 20px;
+  }
+
+  .thanks {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .text-align .email-link {
+    display: block;
+  }
+
   .more-btn {
     display: none;
   }
