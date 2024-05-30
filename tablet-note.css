@@ -1,0 +1,148 @@
+
+/* media query */
+@media screen and (min-width: 1440px) {
+    /* 화면 너비가 1440px 이상인 경우에만 적용되는 스타일 */
+    .inner {
+      width: 1440px;
+    }
+  
+    .right-thumb {
+      width: 840px;
+    }
+  
+    .my-vision {
+      width: 1440px;
+    }
+  }
+  
+  @media screen and (max-width: 1550px) {
+    /* 화면 너비가 1550px 이하인 경우에만 적용되는 스타일 */
+    /* .inner {
+      width: 1152px;
+    } */
+    .right-thumb {
+      width: 800px;
+    }
+  
+    .inner {
+      width: 1152px;
+    }
+  
+    .project-wrapper .main-title {
+      font-size: 40px;
+    }
+  
+    .code-real {
+      width: 600px;
+    }
+  
+    /* #note-close {
+      right: 40px;
+      border: 1px solid red;
+    } */
+  
+    .project-wrapper {
+      width: 1152px;
+    }
+  
+    .new-sub {
+      font-size: 16px;
+    }
+  
+    .img-area {
+      top: 28% !important;
+    }
+  
+    .modal-body {
+      /* left: -140px; */
+    }
+  
+    /*
+    .design-item {
+      width: 90%;
+    }
+    */
+  
+    .my-vision {
+      width: 1152px;
+    }
+  
+    .bottom-bg {
+      height: 180%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
+    .section-tit {
+      font-size: 28px;
+    }
+  
+    .vision-wrap {
+      flex-wrap: wrap;
+    }
+  
+    .viewport-wrap {
+      padding-top: 20px;
+    }
+  
+    body .inner {
+      width: 80%;
+    }
+  
+    .project-tit {
+      font-size: 24px;
+    }
+  
+    .project-wrap .project-index {
+      font-size: 20px;
+    }
+  
+    .my-vision {
+      width: 80%;
+    }
+  
+    .skill-flex {
+      align-items: center;
+    }
+  
+    .skill-wrap {
+      display: block;
+    }
+  
+    .skill-txt {
+      padding-left: 0;
+      margin-top: 8px;
+    }
+  
+     .hero {
+      height: 50vh;
+      /* border: 1px dashed darkblue; */
+    }
+  
+    .tit-wrap {
+      /* border: 1px solid pink; */
+    }
+  
+    
+  
+  
+  
+    .illust-icon,
+    .photo-icon {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .bottom-bg {
+      height: 200%;
+    }
+  
+    .icon-wrap {
+      justify-content: start;
+    }
+  
+    .section-tit {
+      margin-bottom: 40px;
+    }
+  }
