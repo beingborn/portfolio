@@ -111,14 +111,15 @@ nav {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  /* border-radius: 16px; */
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .top-gnb {
+  border: 1px dashed green;
   width: 1440px;
   margin: 0px auto;
   /* width: 100vw; */
@@ -142,18 +143,25 @@ nav {
 
 /* 메인 비주얼 영역 */
 
+
+
 .bg {
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
   height: 120%;
+  /* height: 100%; */
   z-index: -1000;
-
+  /* padding: 100px 0; */
   /* background: url(../img/main-bg3.png) no-repeat; */
-  background: url(../img/main-bg3_optimized.png) no-repeat;
-  background-position: center -15vw;
+  /* background: url(../img/main-bg3_optimized.png) no-repeat; */
+  background: url(../img/main-bg-test.png) no-repeat;
+  background-position: center;
+  /* border: 1px solid sandybrown; */
   background-size: cover;
+  overflow: visible;
 }
 
 .bottom-bg {
@@ -187,7 +195,8 @@ nav {
 }
 
 .right-sub {
-  margin-right: 120px;
+  margin-left: 40px;
+  /* margin-right: 120px; */
 }
 
 .right-sub h2,
@@ -223,7 +232,7 @@ nav {
 .tit-wrap {
   display: flex;
   width: 70%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: absolute;
   left: 50%;
@@ -1736,7 +1745,7 @@ body.modal-open {
     margin-top: 8px;
   }
 
-  .hero {
+  /* .hero {
     height: 50vh;
     border: 1px dashed darkblue;
   }
@@ -1749,7 +1758,7 @@ body.modal-open {
   .bg {
     height: 50vh;
     background-position: center;
-  }
+  } */
 
 
   .illust-icon,
@@ -1773,7 +1782,19 @@ body.modal-open {
 
 @media all and (max-width:767px) {
   .hero-tit {
-    font-size: 10vw;
+    font-size: 12vw;
+  }
+
+  .right-sub {
+    display: none;
+  }
+
+  .tit-wrap {
+    justify-content: center;
+  }
+
+  .section-tit {
+    font-size: 24px;
   }
 }
 
