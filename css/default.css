@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
   margin: 0px auto;
   position: relative;
-  /* background-color: #eee; */
+  background-color: #fff;
   -ms-overflow-style: none;
 }
 
@@ -159,7 +159,7 @@ nav {
   /* padding: 100px 0; */
   /* background: url(../img/main-bg3.png) no-repeat; */
   /* background: url(../img/main-bg3_optimized.png) no-repeat; */
-  background: url(../img/main-bg-test.png) no-repeat;
+  background: url(../img/main-bg-test_optimized.png) no-repeat;
   background-position: center;
   /* border: 1px solid sandybrown; */
   background-size: cover;
