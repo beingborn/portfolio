@@ -1858,10 +1858,10 @@ body.modal-open {
   .more-btn {
     display: none;
   }
-
+/* 
   .footer-sns {
-    height: 50vh;
-  }
+    height: 55vh;
+  } */
 
   .project-index{
     width: 100%;
