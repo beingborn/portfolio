@@ -278,7 +278,8 @@ body.modal-open {
 
 .modal-body {
   position: absolute;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
   width: 640px;
   height: 400px;
@@ -408,6 +409,8 @@ body.modal-open {
   padding-bottom: 16px;
   /* color: var(--font-color); */
 }
+
+
 
 .about-top,
 .about-btm {
@@ -1375,12 +1378,16 @@ body.modal-open {
   justify-content: space-between;
 }
 
+.about-wrap {
+  position: relative;
+}
+
 .skill-wrap {
   /* border: 1px solid green; */
   width: calc(33.33% - 20px);
   display: flex;
   align-items: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .skill-title {
@@ -1657,6 +1664,8 @@ body.modal-open {
     width: 800px;
   }
 
+
+
   .inner {
     width: 1152px;
   }
@@ -1687,7 +1696,7 @@ body.modal-open {
   }
 
   .modal-body {
-    left: -140px;
+    /* left: -140px; */
   }
 
   /*
@@ -1820,7 +1829,14 @@ body.modal-open {
 @media all and (max-width:767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
   .right-vision .korean-vision {
-    -webkit-text-stroke: 0.5px #000;
+    -webkit-text-stroke: 1.5px #000;
+  }
+
+  .modal-body {
+    width: calc(100% - 40px);
+    /* margin-left: calc(-50vw + 50% + 20px); */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
   }
 
   .footer-top .section-tit {
@@ -1938,6 +1954,14 @@ body.modal-open {
   .mo-gnb-wrap {
     display: block;
   }
+
+  .skill-wrap {
+    position: static;
+  }
+
+  .about-wrap {
+    position: relative;
+  }  
 
 
 
