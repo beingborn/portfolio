@@ -1780,8 +1780,38 @@ body.modal-open {
 
 @media all and (max-width:767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
+  body .inner {
+    width: 100%;
+    padding:  0 20px;
+  }
+
+  #home .top-gnb.inner {
+    justify-content: center;
+    padding: 12px 0;
+  }
+
+  .section-tit, .project .section-tit {
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  .footer-sns .section-tit {
+    margin-right: 0;
+  }
+
+  .project .btn-group {
+    text-align: center;
+  }
+
+
   .hero-tit {
-    font-size: 12vw;
+    font-size: 10vw;
+  }
+
+  .tit-wrap {top: 50%;}
+
+  .hero {
+    height: 35vh;
   }
 
   .right-sub {
