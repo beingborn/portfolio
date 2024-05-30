@@ -2073,6 +2073,19 @@ body.modal-open {
   .section-tit {
     font-size: 24px;
   }
+
+  .etc-wrap {
+    flex-wrap: wrap;
+  }
+
+  .etc-wrap .etc-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-total .etc-wrap:nth-child(1) {
+    padding-bottom: 0;
+  } 
 }
 
 /* sub-3.html css */
