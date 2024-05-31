@@ -546,6 +546,7 @@ body.modal-open {
   padding-bottom: 12px;
   font-size: 28px;
   font-family: "Gotham_Bold";
+  padding-right: 20px;
 }
 
 .gall-txt h2,
@@ -1744,6 +1745,28 @@ body.modal-open {
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
 
+  .etc-modal {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gall-txt {
+    margin-bottom: 20px;
+  }
+
+  #project-etc .swiper .swiper-pagination {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+  }
+
+  .etc-close {
+    top: 80px;
+    right: 40px;
+  }
+
   
   .etc-wrap .etc-box .project-detail {
     opacity: 1;
@@ -2287,7 +2310,7 @@ body.modal-open {
 .etc-wrap {
   display: flex;
   /* justify-content: space-between; */
-  border: 1px solid green;
+  /* border: 1px solid green; */
   flex-wrap: wrap;
   gap: 20px 2%;
 }
