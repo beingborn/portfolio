@@ -1,21 +1,14 @@
-// mobileJs 
-$('.top-gnb-mo').hide()
+// mobileJs
+$(".top-gnb-mo").hide();
 
-let moBtn = $('#mo-btn')
-console.log(moBtn)
+let moBtn = $("#mo-btn");
+console.log(moBtn);
 
-moBtn.on("click",function(){
-  $('.top-gnb-mo').toggle()
-})
+moBtn.on("click", function () {
+  $(".top-gnb-mo").toggle();
+});
 
-
-
-// 
-
-
-
-
-
+//
 
 let num = 0.5;
 $(".name").each(function () {
@@ -37,17 +30,13 @@ $(".project-sub").each(function () {
   projectNum += 0.25;
 });
 
-
-
-
-
 // 이미지 추가
 
 for (i = 1; i <= 100; i++) {
   $(".img-area").append(
     "<img src='../img/daily/moday-(" +
       i +
-      ").png' width='800' height='auto' style='padding-bottom:40px;'>"
+      ").png' width='100%' height='auto' style='padding-bottom:40px;'>"
   );
 }
 
@@ -167,18 +156,6 @@ window.onload = function () {
   setInterval(moving, 10);
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
 // 호버 시 배경 이미지 src 가져오기
 // 새로운 값에 담아서
 // 업데이트 해주기
@@ -238,8 +215,7 @@ modalBtn.click(function () {
   let modalIndex = modalBtn.index(this);
 
   modal.eq(modalIndex).fadeIn("swing", function () {
-    
-   /* $("html, body")
+    /* $("html, body")
       .stop()
       .animate(
         {
@@ -249,11 +225,10 @@ modalBtn.click(function () {
       );
   }); */
 
-  $("body").css("overflowY", "hidden");
-})
+    $("body").css("overflowY", "hidden");
+  });
   blackBg.css({ height: $(document).height() });
   blackBg.show();
-  
 });
 
 blackBg.click(AA);

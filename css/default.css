@@ -117,7 +117,7 @@ nav {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
-    /* border-radius: 16px; */
+  /* border-radius: 16px; */
   /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  */
 }
 
@@ -145,8 +145,6 @@ nav {
 }
 
 /* 메인 비주얼 영역 */
-
-
 
 .bg {
   position: absolute;
@@ -410,8 +408,6 @@ body.modal-open {
   padding-bottom: 16px;
   /* color: var(--font-color); */
 }
-
-
 
 .about-top,
 .about-btm {
@@ -1079,7 +1075,6 @@ body.modal-open {
   background-size: cover;
 }
 
-
 .right-thumb {
   /* width: 1200px; */
 }
@@ -1678,8 +1673,6 @@ body.modal-open {
     width: 800px;
   }
 
-
-
   .inner {
     width: 1152px;
   }
@@ -1697,16 +1690,23 @@ body.modal-open {
     border: 1px solid red;
   } */
 
+  .project-view {
+    padding-top: 80px;
+  }
+
   .project-wrapper {
-    width: 1152px;
+    /* width: 1152px; */
+    width: 100%;
+    padding: 0 40px;
   }
 
   .new-sub {
     font-size: 16px;
   }
 
-  .img-area {
-    top: 28% !important;
+  #hundred .img-area {
+    top: 28%;
+    width: 600px;
   }
 
   .modal-body {
@@ -1771,7 +1771,7 @@ body.modal-open {
     margin-top: 8px;
   }
 
-   .hero {
+  .hero {
     height: 50vh;
     /* border: 1px dashed darkblue; */
   }
@@ -1779,10 +1779,6 @@ body.modal-open {
   .tit-wrap {
     /* border: 1px solid pink; */
   }
-
-  
-
-
 
   .illust-icon,
   .photo-icon {
@@ -1803,7 +1799,6 @@ body.modal-open {
   }
 }
 
-
 .mo-gnb-wrap {
   text-align: right;
   width: 100%;
@@ -1817,8 +1812,6 @@ body.modal-open {
   border-radius: 50%;
   background-color: var(--font-color-900);
 }
-
-
 
 .top-gnb-mo {
   /* display: none; */
@@ -1842,9 +1835,8 @@ body.modal-open {
   /* margin-top: 12px; */
 }
 
-
 .mo-gnb-wrap button::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -1852,8 +1844,7 @@ body.modal-open {
   background-size: contain;
 }
 
-
-@media all and (max-width:767px) {
+@media all and (max-width: 767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
   .right-vision .korean-vision {
     -webkit-text-stroke: 1px #000;
@@ -1872,9 +1863,6 @@ body.modal-open {
     padding-top: 20px;
   }
 
-
-  
-
   .modal-body {
     width: calc(100% - 40px);
     overflow: auto;
@@ -1886,7 +1874,6 @@ body.modal-open {
   .footer-top .section-tit {
     text-align: left;
     width: 100%;
-
   }
 
   /* .sns-links a:nth-child(1) {
@@ -1929,7 +1916,6 @@ body.modal-open {
     background-size: cover;
   }
 
-
   .footer-top .section-tit {
     margin-bottom: 0px;
   }
@@ -1961,17 +1947,15 @@ body.modal-open {
     display: none;
   }
 
-
-
   .more-btn {
     display: none;
   }
-/* 
+  /* 
   .footer-sns {
     height: 55vh;
   } */
 
-  .project-index{
+  .project-index {
     width: 100%;
     text-align: center;
   }
@@ -2035,17 +2019,24 @@ body.modal-open {
     font-size: 32px;
   }
 
-  .skill-title, .skill-sub {
+  .skill-title,
+  .skill-sub {
     display: none;
   }
 
-  .skill-flex {justify-content: space-around;}
-  .icon-wrap a {margin-right: 0;}
-  .icon-wrap {justify-content: center;}
+  .skill-flex {
+    justify-content: space-around;
+  }
+  .icon-wrap a {
+    margin-right: 0;
+  }
+  .icon-wrap {
+    justify-content: center;
+  }
 
   body .inner {
     width: 100%;
-    padding:  0 20px;
+    padding: 0 20px;
   }
 
   .mo-gnb-wrap {
@@ -2058,9 +2049,7 @@ body.modal-open {
 
   .about-wrap {
     position: relative;
-  }  
-
-
+  }
 
   #home .top-gnb.inner {
     justify-content: center;
@@ -2071,11 +2060,12 @@ body.modal-open {
     display: none;
   }
 
-  .section-tit, .project .section-tit {
+  .section-tit,
+  .project .section-tit {
     margin-right: 0;
     text-align: center;
   }
-  
+
   .footer-sns .section-tit {
     margin-right: 0;
     text-align: center;
@@ -2085,12 +2075,14 @@ body.modal-open {
     text-align: center;
   }
 
-
   .hero-tit {
     font-size: 14vw;
   }
 
-  .tit-wrap {top: 50%; width: 100%;}
+  .tit-wrap {
+    top: 50%;
+    width: 100%;
+  }
 
   .hero {
     height: 50vh;
@@ -2119,7 +2111,7 @@ body.modal-open {
 
   .project-total .etc-wrap:nth-child(1) {
     padding-bottom: 0;
-  } 
+  }
 }
 
 /* sub-3.html css */
@@ -2146,7 +2138,7 @@ body.modal-open {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 700px;
   z-index: -2000;
   border-radius: 4px;
   /* overflow: hidden; */
@@ -2197,7 +2189,6 @@ body.modal-open {
 .etc-box {
   display: block;
   width: calc(33.33% - 16px);
-  /* border: 1px solid blueviolet; */
   height: 300px;
   /* overflow: hidden; */
   position: relative;
