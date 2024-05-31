@@ -918,7 +918,7 @@ body.modal-open {
   justify-content: space-between;
   /* border: 1px solid blue; */
   padding-top: 10vh;
-  width: 1440px;
+  /* width: 1440px; */
 }
 
 .project-wrapper .sub-title {
@@ -1647,6 +1647,17 @@ body.modal-open {
   background: url(../img/arrow-up-line.svg) no-repeat center;
 }
 
+.inner {
+  border: 1px solid salmon;
+}
+
+.hidden-thumb {
+  width: 100%;
+  display: none;
+  /* height: 40vh; */
+  /* background-color: #464c52; */
+}
+
 /* media query */
 
 @media screen and (min-width: 1440px) {
@@ -1696,8 +1707,8 @@ body.modal-open {
 
   .project-wrapper {
     /* width: 1152px; */
-    width: 100%;
-    padding: 0 40px;
+    /* width: 100%; */
+    /* padding: 0 40px; */
   }
 
   .new-sub {
@@ -1730,6 +1741,71 @@ body.modal-open {
 
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
+
+  .project-wrapper {
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .arrow-down {
+    bottom: 20px;
+  }
+
+  .hidden-thumb {
+    display: block;
+    text-align: center;
+    height: 400px;
+    /* padding: 40px 0; */
+  }
+
+  .project-view {padding-top: 0px;}
+
+  .hidden-thumb img {
+    object-fit: contain;
+    /* padding-top: 120px; */
+    height: 100%;
+  }
+
+  .program-use {justify-content: center;} .btn-wrap {justify-content: center;}
+
+  .left-thumb {
+    width: 100%;
+    height: 440px;
+    text-align: center;
+  }
+
+  .right-thumb {
+    display: none;
+  }
+
+
+
+  .new-wrap {
+    padding-top: 60px;
+  }
+
+  .main-task .inner {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .task-wrap {
+    width: 40%;
+  }
+
+  .task-flex .code-real {
+    width: 55%;
+  }
+
+  .btn-wrap {
+    padding-top: 20px;
+  }
+
+  .new-wrap-top {
+    display: block;
+  }
+
+
   .section-tit {
     font-size: 28px;
   }
