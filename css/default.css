@@ -1649,7 +1649,7 @@ body.modal-open {
 }
 
 .inner {
-  border: 1px solid salmon;
+  /* border: 1px solid salmon; */
 }
 
 .hidden-thumb {
@@ -1693,9 +1693,9 @@ body.modal-open {
     font-size: 40px;
   }
 
-  .code-real {
+  /* .code-real {
     width: 600px;
-  }
+  } */
 
   /* #note-close {
     right: 40px;
@@ -1743,6 +1743,20 @@ body.modal-open {
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
 
+  .mo-point-1, .mo-point-2, .mo-point-3 , .mo-point-4 {
+    display: none;
+  }
+  
+  .btn-wrap .project-link {
+    margin-right: 0;
+    margin: 0 12px;
+  }
+
+  .code-real .line01, .code-real .line02 {
+    width: 100%;
+    overflow: auto;
+  }
+
   .main-task {
     height: auto;
   }
@@ -1753,16 +1767,16 @@ body.modal-open {
   }
 
   .arrow-down {
-    bottom: 20px;
+    display: none;
   }
 
   .hidden-thumb {
     display: block;
     text-align: center;
-    height: 400px;
+    height: 320px;
+    margin-bottom: 40px;
   }
 
-  .project-view {padding-top: 0px;}
 
   .hidden-thumb img {
     object-fit: contain;
@@ -1773,7 +1787,7 @@ body.modal-open {
 
   .left-thumb {
     width: 100%;
-    height: 440px;
+    height: 400px;
     text-align: center;
   }
 
@@ -1812,9 +1826,8 @@ body.modal-open {
   body .inner { width: 80%;}
   .code-title{display: none;}
   .code-real {padding-top: 0;}
-  .project-tit {
-    font-size: 24px;
-  }
+  .project-tit {font-size: 24px;}
+  #mo-sub {display: none;} #mo-main {margin-right: 0;}
 
   .project-wrap .project-index {
     font-size: 20px;
