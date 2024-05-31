@@ -935,6 +935,7 @@ body.modal-open {
 
 .project-article {
   line-height: 24px;
+  font-size: 20px;
 }
 
 .use-wrap {
@@ -1789,12 +1790,24 @@ body.modal-open {
     padding: 0 40px;
   }
 
+
+  /* sub mobile to table css */
+  .task-flex nav {
+    flex-wrap: wrap;
+  }
+
+  .task-list {
+    display: none;
+  }
+
+  
+
   .task-wrap {
-    width: 40%;
+    width: 100%;
   }
 
   .task-flex .code-real {
-    width: 55%;
+    width: 100%;
   }
 
   .btn-wrap {
