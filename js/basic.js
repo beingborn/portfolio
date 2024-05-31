@@ -243,8 +243,9 @@ function AA() {
 
 let etcModalOffset = $(".etc-modal").offset();
 $(".etc-modal").hide();
-
-$(".etc-box").click(function () {
+// $('.etc-modal').eq(1).show();
+// $('.etc-modal').eq(2).show();
+// $('.etc-modal').eq(3).show();
   // $(".etc-modal").fadeIn('swing',function(){
 
   //   $('html, body').stop().animate({
@@ -254,7 +255,20 @@ $(".etc-box").click(function () {
   //   console.log(etcModalOffset.top);
 
   // });
-  $(".etc-modal").fadeIn("swing");
+
+  let etcSwiper = $('.etc-modal');
+  console.log(etcSwiper)
+  let etcBtn = $('.etc-box');
+  console.log(etcBtn)
+
+
+
+$(".etc-box").click(function () {
+  let etcIndex = $(this).index()
+  console.log(etcIndex)
+  
+
+  $(".etc-modal").eq(etcIndex).fadeIn("swing");
   $("body").css("overflowY", "hidden");
 
   blackBg.css({ height: $(document).height() });

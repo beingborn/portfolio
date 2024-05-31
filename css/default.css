@@ -429,6 +429,7 @@ body.modal-open {
 
 .project {
   margin-bottom: 180px;
+  position: relative;
 }
 
 .btn-active {
@@ -1743,6 +1744,12 @@ body.modal-open {
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
 
+  
+  .etc-wrap .etc-box .project-detail {
+    opacity: 1;
+  }
+
+
   .mo-point-1, .mo-point-2, .mo-point-3 , .mo-point-4 {
     display: none;
   }
@@ -1941,6 +1948,12 @@ body.modal-open {
     -webkit-text-stroke: 1px #000;
     letter-spacing: 1.5px;
   }
+
+  .etc-box:hover .project-detail {
+    opacity: unset;
+  }
+
+
 
   .bottom-bg {
     height: 180%;
@@ -2273,13 +2286,24 @@ body.modal-open {
 
 .etc-wrap {
   display: flex;
-  justify-content: space-between;
-  position: relative;
+  /* justify-content: space-between; */
+  border: 1px solid green;
+  flex-wrap: wrap;
+  gap: 20px 2%;
 }
+
+.etc-second-wrap {
+  display: flex;
+  /* justify-content: space-between; */
+  border: 1px solid pink;
+  padding-top: 20px;
+}
+
 
 .etc-box {
   display: block;
-  width: calc(33.33% - 16px);
+  width: 32%;
+  /* margin-bottom: 16px; */
   height: 300px;
   /* overflow: hidden; */
   position: relative;
@@ -2287,6 +2311,7 @@ body.modal-open {
 }
 
 .etc-box > div {
+  /* width: calc(100% - 20px); */
   height: 300px;
   border-radius: 8px;
   overflow: hidden;
@@ -2318,7 +2343,7 @@ body.modal-open {
 }
 
 .etc-wrap:nth-child(1) {
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 /* 스와이퍼 */
@@ -2327,7 +2352,7 @@ body.modal-open {
   width: 100%;
 }
 
-.etcSwiper-1 {
+.etcSwiper-1, .etcSwiper-2, .etcSwiper-3, .etcSwiper-4, .etcSwiper-5, .etcSwiper-6 {
   height: 640px;
 }
 
@@ -2377,7 +2402,7 @@ body.modal-open {
   font-size: 20px;
 }
 
-.swiper.etcSwiper-1 {
+.swiper.etcSwiper-1, .swiper.etcSwiper-2, .swiper.etcSwiper-3, .swiper.etcSwiper-4, .swiper.etcSwiper-5, .swiper.etcSwiper-6 {
   position: relative;
   /* border: 2px dashed white; */
 }
@@ -2396,16 +2421,12 @@ body.modal-open {
   overflow: visible;
 }
 
-/* .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal */
 
 .etc-modal .swiper-pagination-bullet {
   background: #fff;
   opacity: 1;
 }
 
-.etc-modal .swiper-slide {
-  /* transition: all 0.5s; */
-}
 
 .etc-modal .swiper-slide-prev {
   opacity: 0;
