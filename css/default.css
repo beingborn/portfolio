@@ -1743,6 +1743,11 @@ body.modal-open {
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
 
+
+  .main-task {
+    height: auto;
+  }
+
   .project-wrapper {
     flex-wrap: wrap;
     padding-top: 0;
@@ -1794,6 +1799,7 @@ body.modal-open {
   /* sub mobile to table css */
   .task-flex nav {
     flex-wrap: wrap;
+    min-height: 900px;
   }
 
   .task-list {
