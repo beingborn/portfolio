@@ -1967,6 +1967,17 @@ body.modal-open {
 
 @media all and (max-width: 767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
+
+  .project-wrapper .main-title {font-size: 24px;}
+  .project-article {font-size: 16px;}
+  .wrap .project-close {right: 20px; top: 20px; width: 20px; height: 20px;}
+  .new-wrap {height: auto; padding-top: 20px;}
+  .hidden-thumb {padding: 0 20px;}
+  .project-view {height: auto; padding-top: 20px; padding-bottom: 0;}
+  .main-task {padding-top: 0;}
+  .task-flex nav {display: block;}
+  .task-flex .code-real {padding-top: 40px;}
+
   .right-vision .korean-vision {
     -webkit-text-stroke: 1px #000;
     letter-spacing: 1.5px;
