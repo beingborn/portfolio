@@ -950,6 +950,10 @@ body.modal-open {
   font-size: 20px;
 }
 
+.etc-inner {
+  margin-top: 0;
+}
+
 .use-wrap {
   padding-top: 48px;
 }
