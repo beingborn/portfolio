@@ -1,3 +1,39 @@
+$(document).ready(function () {
+  // 'visited' 라는 키로 sessionStorage를 확인합니다.
+  if (!sessionStorage.getItem('visited')) {
+    setTimeout(function () {
+
+      sessionStorage.setItem('visited', 'true');
+    }, 3000);
+  } else {
+
+  for (let i = 1; i < 4; i++){
+    $(`.name-${i}`).removeClass("animate__animated animate__fadeInLeft")  
+  }
+  $('.project-sub').removeClass('animate__animated animate__fadeInLeft');
+  $(".left-title").removeClass("animate__animated animate__fadeInLeft");
+  $(".sub-year").removeClass("animate__animated animate__fadeInLeft");
+  }
+});
+
+
+
+
+
+// is it mobile ? 
+document.addEventListener('DOMContentLoaded', function() {
+  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  var links = document.querySelectorAll('.move-link');
+
+  links.forEach(function(link) {
+      if (isMobile) {
+          link.setAttribute('target', '_self');
+      } else {
+          link.setAttribute('target', '_blank');
+      }
+  });
+});
+
 // mobileJs
 $(".top-gnb-mo").hide();
 

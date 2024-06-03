@@ -41,6 +41,15 @@
   font-weight: 800;
 }
 
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 * {
   scroll-behavior: smooth;
 }
@@ -578,9 +587,9 @@ body.modal-open {
 }
 
 .project-skill {
-  font-size: 20px;
+  font-size: 18px;
   /* font-weight: 400; */
-  font-family: "Gotham_Medium";
+  /* font-family: "Gotham_Medium"; */
   color: lightgray;
 }
 
@@ -936,7 +945,8 @@ body.modal-open {
 }
 
 .project-article {
-  line-height: 24px;
+  /* line-height: 24px; */
+  line-height: 30px;
   font-size: 20px;
 }
 
@@ -1285,7 +1295,7 @@ body.modal-open {
   border-right: 1px solid #e5ecef;
   color: black;
   font-size: 12px;
-  background-color: #fff;
+  background-color: #eee;
   font-family: inherit;
   /* padding:0.5em 0.5em 0.5em 1em;  */
   line-height: 32px;
@@ -1549,6 +1559,8 @@ body.modal-open {
 
 .how-design p {
   font-size: 15px;
+  width: 60%;
+  margin: 0px auto;
 }
 
 .how-design h2 {
@@ -1665,6 +1677,10 @@ body.modal-open {
 
 @media screen and (min-width: 1440px) {
   /* 화면 너비가 1440px 이상인 경우에만 적용되는 스타일 */
+
+
+
+
   .inner {
     width: 1440px;
   }
@@ -1683,6 +1699,12 @@ body.modal-open {
   /* .inner {
     width: 1152px;
   } */
+  
+
+  .r1 ,.r2 {
+    display: none;
+  }
+
   .right-thumb {
     width: 800px;
   }
@@ -1858,6 +1880,18 @@ body.modal-open {
   .code-real {padding-top: 0;}
   .project-tit {font-size: 24px;}
   #mo-sub {display: none;} #mo-main {margin-right: 0;}
+  .right-gnb {
+    top: 140px;
+    padding: 12px; 
+    border-radius: 8px;  
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+
+  .right-gnb li a {
+    color: #000;
+  }
 
   .project-wrap .project-index {
     font-size: 20px;
@@ -1909,17 +1943,6 @@ body.modal-open {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .mo-gnb-wrap {
   text-align: right;
   width: 100%;
@@ -1967,16 +1990,25 @@ body.modal-open {
 
 @media all and (max-width: 767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
-
-  .project-wrapper .main-title {font-size: 24px;}
+  .how-design p {width: 80%;}
+  .project-wrapper .main-title {font-size: 28px;}
   .project-article {font-size: 16px;}
   .wrap .project-close {right: 20px; top: 20px; width: 20px; height: 20px;}
-  .new-wrap {height: auto; padding-top: 20px;}
-  .hidden-thumb {padding: 0 20px;}
-  .project-view {height: auto; padding-top: 20px; padding-bottom: 0;}
+  .new-wrap {height: auto; padding-top: 32px;}
+  .project-wrapper .hidden-thumb {padding: 0 20px; margin-bottom: 0; height: auto;}
+  .project-view {height: 90vh; padding-top: 0px; padding-bottom: 0;}
   .main-task {padding-top: 0;}
   .task-flex nav {display: block;}
   .task-flex .code-real {padding-top: 40px;}
+  /* .sub-project-title {top: 46%;} */
+  .sub-project-title {top: 54%;}
+  .design-page {display: none;}
+  .wrap .desub {display: block;}
+  #hundred .img-area {width: calc(100% - 40px); top: 85%;}
+  .wrap .hundred-day {height: auto;}
+  #hundred {padding: 40px 0px 60px 0;}
+  .etc-modal .swiper {max-height: 300px;}
+
 
   .right-vision .korean-vision {
     -webkit-text-stroke: 1px #000;
