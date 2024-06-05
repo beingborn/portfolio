@@ -1092,6 +1092,17 @@ body.modal-open {
   background-size: cover;
 }
 
+.program-use .next {
+  background: url(../img/devicon_nextjs.svg) no-repeat center;
+  background-size: cover;
+}
+
+
+.program-use .mongo {
+  background: url(../img/mongodb-icon-on.svg) no-repeat center;
+  background-size: cover;
+}
+
 .right-thumb {
   /* width: 1200px; */
 }
@@ -1299,7 +1310,7 @@ body.modal-open {
   border-right: 1px solid #e5ecef;
   color: black;
   font-size: 12px;
-  background-color: #eee;
+  background-color: #fefefe;
   font-family: inherit;
   /* padding:0.5em 0.5em 0.5em 1em;  */
   line-height: 32px;
@@ -2001,7 +2012,7 @@ body.modal-open {
   .new-wrap {height: auto; padding-top: 32px;}
   .project-wrapper .hidden-thumb {padding: 0 20px; margin-bottom: 0; height: auto;}
   .project-view {height: 90vh; padding-top: 0px; padding-bottom: 0;}
-  .main-task {padding-top: 0;}
+  .main-task {padding-top: 60px;}
   .task-flex nav {display: block;}
   .task-flex .code-real {padding-top: 40px;}
   /* .sub-project-title {top: 46%;} */

@@ -26,7 +26,7 @@
         <div class="project-wrapper inner">
           <div class="hidden-thumb">
             <img
-              src="../img/mobile-ossulloc.png"
+              src="../img/hidden-next.png"
               width="100%"
               height="auto"
               alt=""
@@ -35,23 +35,21 @@
           <div class="left-thumb">
             <div class="sub-project-title">
               <ul class="program-use">
-                <li class="html"></li>
+                <li class="next"></li>
+                <li class="mongo"></li>
                 <li class="css"></li>
                 <li class="js"></li>
               </ul>
               <h2 class="main-title">NEXTJS BLOG PROJECT</h2>
               <p class="project-article">
-                <b>반응형 단위와 미디어쿼리</b>를 적극 활용해 진행한
-                프로젝트입니다. <b>태블릿, 모바일, PC</b> 모두 대응해보았고 보다
-                <b>직접적인 예제를 통해</b> 반응형 CSS에 대한 감을 익힐 수
-                있었습니다.
-                <br />
+                REACT와 문법이 같고 서버 사이드 렌더링을 통한
+                풀스택 개발이 가능한 nextjs 프로젝트입니다. <b>서버에 대한 실습적 이해</b>를 위해 진행하였습니다.
               </p>
               <div class="new-wrap">
                 <div class="new-wrap-top">
                   <div class="new-subwrap">
                     <p class="new-sub">
-                      <span class="new-title"> 기여도 </span> : 개발 100%
+                      <span class="new-title"> 기여도 </span> : 개발 100%, 디자인 100%
                     </p>
                     <p class="new-sub">
                       <span class="new-title">글꼴</span> : NOTOSANS
@@ -72,7 +70,7 @@
           <!-- right-thumb -->
           <div class="right-thumb">
             <img
-              src="../img/ossulloc-test.png"
+              src="../img/moniterOnly-next.png"
               width="100%"
               height="780px"
               alt=""
@@ -94,16 +92,16 @@
               <ul class="task-wrap">
                 <li>
                   <a
-                    >라이브러리 없이 자동 슬라이드 구현
+                    >몽고 DB 연결
                     <div class="task-box">
                       <p class="task-list">
-                        1. 변수 선언, 위치 초기 값 및 이동 값 설정
+                        1. 몽고 DB 설치 및 라이브러리 import 연결
                       </p>
                       <p class="task-list">
-                        2. setInterval로 특정 값 n초마다 실행
+                        2. 몽고 DB 클러스터 연결
                       </p>
                       <p class="task-list">
-                        3. 슬라이드 전부 이동 시 위치 초기화하기
+                        3. 옵션 설정 및 변수 반환
                       </p>
                     </div>
                   </a>
@@ -111,14 +109,14 @@
 
                 <li>
                   <a
-                    >슬라이드 정지, 플레이 구현
+                    >해당 글 ID 찾아 수정하기
                     <div class="task-box">
-                      <p class="task-list">1. 상태 초기 값 설정하기</p>
+                      <p class="task-list">1. 수정 버튼 클릭 시 해당 글 ID URL 이동</p>
                       <p class="task-list">
-                        2. if문으로 해당 상태 값 마다 코드 실행하기
+                        2. 수정 시 서버 역할 js에 정보 전달
                       </p>
                       <p class="task-list">
-                        3. 버튼 클릭 시 마다 src값 변경 혹은 display 변경하기
+                        3. 조건 성립 (저자 동일, 공백 검사) 후 포스트
                       </p>
                     </div>
                   </a>
@@ -126,21 +124,23 @@
 
                 <li>
                   <a
-                    >글자별 find, 해당 css 변경하기
+                    >NEXTAUTH 로그인 구현
                     <div class="task-box">
                       <p class="task-list">
-                        1. 해당 태그에 특정 문자열이 포함되는 지 확인하기
+                        1. NEXTAUTH 설치, 구글 console 가입
                       </p>
                       <p class="task-list">
-                        2. html 코드 직접 삽입 혹은 클래스 추가하기
+                        2. authOption 객체 정의하기
+                      </p>
+                      <p class="task-list">
+                        3. NEXTAUTH 함수 호출, 내보내기
                       </p>
                     </div>
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    >아이콘 background position으로 관리하기
+                  <a>마우스에 따라 움직이는 큐브
                     <div class="task-box">
                       <p class="task-list">1. 전체 아이콘 세트 png 설정</p>
                       <p class="task-list">
@@ -150,32 +150,25 @@
                   </a>
                 </li>
 
-                <!-- <li>
-                  <a
-                    >접고 펼쳐지는 느낌의 tab 메뉴 만들기
+                <li>
+                  <a>TOP 3만 보여주기
                     <div class="task-box">
+                      <p class="task-list">1. 전체 아이콘 세트 png 설정</p>
                       <p class="task-list">
-                        1. 클릭된 상태가 될 요소 변수 선언
-                      </p>
-                      <p class="task-list">
-                        2. this와 find()를 이용해 이벤트 대상 변수에 할당하기
-                      </p>
-                      <p class="task-list">
-                        3. 해당 클래스의 요소에 해당 변수 text()로 바인딩하기
+                        2. 개별 아이콘 background-position 변경
                       </p>
                     </div>
                   </a>
-                </li> -->
+                </li>
+
               </ul>
 
               <!-- 1번 태스크 코드 -->
               <div class="code-real">
                 <div class="code-title">
-                  <h4>slideInterval</h4>
+                  <h4>Mongodb 연결하기</h4>
                   <span style="font-size: 14px">
-                    setInterval 은 일정시간 마다 함수가 실행되도록 처리하는 내장
-                    함수 clearInterval 은 setInterval 로 설정한 작업을 취소하는
-                    내장 함수입니다.
+                    몽고DB는 데이터베이스입니다. 기존 데이터 베이스와 다르게 데이터를 테이블 행이 아닌 문서 단위로 저장한다는 것이 특징입니다. 몽고DB 연결하기
                   </span>
                 </div>
 
@@ -200,7 +193,7 @@
                 <div class="code">
                   <div class="line01">
                     <p>
-                      var slideFirstClone = slideBox.firstElementChild;
+                      import { MongoClient } from "mongodb";
                       <span class="code-explain"
                         >// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에
                         추가하기</span
@@ -208,16 +201,14 @@
                     </p>
                   </div>
                   <div class="line02">
-                    <p>var cloneFirst = slideFirstClone.cloneNode(true);</p>
+                    <p>const url = "mongodb+srv:// ... </p>
                   </div>
                   <div class="line01">
-                    <p>slideBox.appendChild(cloneFirst);</p>
+                    <p>const options = { useNewUrlParser: true };</p>
                   </div>
                   <div class="line02">
                     <p>
-                      <span class="code-explain"
-                        >// var slideInterval; 선언 생략</span
-                      >
+                      let connectDB;
                     </p>
                   </div>
                   <div class="line01">
@@ -233,67 +224,49 @@
                   </div>
                   <div class="line01">
                     <p>
-                      if (currentView >= 1) {
-                      <span class="code-explain"
-                        >// 초기값이 1보다 큰 상태일 시 실행</span
-                      >
+                      if (process.env.NODE_ENV === "development") {
                     </p>
                   </div>
                   <div class="line02">
                     <p>
-                      currentView++;<span class="code-explain">
-                        // 상태값 + 1 하기</span
-                      >
+                      if (!global._mongo) {
                     </p>
                   </div>
                   <div class="line01">
                     <p>
-                      slideBox.style.transform = "translateX(-" + 690 *
-                      currentView + "px)";<span class="code-explain">
-                        // 상태 값 x 위치 이동 값</span
-                      >
+                      global._mongo = new MongoClient(url, options).connect();
                     </p>
                   </div>
                   <div class="line02">
                     <p>
-                      document.querySelector('#con-counter').innerHTML =
-                      currentView + "/3"
-                      <span class="code-explain"> // 해당 상태 바인딩하기</span>
+                    }
                     </p>
                   </div>
                   <div class="line01">
                     <p>
-                      if (currentView === slideImg.length + 1) {<span
-                        class="code-explain"
-                      >
-                        // 슬라이드가 끝 도달 시 위치 초기화, 상태 값
-                        초기화</span
-                      >
+                      connectDB = global._mongo;
                     </p>
                   </div>
                   <div class="line02">
-                    <p>slideBox.style.transition = "0s";</p>
+                    <p>} else {</p>
                   </div>
                   <div class="line01">
-                    <p>slideBox.style.transform = "translateX(0px)";</p>
+                    <p>connectDB = new MongoClient(url, options).connect();</p>
                   </div>
-                  <div class="line02"><p>currentView = 1;</p></div>
+                  <div class="line02"><p>}</p></div>
                   <div class="line01">
                     <p>
-                      return slideInterval; , moveAuto();
-                      <span class="code-explain"
-                        >// 슬라이드 정지 매개변수를 위해 리턴하기, 함수
-                        실행하기</span
-                      >
+                      export { connectDB };
                     </p>
                   </div>
                 </div>
               </div>
 
+              <!-- 2번 태스크 -->
               <div class="code-real">
                 <div class="code-title">
                   <h4>
-                    clearInterval로 함수 종료, class 추가 삭제로 디자인 변경하기
+                    해당 글 아이디 찾아 서버에서 검수 후 삭제하기
                   </h4>
                   <span>
                     버튼 클릭 시 상태 값 카운트를 통해 재생, 정지를
@@ -313,46 +286,49 @@
                   <li class="numberline"><p>9</p></li>
                   <li class="numberline"><p>10</p></li>
                   <li class="numberline"><p>11</p></li>
+                  <li class="numberline"><p>12</p></li>
+                  <li class="numberline"><p>13</p></li>
+                  <li class="numberline"><p>14</p></li>
+                  <li class="numberline"><p>15</p></li>
+                  <li class="numberline"><p>16</p></li>
+                  <li class="numberline"><p>17</p></li>
+                  <li class="numberline"><p>18</p></li>
+                  <li class="numberline"><p>19</p></li>
+                  <li class="numberline"><p>20</p></li>
+                  <li class="numberline"><p>21</p></li>
+                  <li class="numberline"><p>22</p></li>
+                  <li class="numberline"><p>23</p></li>
+                  <li class="numberline"><p>24</p></li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
                     <p>
-                      var mainPausePlayBtn =
-                      document.querySelector('#main-pauseBtn');
+                     <span class="code-explain">// list.js 라우팅으로 이동 </span>
                     </p>
                   </div>
                   <div class="line02">
                     <p>
-                      var mainPauseCount = 0
-                      <span class="code-explain">// 상태 초기 값 설정</span>
+                      
+                      <span class="code-explain">export default async function Correction(props) {</span>
                     </p>
                   </div>
                   <div class="line01">
                     <p>
-                      if (mainPauseCount % 2 == 1) {
-                      <span class="code-explain"
-                        >// 상태 값이 홀수일시 == 재생되고 있을 때</span
-                      >
+                      const db = (await connectDB).db("forum");
                     </p>
                   </div>
                   <div class="line01">
                     <p>
-                      clearInterval(slideInterval);
-                      <span class="code-explain"
-                        >기존 함수 안 setInterval 종료</span
-                      >
+                      let result = await db
                     </p>
                   </div>
                   <div class="line02">
-                    <p>mainPausePlayBtn.classList.remove("fa-pause");</p>
+                    <p> .collection("post")</p>
                   </div>
                   <div class="line01">
                     <p>
-                      mainPausePlayBtn.classList.remove("fa-play");
-                      <span class="code-explain"
-                        >// 다른 url값 가진 class 탈부착하기</span
-                      >
+                      .findOne({ _id: new ObjectId(props.params.id) });
                     </p>
                   </div>
                   <div class="line02">
@@ -360,40 +336,134 @@
                   </div>
                   <div class="line01">
                     <p>
-                      if (mainPauseCount % 2 == 0) {
-                      <span class="code-explain"
-                        >// 상태 값이 짝수 일 시 == 정지되어 있을 때</span
-                      >
+                      return (
                     </p>
                   </div>
                   <div class="line01">
                     <p>
-                      <span class="code-explain">// 위와 동일하므로 생략</span>
+                      
+                      &lt;form action="/api/post/edit" method="POST"&gt;&lt;/form&gt;
                     </p>
                   </div>
                   <div class="line02">
                     <p>
-                      moveAuto(); <span class="code-explain">함수 재시작</span>
+                      &lt;input
+                      className="id-value"
+                      name="_id"
+                      defaultValue={result._id.toString()}
+                      /&gt;
                     </p>
                   </div>
                   <div class="line01">
                     <p>}</p>
                   </div>
+                  <div class="line02">
+                    <p>edit.js</p>
+                  </div>
+                  <div class="line01">
+                    <p>export default async function handler(req, res) {</p>
+                  </div>
+                  <div class="line02">
+                    <p>if (req.method == "POST") {</p>
+                  </div>
+                  <div class="line01">
+                    <p>// console.log(req.body);</p>
+                  </div>
+                  <div class="line02">
+                    <p>let change = { title: req.body.title, content: req.body.content }; // 바꾸는 대상 객체 배열로 담기</p>
+                  </div>
+                  <div class="line01">
+                    <p>console.log(change);</p>
+                  </div>
+                  <div class="line02">
+                    <p>let db = (await connectDB).db("forum"); // 해당 포스트 될 db 불러오기</p>
+                  </div>
+                  <div class="line01">
+                    <p>let result = db</p>
+                  </div>
+                  <div class="line02">
+                    <p>.collection("post")</p>
+                  </div>
+                  <div class="line01">
+                    <p>.updateOne({ _id: new ObjectId(req.body._id) }, { $set: change }); // 포스트 대상 불러와서 요청 내용 집어 넣기</p>
+                  </div>
+                  <div class="line02">
+                    <p>console.log(result);</p>
+                  </div>
+                  <div class="line01">
+                    <p>res.redirect(302, "/list"); // 응답 302 => 유저 /list 페이지로 강제 이동</p>
+                  </div>
+                  <div class="line02">
+                    <p>}</p>
+                  </div>
+         
+
                 </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>replace() , :contains</h4>
+                  <h4>NextAuth 라이브러리</h4>
                   <span
-                    >replace 함수는 첫 번째로 발견한 문자열을 지정한 문자열로
-                    치환하여 줍니다.</span
+                    >Next.js 애플리케이션에서 사용자 인증을 손쉽게 구현할 수 있도록 도와주는 라이브러리입니다.</span
                   >
-                  <br />
+                  
+                </div>
+
+                <ul class="code-number">
+                  <li class="numberline"><p>1</p></li>
+                  <li class="numberline"><p>2</p></li>
+                  <li class="numberline"><p>3</p></li>
+                  <li class="numberline"><p>4</p></li>
+                  <li class="numberline"><p>5</p></li>
+                  <li class="numberline"><p>6</p></li>
+                  <li class="numberline"><p>7</p></li>
+                  <li class="numberline"><p>8</p></li>
+                  <li class="numberline"><p>9</p></li>
+                  <li class="numberline"><p>10</p></li>
+                </ul>
+
+                <div class="code">
+                  <div class="line01">
+                    <p>export const authOptions = {</p>
+                  </div>
+                  <div class="line02">
+                    <p>providers: [</p>
+                  </div>
+                  <div class="line01">
+                    <p>GoogleProvider({</p>
+                  </div>
+                  <div class="line02">
+                    <p>clientId: process.env.GOOGLE_CLIENT_ID,</p>
+                  </div>
+                  <div class="line01">
+                    <p>clientSecret: process.env.GOOGLE_CLIENT_SECRET,</p>
+                  </div>
+                  <div class="line02">
+                    <p>redirect_uri: "http://localhost:3000/api/auth/callback/google",</p>
+                  </div>
+                  <div class="line01">
+                    <p>}),</p>
+                  </div>
+                  <div class="line02">
+                    <p>],</p>
+                  </div>
+                  <div class="line01">
+                    <p>secret: process.env.NEXTAUTH_SECRET,</p>
+                  </div>
+                  <div class="line02">
+                    <p>};</p>
+                  </div>
+              </div>
+              </div>
+
+              <div class="code-real">
+                <div class="code-title">
+                  <h4>useEffect, useClient 이용해서 nextAuth 애니메이션 구현</h4>
                   <span
-                    >:contains는 해당 문자열의 특정 문자열이 있는 지 검수하여
-                    추가 코드를 작성할 수 있도록 합니다.</span
+                    >Next.js 애플리케이션에서 사용자 인증을 손쉽게 구현할 수 있도록 도와주는 라이브러리입니다.</span
                   >
+                  
                 </div>
 
                 <ul class="code-number">
@@ -413,118 +483,69 @@
                   <li class="numberline"><p>14</p></li>
                   <li class="numberline"><p>15</p></li>
                   <li class="numberline"><p>16</p></li>
-                </ul>
-
-                <div class="code">
-                  <div class="line01"><p>.grid-container {</p></div>
-                  <div class="line02">
-                    <p>
-                      display: grid;
-                      <span class="code-explain"
-                        >/* 컨테이너 그리드 박스 지정 */</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      grid-template-columns: repeat(3, 1fr); /* 행열 프레임 설정
-                      */
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>grid-template-rows: repeat(2, 1fr);</p>
-                  </div>
-                  <div class="line01"><p>grid-auto-rows: 480px;</p></div>
-                  <div class="line02"><p>grid-gap: 20px;</p></div>
-                  <div class="line01">
-                    <p>
-                      grid-template-areas:
-                      <span class="code-explain">/* 행열 별 영역 지정 */</span>
-                    </p>
-                  </div>
-                  <div class="line01"><p>'a b b'</p></div>
-                  <div class="line02"><p>'a c d'</p></div>
-                  <div class="line01"><p>;</p></div>
-                  <div class="line02"><p>}</p></div>
-                  <div class="line01"><p></p></div>
-                  <div class="line02">
-                    <p>
-                      <span class="code-explain"
-                        >/* 자식 아이템 영역 지정 */</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line01"><p>.grid-itemA {</p></div>
-                  <div class="line02"><p>grid-area : a;</p></div>
-                  <div class="line01"><p>}</p></div>
-                </div>
-              </div>
-
-              <div class="code-real">
-                <div class="code-title">
-                  <h4>
-                    아이콘 한꺼번에 배경이미지처리 후 background-position 처리
-                  </h4>
-                  <span>
-                    대규모 웹사이트의 경우 아이콘이 너무 많아질 시 이를 그룹화
-                    및 정리하기 쉽지 않습니다. 그래서 png 파일로 해당 아이콘들을
-                    모두 모은 뒤 background-position 처리를 하는 네이버
-                    홈페이지의 코드를 참고해 제작해보았습니다.
-                  </span>
-                </div>
-
-                <ul class="code-number">
-                  <li class="numberline"><p>1</p></li>
-                  <li class="numberline"><p>2</p></li>
-                  <li class="numberline"><p>3</p></li>
-                  <li class="numberline"><p>4</p></li>
-                  <li class="numberline"><p>5</p></li>
-                  <li class="numberline"><p>6</p></li>
-                  <li class="numberline"><p>7</p></li>
-                  <li class="numberline"><p>8</p></li>
+                  <li class="numberline"><p>17</p></li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
-                    <p>
-                      .link-set > li a::before {
-                      <span class="code-explain"
-                        >부모와 같은 역할을 할 수 있도록 지정</span
-                      >
-                    </p>
+                    <p>import { useEffect } from 'react';</p>
                   </div>
                   <div class="line02">
-                    <p>content: "";</p>
+                    <p>export default function Cube() {</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      background-image: url(../images/icon_set_service.png);
-                    </p>
+                    <p>useEffect(() => {</p>
                   </div>
                   <div class="line02">
+                    <p>const handleMouseMove = (event) => {</p>
+                  </div>
+                  <div class="line01">
+                    <p>const cube = document.querySelector('.cube');</p>
+                  </div>
+                  <div class="line02">
+                    <p>const x = event.clientX / window.innerWidth * 2 - 1;</p>
+                  </div>
+                  <div class="line01">
+                    <p>const y = event.clientY / window.innerHeight * 2 - 1;</p>
+                  </div>
+                  <div class="line02">
+                    <p>const rotateX = y * 180;</p>
+                  </div>
+                  <div class="line01">
+                    <p>const rotateY = x * 180;</p>
+                  </div>
+                  <div class="line02">
+                    <p>cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;</p>
+                  </div>
+                  <div class="line01">
+                    <p>};</p>
+                  </div>
+                  <div class="line02">
+                    <p>document.addEventListener('mousemove', handleMouseMove);</p>
+                  </div>
+                  <div class="line01">
+                    <p>return () => {</p>
+                  </div>
+                  <div class="line02">
+                    <p>document.removeEventListener('mousemove', handleMouseMove);</p>
+                  </div>
+                  <div class="line01">
+                    <p>};</p>
+                  </div>
+                  <div class="line02">
+                    <p>}, []);</p>
+                  </div>
+                  <div class="line01">
                     <p>}</p>
                   </div>
-                  <div class="line01">
-                    <p></p>
-                  </div>
-                  <div class="line02">
-                    <p>.link-set li.link1 a::before {</p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      background-position: -360px 0;
-                      <span class="code-expain">해당 값으로 position 변경</span>
-                    </p>
-                  </div>
-                  <div class="line02"><p>}</p></div>
-                </div>
+              </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>데이터 바인딩</h4>
+                  <h4>데이터베이스에서 값 가져와서 TOP 3만 보여주기</h4>
                   <span
-                    >요소에 객체 및 데이터 값을 주소를 통해 전달해주는 것</span
+                    >slice 함수를 이용해서 배열에서 객체를 분리한 후, map 함수로 return하였습니다.</span
                   >
                 </div>
 
@@ -539,61 +560,38 @@
                   <li class="numberline"><p>8</p></li>
                   <li class="numberline"><p>9</p></li>
                   <li class="numberline"><p>10</p></li>
-                  <li class="numberline"><p>11</p></li>
-                  <li class="numberline"><p>12</p></li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
-                    <p>
-                      var carformSlides;
-                      <span class="code-explain">// 슬라이드</span>
-                    </p>
+                    <p>// result == db 값을 담은 변수</p>
                   </div>
                   <div class="line02">
-                    <p>
-                      var clickModel
-                      <span class="code-explain">// 클릭된 슬라이드 변수</span>
-                    </p>
-                  </div>
-                  <div class="line01"><p></p></div>
-                  <div class="line02">
-                    <p>carformSlides.click(function() {</p>
+                    &#123;result.slice(0, 3).map((item, i) =&gt; (
                   </div>
                   <div class="line01">
-                    <p>
-                      clickModel = $(this).find('p').text();
-                      <span class="code-explain"
-                        >// 클릭된 (this)의 텍스트 값 변수 할당</span
-                      >
-                    </p>
+                    &lt;div className=&quot;top-3-list&quot; key=&#123;i&#125;&gt;
                   </div>
                   <div class="line02">
-                    <p>
-                      $('.clicked-model').text(clickModel);
-                      <span class="code-explain">// 해당 값 바인딩</span>
-                    </p>
+                    &lt;p className=&quot;top-3-index&quot;&gt;&#123;i + 1&#125;&lt;/p&gt;
                   </div>
-                  <div class="line01"><p></p></div>
-                  <div class="line02">
-                    <p>
-                      localStorage.setItem('choose', clickModel);
-                      <span class="code-explain"
-                        >// 로컬스토리지에 값 저장</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line01"><p>});</p></div>
-                  <div class="line02"><p></p></div>
                   <div class="line01">
-                    <p>
-                      <span class="code-explain">
-                        저장소에 있는 값 다른 브라우저에서 가져오기</span
-                      >
-                    </p>
+                    &lt;h4 className=&quot;top-3-tit&quot;&gt;&#123;item.title&#125;&lt;/h4&gt;
                   </div>
                   <div class="line02">
-                    <p>var clickSub = localStorage.getItem('choose');</p>
+                    &lt;div className=&quot;top-3-right&quot;&gt;
+                  </div>
+                  <div class="line01">
+                    &lt;p&gt;&#123;item.author&#125;&lt;/p&gt;
+                  </div>
+                  <div class="line02">
+                    &lt;/div&gt;
+                  </div>
+                  <div class="line01">
+                    <p>&lt;/div&gt;&lt;</p>
+                  </div>
+                  <div class="line02">
+                    &gt;)&#125;
                   </div>
                 </div>
               </div>
