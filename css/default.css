@@ -1732,6 +1732,8 @@ body.modal-open {
   #hundred .img-area {
     top: 28%;
     width: 600px;
+    height: 700px;
+    display: block;
   }
 
   .modal-body {
