@@ -94,7 +94,7 @@ nav {
 .inner {
   width: 1440px;
   margin: 0px auto;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   /* border: 1px solid red; */
 }
 
