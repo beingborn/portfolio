@@ -85,7 +85,6 @@ body::after {
 .inner {
   width: 1440px;
   margin: 0px auto;
-  border: 1px solid blue;
 }
 
 .section-tit {
