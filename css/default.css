@@ -1184,10 +1184,9 @@ body.modal-open {
   padding: 40px 0;
 }
 
-.task-flex nav {
-  display: flex;
-  justify-content: space-between;
-}
+.task-flex nav {display: flex; justify-content: space-between;}
+
+.task-flexwrap {display: flex; justify-content: space-between;}
 
 .code-title > h4 {
   padding-bottom: 12px;
@@ -1758,6 +1757,8 @@ body.modal-open {
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
 
+  .task-flexwrap {flex-wrap: wrap; min-height: 800px;}
+
   .project-view {
     height: auto;
   }
@@ -2032,6 +2033,11 @@ body.modal-open {
   .how-design p {
     width: 80%;
   }
+
+  .next-flex {
+    display: block;
+  }
+
   .project-wrapper .main-title {
     font-size: 28px;
   }
@@ -2383,14 +2389,12 @@ body.modal-open {
 }
 
 .img-area {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   width: 700px;
   z-index: -2000;
   border-radius: 4px;
-  /* overflow: hidden; */
+  margin: 0px auto;
+  padding-top: 40px;
 }
 
 .img-area img {
@@ -2398,10 +2402,6 @@ body.modal-open {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 8px;
-  /* min-width: 800px; */
-  /* left: 0; */
-
-  /* top: 0; */
 }
 
 .hundred-day {

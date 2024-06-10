@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ossulloc clone</title>
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT-JS BLOG</title>
 
-    <link rel="icon" href="../img/main-pavicon.svg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="../img/main-pavicon.svg">
 
     <style>
-      body {
+      #sub-bg {
         background: none !important;
         overflow-x: hidden;
       }
     </style>
   </head>
-  <body>
+  <body id="sub-bg">
     <div class="wrap">
       <a href="../index.html" class="project-close"></a>
 
-      <!-- <div class="inner"> -->
       <section class="project-view">
-        <!-- <a href="/포트폴리오/index.html" style="font-family: 'Gotham_Bold';" class="prev-btn">PREV</a> -->
+        <span class="blind">상단 프로젝트 영역</span>
         <div class="project-wrapper inner">
           <div class="hidden-thumb">
-            <img
-              src="../img/hidden-next.png"
-              width="100%"
-              height="auto"
-              alt=""
-            />
+            <img src="../img/hidden-next.png" alt="nextjs 모바일 섬네일">
           </div>
           <div class="left-thumb">
             <div class="sub-project-title">
@@ -40,6 +37,7 @@
                 <li class="css"></li>
                 <li class="js"></li>
               </ul>
+              <span class="blind">프로젝트 제목 및 설명</span>
               <h2 class="main-title">NEXTJS BLOG PROJECT</h2>
               <p class="project-article">
                 REACT와 문법이 같고 서버 사이드 렌더링을 통한
@@ -71,10 +69,7 @@
           <div class="right-thumb">
             <img
               src="../img/moniterOnly-next.png"
-              width="100%"
-              height="780px"
-              alt=""
-            />
+              alt="nextjs 태블릿 데스크탑 섬네일 이미지">
           </div>
         </div>
 
@@ -83,58 +78,40 @@
       </section>
 
       <!-- 프로젝트 소개 -->
-
       <section class="main-task">
         <div class="inner">
           <h2 class="section-tit">PROJECT MAIN TASK</h2>
-          <div class="task-flex">
-            <nav>
+          <!-- 태스크 제목 (버튼)-->
+          <div class="task-flex next-flex">
+            <div class="task-flexwrap">
               <ul class="task-wrap">
                 <li>
-                  <a
-                    >몽고 DB 연결
+                  <a>
+                    몽고 DB 연결
                     <div class="task-box">
-                      <p class="task-list">
-                        1. 몽고 DB 설치 및 라이브러리 import 연결
-                      </p>
-                      <p class="task-list">
-                        2. 몽고 DB 클러스터 연결
-                      </p>
-                      <p class="task-list">
-                        3. 옵션 설정 및 변수 반환
-                      </p>
+                      <p class="task-list">1. 몽고 DB 설치 및 라이브러리 import 연결</p>
+                      <p class="task-list">2. 몽고 DB 클러스터 연결</p>
+                      <p class="task-list">3. 옵션 설정 및 변수 반환</p>
                     </div>
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    >해당 글 ID 찾아 수정하기
+                  <a>해당 글 ID 찾아 수정하기
                     <div class="task-box">
                       <p class="task-list">1. 수정 버튼 클릭 시 해당 글 ID URL 이동</p>
-                      <p class="task-list">
-                        2. 수정 시 서버 역할 js에 정보 전달
-                      </p>
-                      <p class="task-list">
-                        3. 조건 성립 (저자 동일, 공백 검사) 후 포스트
-                      </p>
+                      <p class="task-list">2. 수정 시 서버 역할 js에 정보 전달</p>
+                      <p class="task-list">3. 조건 성립 (저자 동일, 공백 검사) 후 포스트</p>
                     </div>
                   </a>
                 </li>
 
                 <li>
-                  <a
-                    >NEXTAUTH 로그인 구현
+                  <a>NEXTAUTH 로그인 구현
                     <div class="task-box">
-                      <p class="task-list">
-                        1. NEXTAUTH 설치, 구글 console 가입
-                      </p>
-                      <p class="task-list">
-                        2. authOption 객체 정의하기
-                      </p>
-                      <p class="task-list">
-                        3. NEXTAUTH 함수 호출, 내보내기
-                      </p>
+                      <p class="task-list">1. NEXTAUTH 설치, 구글 console 가입</p>
+                      <p class="task-list">2. authOption 객체 정의하기</p>
+                      <p class="task-list">3. NEXTAUTH 함수 호출, 내보내기</p>
                     </div>
                   </a>
                 </li>
@@ -143,9 +120,7 @@
                   <a>마우스에 따라 움직이는 큐브
                     <div class="task-box">
                       <p class="task-list">1. 전체 아이콘 세트 png 설정</p>
-                      <p class="task-list">
-                        2. 개별 아이콘 background-position 변경
-                      </p>
+                      <p class="task-list">2. 개별 아이콘 background-position 변경</p>
                     </div>
                   </a>
                 </li>
@@ -154,15 +129,12 @@
                   <a>TOP 3만 보여주기
                     <div class="task-box">
                       <p class="task-list">1. 전체 아이콘 세트 png 설정</p>
-                      <p class="task-list">
-                        2. 개별 아이콘 background-position 변경
-                      </p>
+                      <p class="task-list">2. 개별 아이콘 background-position 변경</p>
                     </div>
                   </a>
                 </li>
-
-
               </ul>
+
 
               <!-- 1번 태스크 코드 -->
               <div class="code-real">
@@ -193,13 +165,7 @@
 
                 <div class="code">
                   <div class="line01">
-                    <p>
-                      import { MongoClient } from "mongodb";
-                      <span class="code-explain"
-                        >// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에
-                        추가하기</span
-                      >
-                    </p>
+                    <p>import { MongoClient } from "mongodb";<span class="code-explain">// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에추가하기</span></p>
                   </div>
                   <div class="line02">
                     <p>const url = "mongodb+srv:// ... </p>
@@ -208,45 +174,28 @@
                     <p>const options = { useNewUrlParser: true };</p>
                   </div>
                   <div class="line02">
-                    <p>
-                      let connectDB;
-                    </p>
+                    <p>let connectDB;</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      slideInterval = setInterval(transitionSlide, 3000);
-                      <span class="code-explain"
-                        >함수 실행 시 마다 새로운 타이머를 3초마다 실행</span
-                      >
-                    </p>
+                    <p>slideInterval = setInterval(transitionSlide, 3000);<span class="code-explain">함수 실행 시 마다 새로운 타이머를 3초마다 실행</span></p>
                   </div>
                   <div class="line02">
                     <p></p>
                   </div>
                   <div class="line01">
-                    <p>
-                      if (process.env.NODE_ENV === "development") {
-                    </p>
+                    <p>if (process.env.NODE_ENV === "development") {</p>
                   </div>
                   <div class="line02">
-                    <p>
-                      if (!global._mongo) {
-                    </p>
+                    <p>if (!global._mongo) {</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      global._mongo = new MongoClient(url, options).connect();
-                    </p>
+                    <p>global._mongo = new MongoClient(url, options).connect();</p>
                   </div>
                   <div class="line02">
-                    <p>
-                    }
-                    </p>
+                    <p>}</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      connectDB = global._mongo;
-                    </p>
+                    <p>connectDB = global._mongo;</p>
                   </div>
                   <div class="line02">
                     <p>} else {</p>
@@ -254,11 +203,11 @@
                   <div class="line01">
                     <p>connectDB = new MongoClient(url, options).connect();</p>
                   </div>
-                  <div class="line02"><p>}</p></div>
+                  <div class="line02">
+                    <p>}</p>
+                  </div>
                   <div class="line01">
-                    <p>
-                      export { connectDB };
-                    </p>
+                    <p>export { connectDB };</p>
                   </div>
                 </div>
               </div>
@@ -304,56 +253,34 @@
 
                 <div class="code">
                   <div class="line01">
-                    <p>
-                     <span class="code-explain">// list.js 라우팅으로 이동 </span>
-                    </p>
+                    <p><span class="code-explain">// list.js 라우팅으로 이동 </span></p>
                   </div>
                   <div class="line02">
-                    <p>
-                      
-                      <span class="code-explain">export default async function Correction(props) {</span>
-                    </p>
+                    <p><span class="code-explain">export default async function Correction(props) {</span></p>
                   </div>
                   <div class="line01">
-                    <p>
-                      const db = (await connectDB).db("forum");
-                    </p>
+                    <p>const db = (await connectDB).db("forum");</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      let result = await db
-                    </p>
+                    <p>let result = await db</p>
                   </div>
                   <div class="line02">
                     <p> .collection("post")</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      .findOne({ _id: new ObjectId(props.params.id) });
-                    </p>
+                    <p>.findOne({ _id: new ObjectId(props.params.id) });</p>
                   </div>
                   <div class="line02">
                     <p>}</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      return (
-                    </p>
+                    <p>return (</p>
                   </div>
                   <div class="line01">
-                    <p>
-                      
-                      &lt;form action="/api/post/edit" method="POST"&gt;&lt;/form&gt;
-                    </p>
+                    <p>&lt;form action="/api/post/edit" method="POST"&gt;&lt;/form&gt;</p>
                   </div>
                   <div class="line02">
-                    <p>
-                      &lt;input
-                      className="id-value"
-                      name="_id"
-                      defaultValue={result._id.toString()}
-                      /&gt;
-                    </p>
+                    <p>&lt;input className="id-value" name="_id" defaultValue={result._id.toString()} /&gt;</p>
                   </div>
                   <div class="line01">
                     <p>}</p>
@@ -397,18 +324,13 @@
                   <div class="line02">
                     <p>}</p>
                   </div>
-         
-
                 </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
                   <h4>NextAuth 라이브러리</h4>
-                  <span
-                    >Next.js 애플리케이션에서 사용자 인증을 손쉽게 구현할 수 있도록 도와주는 라이브러리입니다.</span
-                  >
-                  
+                  <span>Next.js 애플리케이션에서 사용자 인증을 손쉽게 구현할 수 있도록 도와주는 라이브러리입니다.</span>  
                 </div>
 
                 <ul class="code-number">
@@ -455,16 +377,13 @@
                   <div class="line02">
                     <p>};</p>
                   </div>
-              </div>
+                </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
                   <h4>useEffect, useClient 이용해서 nextAuth 애니메이션 구현</h4>
-                  <span
-                    >Next.js 애플리케이션에서 사용자 인증을 손쉽게 구현할 수 있도록 도와주는 라이브러리입니다.</span
-                  >
-                  
+                  <span>Next.js 애플리케이션에서 사용자 인증을 손쉽게 구현할 수 있도록 도와주는 라이브러리입니다.</span>
                 </div>
 
                 <ul class="code-number">
@@ -539,11 +458,10 @@
                   <div class="line01">
                     <p>}</p>
                   </div>
-              </div>
+                </div>
               </div>
 
               <div class="code-real">
-
                 <div class="code-title">
                   <h4>데이터베이스에서 값 가져와서 TOP 3만 보여주기</h4>
                   <span>slice 함수를 이용해서 배열에서 객체를 분리한 후, map 함수로 return하였습니다.</span>
@@ -594,18 +512,12 @@
                     &gt;)&#125;
                   </div>
                 </div>
-                <!-- code- 6 -->
-                
-               
-              
+            </div>
 
-            
+            </div>
           </div>
-        </nav>
         </div>
       </section>
-
-      <!-- <a href="#" class="top-btn">GO TOP</a> -->
     </div>
 
     <script
@@ -619,7 +531,7 @@
       function openMo() {
         var popup = window.open(
           "http://next-last-env.eba-amfy7tmq.eu-north-1.elasticbeanstalk.com/",
-          "오설록팝업",
+          "nextjs 팝업",
           "width=1024px,scrollbars=yes"
         );
       }
