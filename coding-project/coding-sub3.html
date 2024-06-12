@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seoul clone</title>
 
-    <link rel="stylesheet" href="../css/default.css" />
-    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/reset.css">
 
-    <link rel="icon" href="../img/main-pavicon.svg" />
+    <!-- 파비콘 -->
+    <link rel="icon" href="../img/main-pavicon.svg">
 
     <style>
-      body {
-        background: none !important;
+      #sub-bg {
+        background: none;
         overflow-x: hidden;
       }
     </style>
   </head>
-  <body>
+  <body id="sub-bg">
     <div class="wrap">
       <a href="../index.html" class="project-close"></a>
 
-      <!-- <div class="inner"> -->
       <section class="project-view">
-        <!-- <a href="/포트폴리오/index.html" style="font-family: 'Gotham_Bold';" class="prev-btn">PREV</a> -->
+        <span class="blind">상단 프로젝트 영역</span>
         <div class="project-wrapper inner">
           <div class="hidden-thumb">
-            <img src="../img/mobile-seoul.png" width="100%" height="auto" alt=""/>
+            <img src="../img/mobile-seoul.png" alt="서울시 클론코딩 모바일 섬네일">
           </div>
           <div class="left-thumb">
             <div class="sub-project-title">
@@ -41,7 +42,7 @@
                 <b>바닐라 자바스크립트만을 이용하여</b> 슬라이드 및 탭 등을 직접
                 적용하여 기본 원리에 대한 개념을 강화시켰습니다. 또한
                 <b>다양한 레이아웃과 아이콘을 종합적으로</b> 관리했습니다.
-                <br />
+                <br>
               </p>
               <div class="new-wrap">
                 <div class="new-wrap-top">
@@ -62,19 +63,12 @@
                     </li>
                   </ul>
                 </div>
-
-                <!-- <a href="https://beingborn.github.io/jeepweb/" class="project-link btn-active" id="web-linker">WEBSITE</a> -->
               </div>
             </div>
           </div>
           <!-- right-thumb -->
           <div class="right-thumb">
-            <img
-              src="../img/sub2-mockup-example.png"
-              width="100%"
-              height="780px"
-              alt=""
-            />
+            <img src="../img/sub2-mockup-example.png" alt="서울시 클론 코딩 태블릿 데스크탑 섬네일">
           </div>
         </div>
 
@@ -87,6 +81,7 @@
       <section class="main-task">
         <div class="inner">
           <h2 class="section-tit">PROJECT MAIN TASK</h2>
+          <span class="blind">프로젝트 제목 및 설명</span>
           <div class="task-flex">
             <nav>
               <ul class="task-wrap">
@@ -147,23 +142,6 @@
                     </div>
                   </a>
                 </li>
-
-                <!-- <li>
-                  <a
-                    >접고 펼쳐지는 느낌의 tab 메뉴 만들기
-                    <div class="task-box">
-                      <p class="task-list">
-                        1. 클릭된 상태가 될 요소 변수 선언
-                      </p>
-                      <p class="task-list">
-                        2. this와 find()를 이용해 이벤트 대상 변수에 할당하기
-                      </p>
-                      <p class="task-list">
-                        3. 해당 클래스의 요소에 해당 변수 text()로 바인딩하기
-                      </p>
-                    </div>
-                  </a>
-                </li> -->
               </ul>
 
               <!-- 1번 태스크 코드 -->
@@ -387,7 +365,7 @@
                     >replace 함수는 첫 번째로 발견한 문자열을 지정한 문자열로
                     치환하여 줍니다.</span
                   >
-                  <br />
+                  <br>
                   <span
                     >:contains는 해당 문자열의 특정 문자열이 있는 지 검수하여
                     추가 코드를 작성할 수 있도록 합니다.</span
@@ -596,12 +574,10 @@
                 </div>
               </div>
             </nav>
-            <!-- 왼쪽 nav 정보 end -->
           </div>
         </div>
       </section>
 
-      <!-- <a href="#" class="top-btn">GO TOP</a> -->
     </div>
 
     <script
