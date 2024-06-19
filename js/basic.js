@@ -89,14 +89,16 @@ $(document).ready(function () {
 
 // 프로젝트 탭
 
+var whydont = $(".project-total");
+var whyBtn = $(".project-change");
+
 $(".project-total").hide();
-$(".project-total").eq(0).show();
+$(".project-total").eq(0).css("display", "block");
 
 $(".project-change").on("click", function () {
-  // project change 버튼
   let projectIndex = $(".project-change").index(this);
-  $(".project-total").hide(); // 모든 project-total을 숨깁니다.
-  $(".project-total").eq(projectIndex).show(); // 클릭한 버튼에 해당하는 project-total을 보여줍니다.
+  $(".project-total").hide();
+  $(".project-total").eq(projectIndex).css("display", "block");
 
   $(this).addClass("btn-active");
   $(".project-change").not(this).removeClass("btn-active");
@@ -119,9 +121,9 @@ window.onload = function () {
 
   mainTask.click(function () {
     // 기능 버튼 클릭 시
-    var taskIndex = mainTask.index(this); // 누른 인덱스 값 저장
-    taskBox.eq(taskIndex).show(); // 해당 인덱스 글 보이기
-    taskExplain.eq(taskIndex).show(); // 해당 인덱스 설명 보이기
+    var taskIndex = mainTask.index(this);
+    taskBox.eq(taskIndex).show();
+    taskExplain.eq(taskIndex).show();
 
     var notThisIndexes = mainTask
       .not(this)
@@ -287,9 +289,7 @@ $(".etc-modal").hide();
 // });
 
 let etcSwiper = $(".etc-modal");
-console.log(etcSwiper);
 let etcBtn = $(".etc-box");
-console.log(etcBtn);
 
 $(".etc-box").click(function () {
   let etcIndex = $(this).index();
