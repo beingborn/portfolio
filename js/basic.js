@@ -385,18 +385,3 @@ subGnbBtn.on("click", function () {
   // 클릭된 요소가 아닌 것들
   subGnbBtn.not(this).css("color", "lightgray");
 });
-
-// 스와이퍼 자바스크립트
-
-// var swiper = new Swiper(".etcSwiper-1", {
-//   pagination: {
-//     el: ".swiper-pagination",
-//     type: "fraction",
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-// mobile style
