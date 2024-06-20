@@ -98,16 +98,14 @@
               <ul class="task-wrap">
                 <li>
                   <a
-                    >라이브러리 없이 자동 슬라이드 구현
+                    >게시물 별 상세페이지 이동
                     <div class="task-box">
                       <p class="task-list">
-                        1. 변수 선언, 위치 초기 값 및 이동 값 설정
+                        1. 라우터 기능 이용, 주소 값 URL 파라미터 지정
                       </p>
+                      <p class="task-list">2. 게시물 정보 바인딩</p>
                       <p class="task-list">
-                        2. setInterval로 특정 값 n초마다 실행
-                      </p>
-                      <p class="task-list">
-                        3. 슬라이드 전부 이동 시 위치 초기화하기
+                        3. useNavigate 훅 사용해서 링크 이동
                       </p>
                     </div>
                   </a>
@@ -115,14 +113,30 @@
 
                 <li>
                   <a
-                    >슬라이드 정지, 플레이 구현
+                    >useQuery로 유저 데이터 받아와서 바인딩
                     <div class="task-box">
-                      <p class="task-list">1. 상태 초기 값 설정하기</p>
+                      <p class="task-list">1. useQuery 훅으로 쿼리 생성하기</p>
                       <p class="task-list">
-                        2. if문으로 해당 상태 값 마다 코드 실행하기
+                        2. axios로 지정된 url에서 get으로 데이터 가져오기
+                      </p>
+                      <p class="task-list">3. 변수에 결과 값 저장하기</p>
+                      <p class="task-list">4. 지정된 html에 할당하기</p>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    >다중 input 이용해서 댓글 기능 만들기
+                    <div class="task-box">
+                      <p class="task-list">
+                        1. input 태그 생성해서 onChange, onSubmit 기능 추가
                       </p>
                       <p class="task-list">
-                        3. 버튼 클릭 시 마다 src값 변경 혹은 display 변경하기
+                        2. onChange를 이용해서 특정 useState에 값 담기
+                      </p>
+                      <p class="task-list">
+                        3. submit 이벤트 발생 시 배열에 객체 값 추가하기
                       </p>
                     </div>
                   </a>
@@ -130,26 +144,15 @@
 
                 <li>
                   <a
-                    >글자별 find, 해당 css 변경하기
+                    >리덕스로 북마크 아이템 삭제 구현
                     <div class="task-box">
                       <p class="task-list">
-                        1. 해당 태그에 특정 문자열이 포함되는 지 확인하기
+                        1. 리덕스로 값 만들고 함수 제작하기 (createSlice)
                       </p>
                       <p class="task-list">
-                        2. html 코드 직접 삽입 혹은 클래스 추가하기
+                        2. dispatch로 store.js에 요청 보기
                       </p>
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    >아이콘 background position으로 관리하기
-                    <div class="task-box">
-                      <p class="task-list">1. 전체 아이콘 세트 png 설정</p>
-                      <p class="task-list">
-                        2. 개별 아이콘 background-position 변경
-                      </p>
+                      <p class="task-list">3. 조건 충족 시 배열에서 값 삭제</p>
                     </div>
                   </a>
                 </li>
@@ -158,11 +161,11 @@
               <!-- 1번 태스크 코드 -->
               <div class="code-real">
                 <div class="code-title">
-                  <h4>slideInterval</h4>
+                  <h4>Route, useNavigate</h4>
                   <span style="font-size: 14px">
-                    setInterval 은 일정시간 마다 함수가 실행되도록 처리하는 내장
-                    함수 clearInterval 은 setInterval 로 설정한 작업을 취소하는
-                    내장 함수입니다.
+                    Route는 URL 경로에 따라 렌더링되는 화면을 지정해주는
+                    기능이고 useNavigate는 해당 경로로 링크를 이동시켜주는 내장
+                    기능입니다.
                   </span>
                 </div>
 
@@ -188,121 +191,46 @@
                   <li class="numberline">
                     <p>7</p>
                   </li>
-                  <li class="numberline">
-                    <p>8</p>
-                  </li>
-                  <li class="numberline">
-                    <p>9</p>
-                  </li>
-                  <li class="numberline">
-                    <p>10</p>
-                  </li>
-                  <li class="numberline">
-                    <p>11</p>
-                  </li>
-                  <li class="numberline">
-                    <p>12</p>
-                  </li>
-                  <li class="numberline">
-                    <p>13</p>
-                  </li>
-                  <li class="numberline">
-                    <p>14</p>
-                  </li>
-                  <li class="numberline">
-                    <p>15</p>
-                  </li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
                     <p>
-                      var slideFirstClone = slideBox.firstElementChild;
+                      &lt;Route path="/detail/:id" element={&lt;Detail
+                      article="{article}" /&gt;} /&gt;
                       <span class="code-explain"
-                        >// 첫번째 슬라이드 복사하여 컨테이너 박스 뒷부분에
-                        추가하기</span
+                        >// 라우터 주소 지정 및 내용 설정</span
                       >
                     </p>
                   </div>
                   <div class="line02">
-                    <p>var cloneFirst = slideFirstClone.cloneNode(true);</p>
+                    &lt;h4
+                    className="article-title">{props.article.title}&lt;/h4&gt;
                   </div>
                   <div class="line01">
-                    <p>slideBox.appendChild(cloneFirst);</p>
+                    &lt;p
+                    className="article-content">{props.article.content}&lt;/p&gt;
                   </div>
                   <div class="line02">
                     <p>
+                      <span class="code-explain">// props로 함수 전달하기</span>
+                    </p>
+                  </div>
+                  <div class="line01">
+                    <p>
+                      &lt;Card article={article[i]} i={i} count={count}
+                      navigate={navigate}&gt;&lt;/Card&gt;
                       <span class="code-explain"
-                        >// var slideInterval; 선언 생략</span
+                        >article == data, navigate == 함수</span
                       >
                     </p>
                   </div>
-                  <div class="line01">
+                  <div class="line02">
                     <p>
-                      slideInterval = setInterval(transitionSlide, 3000);
+                      &lt;div className="card-click" onClick={() =&gt;
+                      {props.navigate(`/detail/${props.article.id}`);}}&gt;
                       <span class="code-explain"
-                        >함수 실행 시 마다 새로운 타이머를 3초마다 실행</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p></p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      if (currentView >= 1) {
-                      <span class="code-explain"
-                        >// 초기값이 1보다 큰 상태일 시 실행</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>
-                      currentView++;<span class="code-explain">
-                        // 상태값 + 1 하기</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      slideBox.style.transform = "translateX(-" + 690 *
-                      currentView + "px)";<span class="code-explain">
-                        // 상태 값 x 위치 이동 값</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>
-                      document.querySelector('#con-counter').innerHTML =
-                      currentView + "/3"
-                      <span class="code-explain"> // 해당 상태 바인딩하기</span>
-                    </p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      if (currentView === slideImg.length + 1) {<span
-                        class="code-explain"
-                      >
-                        // 슬라이드가 끝 도달 시 위치 초기화, 상태 값
-                        초기화</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>slideBox.style.transition = "0s";</p>
-                  </div>
-                  <div class="line01">
-                    <p>slideBox.style.transform = "translateX(0px)";</p>
-                  </div>
-                  <div class="line02">
-                    <p>currentView = 1;</p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      return slideInterval; , moveAuto();
-                      <span class="code-explain"
-                        >// 슬라이드 정지 매개변수를 위해 리턴하기, 함수
-                        실행하기</span
+                        >// 전달 받은 데이터의 id값으로 이동</span
                       >
                     </p>
                   </div>
@@ -311,12 +239,11 @@
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>
-                    clearInterval로 함수 종료, class 추가 삭제로 디자인 변경하기
-                  </h4>
+                  <h4>useQuery , axios</h4>
                   <span>
-                    버튼 클릭 시 상태 값 카운트를 통해 재생, 정지를
-                    구현하였습니다.
+                    useQuery란 데이터를 비동기적으로 가져오고 캐싱하는 데
+                    사용되는 기능입니다. axios는 http 데이터를 가져오는
+                    라이브러리입니다.
                   </span>
                 </div>
 
@@ -348,91 +275,61 @@
                   <li class="numberline">
                     <p>9</p>
                   </li>
-                  <li class="numberline">
-                    <p>10</p>
-                  </li>
-                  <li class="numberline">
-                    <p>11</p>
-                  </li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
                     <p>
-                      var mainPausePlayBtn =
-                      document.querySelector('#main-pauseBtn');
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>
-                      var mainPauseCount = 0
-                      <span class="code-explain">// 상태 초기 값 설정</span>
-                    </p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      if (mainPauseCount % 2 == 1) {
+                      let result = useQuery(["작명"], () => {
                       <span class="code-explain"
-                        >// 상태 값이 홀수일시 == 재생되고 있을 때</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      clearInterval(slideInterval);
-                      <span class="code-explain"
-                        >기존 함수 안 setInterval 종료</span
+                        >// [작명]이란 키워드를 가진 쿼리 생성</span
                       >
                     </p>
                   </div>
                   <div class="line02">
-                    <p>mainPausePlayBtn.classList.remove("fa-pause");</p>
+                    <p>return axios</p>
                   </div>
                   <div class="line01">
                     <p>
-                      mainPausePlayBtn.classList.remove("fa-play");
+                      .get("https://beingborn.github.io/gitImage/userdata.json")
                       <span class="code-explain"
-                        >// 다른 url값 가진 class 탈부착하기</span
-                      >
-                    </p>
-                  </div>
-                  <div class="line02">
-                    <p>}</p>
-                  </div>
-                  <div class="line01">
-                    <p>
-                      if (mainPauseCount % 2 == 0) {
-                      <span class="code-explain"
-                        >// 상태 값이 짝수 일 시 == 정지되어 있을 때</span
+                        >// url에서 get으로 데이터 받기</span
                       >
                     </p>
                   </div>
                   <div class="line01">
-                    <p>
-                      <span class="code-explain">// 위와 동일하므로 생략</span>
-                    </p>
+                    <p>.then((res) => {</p>
+                  </div>
+                  <div class="line02">
+                    <p>});</p>
+                  </div>
+                  <div class="line01">
+                    <p>});</p>
                   </div>
                   <div class="line02">
                     <p>
-                      moveAuto(); <span class="code-explain">함수 재시작</span>
+                      {result.isLoading && "로딩중"}
+                      <span class="code-explain"
+                        >// 데이터 값의 상태에 따라 값 나타내기</span
+                      >
                     </p>
                   </div>
                   <div class="line01">
-                    <p>}</p>
+                    <p>{result.error && "에러남"}</p>
+                  </div>
+                  <div class="line01">
+                    <p>안녕하세요{" "} {result.data && result.data.name}</p>
                   </div>
                 </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>replace() , :contains</h4>
+                  <h4>onchage, submit</h4>
                   <span
-                    >replace 함수는 첫 번째로 발견한 문자열을 지정한 문자열로
-                    치환하여 줍니다.</span
-                  >
-                  <span
-                    >:contains는 해당 문자열의 특정 문자열이 있는 지 검수하여
-                    추가 코드를 작성할 수 있도록 합니다.</span
+                    >onchange는 input 태그의 상태 변화를 감지하는 기능입니다.
+                    submit은 form이 서버로 전송될 때 발생하는
+                    이벤트입니다.</span
                   >
                 </div>
 
@@ -467,103 +364,81 @@
                   <li class="numberline">
                     <p>10</p>
                   </li>
-                  <li class="numberline">
-                    <p>11</p>
-                  </li>
-                  <li class="numberline">
-                    <p>12</p>
-                  </li>
-                  <li class="numberline">
-                    <p>13</p>
-                  </li>
-                  <li class="numberline">
-                    <p>14</p>
-                  </li>
-                  <li class="numberline">
-                    <p>15</p>
-                  </li>
-                  <li class="numberline">
-                    <p>16</p>
-                  </li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
-                    <p>.grid-container {</p>
+                    <p>
+                      const [userComment, setComment] = useState('')
+                      <span class="code-explain"
+                        >// 댓글 임시 저장 공간 생성</span
+                      >
+                    </p>
                   </div>
                   <div class="line02">
                     <p>
-                      display: grid;
+                      const onChange = event => setComment(event.target.value);
                       <span class="code-explain"
-                        >/* 컨테이너 그리드 박스 지정 */</span
+                        >// 댓글 임시 저장 공간에 value 값 저장 저장한다.</span
                       >
                     </p>
                   </div>
                   <div class="line01">
-                    <p>
-                      grid-template-columns: repeat(3, 1fr); /* 행열 프레임 설정
-                      */
-                    </p>
+                    <p>const [userCommentList , setList] = useState([])</p>
                   </div>
                   <div class="line02">
-                    <p>grid-template-rows: repeat(2, 1fr);</p>
+                    <p>let commentCount = userCommentList.length;</p>
                   </div>
                   <div class="line01">
-                    <p>grid-auto-rows: 480px;</p>
+                    <p>const onSubmit = event => {</p>
                   </div>
                   <div class="line02">
-                    <p>grid-gap: 20px;</p>
-                  </div>
-                  <div class="line01">
                     <p>
-                      grid-template-areas:
-                      <span class="code-explain">/* 행열 별 영역 지정 */</span>
+                      event.preventDefault();
+                      <span class="code-explain">// 폼 제출 동작 막기</span>
                     </p>
                   </div>
                   <div class="line01">
-                    <p>'a b b'</p>
-                  </div>
-                  <div class="line02">
-                    <p>'a c d'</p>
-                  </div>
-                  <div class="line01">
-                    <p>;</p>
-                  </div>
-                  <div class="line02">
-                    <p>}</p>
+                    <p>
+                      if (userComment === ''){
+                      <span class="code-explain">// 공백 검사</span>
+                      return; }
+                    </p>
                   </div>
                   <div class="line01">
-                    <p></p>
+                    <p>
+                      const newComment = {user : '@newUser', content :
+                      userComment}
+                      <span class="code-explain">
+                        // 새로운 댓글에 값 지정
+                      </span>
+                    </p>
                   </div>
                   <div class="line02">
                     <p>
+                      setList(userCommentList => [newComment,
+                      ...userCommentList])
+                      <span class="code-explain"> // 배열 앞에 댓글 추가 </span>
+                    </p>
+                  </div>
+                  <div class="line01">
+                    <p>
+                      setComment('')
                       <span class="code-explain"
-                        >/* 자식 아이템 영역 지정 */</span
+                        >// 공백(space) 값 포함 submit</span
                       >
                     </p>
-                  </div>
-                  <div class="line01">
-                    <p>.grid-itemA {</p>
-                  </div>
-                  <div class="line02">
-                    <p>grid-area : a;</p>
-                  </div>
-                  <div class="line01">
-                    <p>}</p>
                   </div>
                 </div>
               </div>
 
               <div class="code-real">
                 <div class="code-title">
-                  <h4>
-                    아이콘 한꺼번에 배경이미지처리 후 background-position 처리
-                  </h4>
+                  <h4>Redux, useDispatch</h4>
                   <span>
-                    아이콘이 너무 많아질 시 정리하기 쉽지 않습니다. 그래서 png
-                    파일로 해당 아이콘들을 모두 모은 뒤 background-position
-                    처리를 하는 네이버 홈페이지의 코드를 참고해
-                    제작해보았습니다.
+                    Redux란 여러 변수 및 배열 값을 종합적으로 모아 관리하는
+                    자바스크립트 라이브러리입니다. useDispatch는 상태를 변경하기
+                    위한 redux의 훅입니다.
                   </span>
                 </div>
 
@@ -592,42 +467,70 @@
                   <li class="numberline">
                     <p>8</p>
                   </li>
+                  <li class="numberline">
+                    <p>9</p>
+                  </li>
+                  <li class="numberline">
+                    <p>10</p>
+                  </li>
                 </ul>
 
                 <div class="code">
                   <div class="line01">
                     <p>
-                      .link-set > li a::before {
+                      let cart = createSlice({ name: "cart", initialState: [...]
+                      <span class="code-explain">배열 값 만들기</span>
+                    </p>
+                  </div>
+                  <div class="line02">
+                    <p>reducers: {</p>
+                  </div>
+                  <div class="line01">
+                    <p>
+                      deleteItem(state, action) {
                       <span class="code-explain"
-                        >부모와 같은 역할을 할 수 있도록 지정</span
+                        >해당 state 변경 함수 생성</span
                       >
                     </p>
                   </div>
                   <div class="line02">
-                    <p>content: "";</p>
+                    <p>
+                      let deleteItemId = state.findIndex((a) => {
+                      <span class="code-explain"
+                        >전달받은 index값의 아이디 저장</span
+                      >
+                    </p>
+                  </div>
+                  <div class="line01">
+                    <p>return a.id === action.payload; });</p>
+                  </div>
+                  <div class="line02">
+                    <p>state.splice(deleteItemId, 1); }</p>
                   </div>
                   <div class="line01">
                     <p>
-                      background-image: url(../images/icon_set_service.png);
+                      export let { addCount, addItem, deleteItem, reset } =
+                      cart.actions;
+                      <span class="code-explain">함수 export 하기</span>
                     </p>
                   </div>
                   <div class="line02">
-                    <p>}</p>
-                  </div>
-                  <div class="line01">
-                    <p></p>
-                  </div>
-                  <div class="line02">
-                    <p>.link-set li.link1 a::before {</p>
+                    <p>
+                      let dispatch = useDispatch(); // store.js 로 요청
+                      보내주는함수
+                      <span class="code-explain"></span>
+                    </p>
                   </div>
                   <div class="line01">
                     <p>
-                      background-position: -360px 0;
-                      <span class="code-expain">해당 값으로 position 변경</span>
+                      &lt;button className="delete" onClick={() =&lt; {
+                      dispatch(deleteItem(state.cart[i].id));}}/&gt;
                     </p>
                   </div>
                   <div class="line02">
-                    <p>}</p>
+                    <span class="code-explain"
+                      >삭제 버튼 클릭 시 deleteItem에 id를 매개변수로 요청</span
+                    >
                   </div>
                 </div>
               </div>
