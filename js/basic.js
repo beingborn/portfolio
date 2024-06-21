@@ -296,7 +296,7 @@ $(".etc-box").click(function () {
   console.log(etcIndex);
 
   $(".etc-modal").eq(etcIndex).fadeIn("swing");
-  $("body").css("overflowY", "hidden");
+  // $("body").css("overflowY", "hidden");
 
   blackBg.css({ height: $(document).height() });
   blackBg.show();
