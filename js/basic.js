@@ -1,3 +1,28 @@
+var opacityText1 = $(".desc-box").eq(0);
+var opacityText2 = $(".desc-box").eq(1);
+var opacityText3 = $(".desc-box").eq(2);
+
+const io = new IntersectionObserver( // 생성자 즉 대상 요소 감시자 설정
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // 요소가 뷰 포트에 보일 시 해당 코드 실행
+        $(entry.target).addClass("animate__animated animate__fadeInUp 0.5s");
+        console.log("보인다!");
+      } else {
+        $(entry.target).css({ opacity: 0 });
+        console.log("안보입니다!");
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+// 관찰 대상 설정
+io.observe(opacityText1[0]);
+io.observe(opacityText2[0]);
+io.observe(opacityText3[0]);
+
 $(document).ready(function () {
   // 'visited' 라는 키로 sessionStorage를 확인합니다.
   if (!sessionStorage.getItem("visited")) {

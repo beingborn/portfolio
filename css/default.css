@@ -318,7 +318,7 @@ body.modal-open {
   background: url(../img/mongodb-icon-on.svg) no-repeat center;
   background-size: cover;
 }
-.photo-detail::before {
+p .photo-detail::before {
   background: url(../img/ph-ai-on.svg) no-repeat center;
   background-size: contain;
 }
@@ -391,6 +391,118 @@ body.modal-open {
 
 .about-top {
   padding-bottom: 80px;
+}
+
+/* about me */
+
+.about-me {
+  margin-bottom: 160px;
+}
+
+.about-me .inner {
+  position: relative;
+  /* border: 1px dashed darkblue; */
+}
+
+.about-me .section-tit {
+  margin-bottom: 20px;
+}
+
+.about-me .about-desc {
+  font-size: 16px;
+  /* font-weight: 600; */
+}
+
+.about-me .col-1 {
+  margin-bottom: 8px;
+}
+
+.about-me .desc-global {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  /* border: 1px darkseagreen; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.desc-global .desc-box {
+  width: 33%;
+  position: relative;
+  cursor: pointer;
+
+  /* border: 1px dashed blue; */
+}
+
+.desc-global .desc-box > div {
+  /* padding: 20px; */
+}
+
+.desc-global .desc-box .circle {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 20%;
+  /* background-color: #1e1eca; */
+  background: url(../img/plus_svg.svg) no-repeat center;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+}
+
+.desc-global .desc-box .ko {
+  font-size: 13px;
+  color: gray;
+}
+
+.desc-global .desc-box:nth-child(1),
+.desc-global .desc-box:nth-child(2) {
+  /* border-right: 1px solid lightgray; */
+}
+
+.desc-box {
+  text-align: center;
+}
+
+.about-me .title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  white-space: nowrap;
+  /* line-height: 48px; */
+  height: 48px;
+  font-family: "Gotham_Black";
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  justify-content: center;
+}
+
+.about-me .desc-global .desc-box .icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 6px;
+  /* background: url(../img/ant-design_global-outlined.svg) no-repeat center; */
+}
+
+.about-me .desc-global .desc-box .memo {
+  background: url(../img/icons8_document.svg) no-repeat center;
+  background-size: cover;
+}
+
+.about-me .desc-global .desc-box .global {
+  background: url(../img/ant-design_global-outlined.svg) no-repeat center;
+  background-size: cover;
+}
+
+.about-me .desc-global .desc-box p {
+  /* padding-right: 32px; */
+  /* line-height: 1.5; */
+  font-size: 13px;
+  padding-bottom: 8px;
 }
 
 /* project change */
@@ -1559,6 +1671,14 @@ body.modal-open {
 @media screen and (max-width: 1200px) {
   /* 화면 너비가 1200px 이하인 경우에만 적용되는 스타일 */
 
+  .about-me .title {
+    font-size: 20px;
+  }
+
+  .about-me .desc-global .desc-box p {
+    font-size: 11px;
+  }
+
   .task-flexwrap {
     flex-wrap: wrap;
     min-height: 800px;
@@ -1811,10 +1931,38 @@ body.modal-open {
   background-size: contain;
 }
 
+@media all and (max-width: 900px) {
+  .desc-global .desc-box .circle {
+    display: none;
+  }
+
+  .about-me .title {
+    font-size: 28px;
+  }
+
+  .about-me {
+    margin-bottom: 80px;
+  }
+
+  .about-me .desc-global {
+    display: block;
+  }
+
+  .about-me .desc-box {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
 @media all and (max-width: 767px) {
   /* 767px 이하인 경우에만 적용되는 스타일 == 모바일 */
+
   .how-design p {
     width: 80%;
+  }
+
+  .about-desc {
+    text-align: center;
   }
 
   .next-flex {
