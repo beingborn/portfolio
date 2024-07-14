@@ -937,6 +937,9 @@
         </div>
       </section>
     </div>
+    <script></script>
+
+
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -951,6 +954,48 @@
           "width=360px,scrollbars=yes"
         );
       }
+    </script>
+    <script>
+      window.onload = function () {
+  var mainTask = $(".task-wrap li a");
+  var taskExplain = $(".task-box");
+  var taskBox = $(".code-real");
+  var isOpen = false;
+
+  taskBox.hide();
+  taskBox.eq(0).show();
+
+  mainTask.eq(0).css("color", "black");
+
+  mainTask.click(function () {
+    // 기능 버튼 클릭 시
+    var taskIndex = mainTask.index(this);
+    taskBox.eq(taskIndex).show();
+    taskExplain.eq(taskIndex).show();
+
+    var notThisIndexes = mainTask
+      .not(this)
+      .map(function () {
+        // 선택 안된 것들의 index 얻기
+        return mainTask.index(this);
+      })
+      .get();
+
+    for (let i = 0; i < notThisIndexes.length; i++) {
+      // 반복문 돌면서 display block 시키기
+      taskBox.eq(notThisIndexes[i]).hide();
+      taskExplain.eq(notThisIndexes[i]).hide();
+    }
+
+    $(this).css({
+      color: "black",
+    });
+
+    mainTask.not(this).css({
+      color: "lightgray",
+    });
+  });
+}
     </script>
   </body>
 </html>
