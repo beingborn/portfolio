@@ -40,18 +40,18 @@ $(document).ready(function () {
 });
 
 // is it mobile ?
-document.addEventListener("DOMContentLoaded", function () {
-  var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  var links = document.querySelectorAll(".move-link");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+//   var links = document.querySelectorAll(".move-link");
 
-  links.forEach(function (link) {
-    if (isMobile) {
-      link.setAttribute("target", "_self");
-    } else {
-      link.setAttribute("target", "_blank");
-    }
-  });
-});
+//   links.forEach(function (link) {
+//     if (isMobile) {
+//       link.setAttribute("target", "_self");
+//     } else {
+//       link.setAttribute("target", "_blank");
+//     }
+//   });
+// });
 
 // mobileJs
 $(".top-gnb-mo").hide();
